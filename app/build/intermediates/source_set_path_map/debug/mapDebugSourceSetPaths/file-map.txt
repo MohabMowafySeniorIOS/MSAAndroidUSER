@@ -1,0 +1,93 @@
+com.msa.android.app-transition-1.5.0-0 /Users/etisalat/.gradle/caches/9.5.1/transforms/05afcd5bc64b1e2cfbbbe24e5375a69b/transformed/transition-1.5.0/res
+com.msa.android.app-navigation-compose-2.7.7-1 /Users/etisalat/.gradle/caches/9.5.1/transforms/071fe88d0589bcd13a9cda3b9b015c72/transformed/navigation-compose-2.7.7/res
+com.msa.android.app-firebase-messaging-24.0.0-2 /Users/etisalat/.gradle/caches/9.5.1/transforms/0745e7be1840b5e467ac6300cbbd2122/transformed/firebase-messaging-24.0.0/res
+com.msa.android.app-lifecycle-viewmodel-ktx-2.8.4-3 /Users/etisalat/.gradle/caches/9.5.1/transforms/0797cfe2984e9fc4aecaa6d244c0a869/transformed/lifecycle-viewmodel-ktx-2.8.4/res
+com.msa.android.app-animation-release-4 /Users/etisalat/.gradle/caches/9.5.1/transforms/131b33995abc61b52caf00461a1e7346/transformed/animation-release/res
+com.msa.android.app-hilt-navigation-1.2.0-5 /Users/etisalat/.gradle/caches/9.5.1/transforms/137a18fac1cbbf79a522abf6d9640eae/transformed/hilt-navigation-1.2.0/res
+com.msa.android.app-activity-ktx-1.9.1-6 /Users/etisalat/.gradle/caches/9.5.1/transforms/1ab0ee9c7f5f6b07cb87771b26936145/transformed/activity-ktx-1.9.1/res
+com.msa.android.app-ui-graphics-release-7 /Users/etisalat/.gradle/caches/9.5.1/transforms/1d2fb75575f1af0901756313b649f5d0/transformed/ui-graphics-release/res
+com.msa.android.app-emoji2-1.3.0-8 /Users/etisalat/.gradle/caches/9.5.1/transforms/1f708d272dbed41985d66e86a0e81378/transformed/emoji2-1.3.0/res
+com.msa.android.app-material-ripple-release-9 /Users/etisalat/.gradle/caches/9.5.1/transforms/2104e9e48905654f9aa8a25430f1aa4a/transformed/material-ripple-release/res
+com.msa.android.app-viewpager2-1.0.0-10 /Users/etisalat/.gradle/caches/9.5.1/transforms/2218f6c75090ad7f7d8ae5d90e1b73a0/transformed/viewpager2-1.0.0/res
+com.msa.android.app-play-services-measurement-api-22.0.2-11 /Users/etisalat/.gradle/caches/9.5.1/transforms/26a660522f7b5cf0d6b42562f76dd207/transformed/play-services-measurement-api-22.0.2/res
+com.msa.android.app-activity-1.9.1-12 /Users/etisalat/.gradle/caches/9.5.1/transforms/285aa45efbae93b9e17adf604040deba/transformed/activity-1.9.1/res
+com.msa.android.app-core-splashscreen-1.0.1-13 /Users/etisalat/.gradle/caches/9.5.1/transforms/308d6873b9a84a8cac787ccd0b26d58d/transformed/core-splashscreen-1.0.1/res
+com.msa.android.app-drawerlayout-1.1.1-14 /Users/etisalat/.gradle/caches/9.5.1/transforms/3140632cd0d10494c3be098140dafd46/transformed/drawerlayout-1.1.1/res
+com.msa.android.app-hilt-navigation-compose-1.2.0-15 /Users/etisalat/.gradle/caches/9.5.1/transforms/32502ad16d7020da6cdae2b7bee9b562/transformed/hilt-navigation-compose-1.2.0/res
+com.msa.android.app-camera-core-1.4.2-16 /Users/etisalat/.gradle/caches/9.5.1/transforms/327af9c93be54cf4e69301bad26e1746/transformed/camera-core-1.4.2/res
+com.msa.android.app-lifecycle-livedata-core-2.8.4-17 /Users/etisalat/.gradle/caches/9.5.1/transforms/3547532c39adbe91b3fa27384f16af48/transformed/lifecycle-livedata-core-2.8.4/res
+com.msa.android.app-camera-lifecycle-1.4.2-18 /Users/etisalat/.gradle/caches/9.5.1/transforms/3b5afd246cb4609001a30cb2a5017532/transformed/camera-lifecycle-1.4.2/res
+com.msa.android.app-profileinstaller-1.3.1-19 /Users/etisalat/.gradle/caches/9.5.1/transforms/3ec1906ec1886cbdbbc33c7373b3d14c/transformed/profileinstaller-1.3.1/res
+com.msa.android.app-activity-compose-1.9.1-20 /Users/etisalat/.gradle/caches/9.5.1/transforms/3eca245b29b0592d791e38e5e28b2d89/transformed/activity-compose-1.9.1/res
+com.msa.android.app-ui-geometry-release-21 /Users/etisalat/.gradle/caches/9.5.1/transforms/3ff07b8395943469c6baad65502166c0/transformed/ui-geometry-release/res
+com.msa.android.app-animation-core-release-22 /Users/etisalat/.gradle/caches/9.5.1/transforms/4890d0222c7a815ee62c6df39582e099/transformed/animation-core-release/res
+com.msa.android.app-material-icons-extended-release-23 /Users/etisalat/.gradle/caches/9.5.1/transforms/4be81dfd5977aeb77f78c0cce9a327fd/transformed/material-icons-extended-release/res
+com.msa.android.app-lifecycle-process-2.8.4-24 /Users/etisalat/.gradle/caches/9.5.1/transforms/4c11640bce8bcbaeff669eb858e26bfa/transformed/lifecycle-process-2.8.4/res
+com.msa.android.app-lifecycle-viewmodel-savedstate-2.8.4-25 /Users/etisalat/.gradle/caches/9.5.1/transforms/4d3a92094a1f0448ad69a1dd2b515704/transformed/lifecycle-viewmodel-savedstate-2.8.4/res
+com.msa.android.app-navigation-common-ktx-2.7.7-26 /Users/etisalat/.gradle/caches/9.5.1/transforms/52af231d974e8592f65f3eca27c491c2/transformed/navigation-common-ktx-2.7.7/res
+com.msa.android.app-play-services-ads-lite-23.5.0-27 /Users/etisalat/.gradle/caches/9.5.1/transforms/5cc029c2afe8e1e020925390bb64a429/transformed/play-services-ads-lite-23.5.0/res
+com.msa.android.app-savedstate-1.2.1-28 /Users/etisalat/.gradle/caches/9.5.1/transforms/5da902dd1bcde654f0b7f011b714c090/transformed/savedstate-1.2.1/res
+com.msa.android.app-camera-view-1.4.2-29 /Users/etisalat/.gradle/caches/9.5.1/transforms/60ba04ebba2a64e75cffe427557828e8/transformed/camera-view-1.4.2/res
+com.msa.android.app-lifecycle-livedata-2.8.4-30 /Users/etisalat/.gradle/caches/9.5.1/transforms/62f33c68b3e5dfdbbb7139592a4158be/transformed/lifecycle-livedata-2.8.4/res
+com.msa.android.app-ui-tooling-preview-release-31 /Users/etisalat/.gradle/caches/9.5.1/transforms/63107cc78d02b51a86072b00e545f2b0/transformed/ui-tooling-preview-release/res
+com.msa.android.app-material-icons-core-release-32 /Users/etisalat/.gradle/caches/9.5.1/transforms/63534d9597ea95dc0607741dc13d7159/transformed/material-icons-core-release/res
+com.msa.android.app-recyclerview-1.1.0-33 /Users/etisalat/.gradle/caches/9.5.1/transforms/6611f3f029cf2011a8a8d1f6466bae40/transformed/recyclerview-1.1.0/res
+com.msa.android.app-ui-util-release-34 /Users/etisalat/.gradle/caches/9.5.1/transforms/6dbb4b4b7f53ae87fc61b25c8fb48b41/transformed/ui-util-release/res
+com.msa.android.app-savedstate-ktx-1.2.1-35 /Users/etisalat/.gradle/caches/9.5.1/transforms/6e33113c77e498c10cce84ca6317fa79/transformed/savedstate-ktx-1.2.1/res
+com.msa.android.app-webkit-1.11.0-alpha02-36 /Users/etisalat/.gradle/caches/9.5.1/transforms/729d0418fedc52739621f82a20267e69/transformed/webkit-1.11.0-alpha02/res
+com.msa.android.app-datastore-release-37 /Users/etisalat/.gradle/caches/9.5.1/transforms/772f32f461319090164806419972165f/transformed/datastore-release/res
+com.msa.android.app-play-services-ads-23.5.0-38 /Users/etisalat/.gradle/caches/9.5.1/transforms/7b65a363c20878455e53d171fb48d634/transformed/play-services-ads-23.5.0/res
+com.msa.android.app-navigation-runtime-ktx-2.7.7-39 /Users/etisalat/.gradle/caches/9.5.1/transforms/7cee071754ce98a535d07c0378bb9fb3/transformed/navigation-runtime-ktx-2.7.7/res
+com.msa.android.app-play-services-base-18.5.0-40 /Users/etisalat/.gradle/caches/9.5.1/transforms/7d97631855fc5f9ed5f901fe6d0671f8/transformed/play-services-base-18.5.0/res
+com.msa.android.app-foundation-layout-release-41 /Users/etisalat/.gradle/caches/9.5.1/transforms/7f451e8eeb0bfee55037491f55f0f889/transformed/foundation-layout-release/res
+com.msa.android.app-ui-unit-release-42 /Users/etisalat/.gradle/caches/9.5.1/transforms/8162bc61b192f2927e891b9ebcb5f9f9/transformed/ui-unit-release/res
+com.msa.android.app-work-runtime-2.7.0-43 /Users/etisalat/.gradle/caches/9.5.1/transforms/8469d4fc5617def1fb520d5c2d65eaec/transformed/work-runtime-2.7.0/res
+com.msa.android.app-camera-camera2-1.4.2-44 /Users/etisalat/.gradle/caches/9.5.1/transforms/87dbc54a5286886098849fb2aa270ea5/transformed/camera-camera2-1.4.2/res
+com.msa.android.app-firebase-common-21.0.0-45 /Users/etisalat/.gradle/caches/9.5.1/transforms/8b89bafd3e1706ade790226c1fb7c659/transformed/firebase-common-21.0.0/res
+com.msa.android.app-ui-release-46 /Users/etisalat/.gradle/caches/9.5.1/transforms/8f887bcaace0c1dedb1e5531c72b919d/transformed/ui-release/res
+com.msa.android.app-startup-runtime-1.1.1-47 /Users/etisalat/.gradle/caches/9.5.1/transforms/96e8b787744a046a3526d4894eb045b1/transformed/startup-runtime-1.1.1/res
+com.msa.android.app-emoji2-views-helper-1.3.0-48 /Users/etisalat/.gradle/caches/9.5.1/transforms/97cab28a3dc1972ee2d24aac243693db/transformed/emoji2-views-helper-1.3.0/res
+com.msa.android.app-constraintlayout-2.0.1-49 /Users/etisalat/.gradle/caches/9.5.1/transforms/987a7fb6f2ef36518332ec75c7b53c9d/transformed/constraintlayout-2.0.1/res
+com.msa.android.app-runtime-release-50 /Users/etisalat/.gradle/caches/9.5.1/transforms/9d739221449661916abdc1af95030ffa/transformed/runtime-release/res
+com.msa.android.app-core-ktx-1.13.1-51 /Users/etisalat/.gradle/caches/9.5.1/transforms/9df57fdfa5ea55589efb8918aa9d3e2d/transformed/core-ktx-1.13.1/res
+com.msa.android.app-core-runtime-2.2.0-52 /Users/etisalat/.gradle/caches/9.5.1/transforms/a22520eb4457bcce021024417a09f962/transformed/core-runtime-2.2.0/res
+com.msa.android.app-play-services-basement-18.4.0-53 /Users/etisalat/.gradle/caches/9.5.1/transforms/a97080535e2bea1599e7972f916ecb89/transformed/play-services-basement-18.4.0/res
+com.msa.android.app-tracing-1.2.0-54 /Users/etisalat/.gradle/caches/9.5.1/transforms/aa0246f70fa925e548975fe8105290bb/transformed/tracing-1.2.0/res
+com.msa.android.app-annotation-experimental-1.4.1-55 /Users/etisalat/.gradle/caches/9.5.1/transforms/aa1d889f48a7bcee132400ccd3448b36/transformed/annotation-experimental-1.4.1/res
+com.msa.android.app-navigation-runtime-2.7.7-56 /Users/etisalat/.gradle/caches/9.5.1/transforms/ae312ed238a0db5a5433c5cd51a903fb/transformed/navigation-runtime-2.7.7/res
+com.msa.android.app-camera-video-1.4.2-57 /Users/etisalat/.gradle/caches/9.5.1/transforms/af8e7ca003316c82dde018f88cd71b23/transformed/camera-video-1.4.2/res
+com.msa.android.app-customview-poolingcontainer-1.0.0-58 /Users/etisalat/.gradle/caches/9.5.1/transforms/b01b23bbcffadd9315845813023728b5/transformed/customview-poolingcontainer-1.0.0/res
+com.msa.android.app-coordinatorlayout-1.1.0-59 /Users/etisalat/.gradle/caches/9.5.1/transforms/b35c11f4a797dc797a2a580a127ec763/transformed/coordinatorlayout-1.1.0/res
+com.msa.android.app-cardview-1.0.0-60 /Users/etisalat/.gradle/caches/9.5.1/transforms/bbcfdbabe8a6b70d35e9232e5bd57fea/transformed/cardview-1.0.0/res
+com.msa.android.app-browser-1.8.0-61 /Users/etisalat/.gradle/caches/9.5.1/transforms/bf648b2624f6b1fe8579069f41743257/transformed/browser-1.8.0/res
+com.msa.android.app-runtime-saveable-release-62 /Users/etisalat/.gradle/caches/9.5.1/transforms/c06d1e5590a75cbfeb0dd1bfbbb20e8e/transformed/runtime-saveable-release/res
+com.msa.android.app-lifecycle-viewmodel-compose-release-63 /Users/etisalat/.gradle/caches/9.5.1/transforms/c2d4b529618ea13f95303cfee9ff2339/transformed/lifecycle-viewmodel-compose-release/res
+com.msa.android.app-appcompat-resources-1.7.0-64 /Users/etisalat/.gradle/caches/9.5.1/transforms/c32cfd4d66000d637738eeb7f0e5996e/transformed/appcompat-resources-1.7.0/res
+com.msa.android.app-lifecycle-livedata-core-ktx-2.8.4-65 /Users/etisalat/.gradle/caches/9.5.1/transforms/cbbcba70c09d3b639e883a302a186c98/transformed/lifecycle-livedata-core-ktx-2.8.4/res
+com.msa.android.app-coil-base-2.7.0-66 /Users/etisalat/.gradle/caches/9.5.1/transforms/cc192a758c61f453bf1ad5c312075dd8/transformed/coil-base-2.7.0/res
+com.msa.android.app-lifecycle-runtime-compose-release-67 /Users/etisalat/.gradle/caches/9.5.1/transforms/cfa5152437457adf050dbf231ee5e18e/transformed/lifecycle-runtime-compose-release/res
+com.msa.android.app-ads-adservices-java-1.0.0-beta05-68 /Users/etisalat/.gradle/caches/9.5.1/transforms/d131cecf9db579943a576ba717df885f/transformed/ads-adservices-java-1.0.0-beta05/res
+com.msa.android.app-lifecycle-service-2.8.4-69 /Users/etisalat/.gradle/caches/9.5.1/transforms/d181e6107a094100652c199b4c6fc97c/transformed/lifecycle-service-2.8.4/res
+com.msa.android.app-lifecycle-runtime-ktx-release-70 /Users/etisalat/.gradle/caches/9.5.1/transforms/d417c5929cedfc9ee196ebebef09d55b/transformed/lifecycle-runtime-ktx-release/res
+com.msa.android.app-lifecycle-runtime-release-71 /Users/etisalat/.gradle/caches/9.5.1/transforms/d775f87a818a3c25f492504b21f1396e/transformed/lifecycle-runtime-release/res
+com.msa.android.app-foundation-release-72 /Users/etisalat/.gradle/caches/9.5.1/transforms/dddc03b9b7f012216ab200726a501cca/transformed/foundation-release/res
+com.msa.android.app-navigation-common-2.7.7-73 /Users/etisalat/.gradle/caches/9.5.1/transforms/e25bc617952d52cc095c67f54dc50db5/transformed/navigation-common-2.7.7/res
+com.msa.android.app-lifecycle-viewmodel-release-74 /Users/etisalat/.gradle/caches/9.5.1/transforms/e4428e77a5d29803f3f3ad225316bc6a/transformed/lifecycle-viewmodel-release/res
+com.msa.android.app-material-1.12.0-75 /Users/etisalat/.gradle/caches/9.5.1/transforms/e639ed777fa6dfe09e30ed2b550758ac/transformed/material-1.12.0/res
+com.msa.android.app-tracing-ktx-1.2.0-76 /Users/etisalat/.gradle/caches/9.5.1/transforms/e81a4bbe04f7f972fcda10d5b868438f/transformed/tracing-ktx-1.2.0/res
+com.msa.android.app-datastore-core-release-77 /Users/etisalat/.gradle/caches/9.5.1/transforms/e915eacfc6c368280439e9567ac636dc/transformed/datastore-core-release/res
+com.msa.android.app-datastore-preferences-release-78 /Users/etisalat/.gradle/caches/9.5.1/transforms/eafc2776f0a195bb15600713a87d7335/transformed/datastore-preferences-release/res
+com.msa.android.app-core-1.13.1-79 /Users/etisalat/.gradle/caches/9.5.1/transforms/ebb2e54f6561bfe77f3444eb8fce228a/transformed/core-1.13.1/res
+com.msa.android.app-ads-adservices-1.0.0-beta05-80 /Users/etisalat/.gradle/caches/9.5.1/transforms/ec5f76d3fc39b9be7316e1827e637cea/transformed/ads-adservices-1.0.0-beta05/res
+com.msa.android.app-fragment-1.5.4-81 /Users/etisalat/.gradle/caches/9.5.1/transforms/ee6017da096fb11feffffe5d48a50399/transformed/fragment-1.5.4/res
+com.msa.android.app-ui-text-release-82 /Users/etisalat/.gradle/caches/9.5.1/transforms/f8e758e06f3e2fbc48f6140dd74ef184/transformed/ui-text-release/res
+com.msa.android.app-appcompat-1.7.0-83 /Users/etisalat/.gradle/caches/9.5.1/transforms/fa3a0cc04c7663f44f99e5b5e7abc6ec/transformed/appcompat-1.7.0/res
+com.msa.android.app-material3-release-84 /Users/etisalat/.gradle/caches/9.5.1/transforms/fdd74f0bb70b0b99256f1792c57c3923/transformed/material3-release/res
+com.msa.android.app-res-85 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/generated/res/processDebugGoogleServices
+com.msa.android.app-resValues-86 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/generated/res/resValues/debug
+com.msa.android.app-updated_navigation_xml-87 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/generated/updated_navigation_xml/debug
+com.msa.android.app-packageDebugResources-88 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.msa.android.app-packageDebugResources-89 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.msa.android.app-debug-90 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.msa.android.app-debug-91 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/debug/res
+com.msa.android.app-main-92 /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/res

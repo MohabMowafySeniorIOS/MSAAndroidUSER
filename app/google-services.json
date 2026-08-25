@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "710080677533",
+    "project_id": "bank-rates-app",
+    "storage_bucket": "bank-rates-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710080677533:android:f661192c6b87a473003674",
+        "android_client_info": {
+          "package_name": "com.msa.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQXi_6CKsklgWoeUC5y86gXDqZynSfmsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710080677533:android:34b835283b775d13003674",
+        "android_client_info": {
+          "package_name": "com.msa.msaadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQXi_6CKsklgWoeUC5y86gXDqZynSfmsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
