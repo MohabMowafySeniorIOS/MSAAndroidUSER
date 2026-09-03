@@ -1,242 +1,242 @@
 [
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_info.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_info.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_tab_calculator.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_tab_calculator.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_bullion_placeholder.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/bullion_placeholder.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_info.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_info.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/font_ibm_plex_sans_arabic_bold.ttf.flat",
-        "source": "com.msa.android.app-main-92:/font/ibm_plex_sans_arabic_bold.ttf"
+        "merged": "com.msa.android.app-debug-93:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_money_back.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_money_back.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_splash_logo.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_splash_logo.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_tab_more.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_tab_more.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_silver_pile.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_silver_pile.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_shared.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_shared.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_onboarding_placeholder.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/onboarding_placeholder.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_terms.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_terms.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_terms.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_terms.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_arrow_down.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_coins_01.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/coins_01.xml"
+        "merged": "com.msa.android.app-debug-93:/font_ibm_plex_sans_arabic_regular.ttf.flat",
+        "source": "com.msa.android.app-main-95:/font/ibm_plex_sans_arabic_regular.ttf"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/font_ibm_plex_sans_arabic_regular.ttf.flat",
-        "source": "com.msa.android.app-main-92:/font/ibm_plex_sans_arabic_regular.ttf"
+        "merged": "com.msa.android.app-debug-93:/xml_data_extraction_rules.xml.flat",
+        "source": "com.msa.android.app-main-95:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/font_ibm_plex_sans_arabic_medium.ttf.flat",
-        "source": "com.msa.android.app-main-92:/font/ibm_plex_sans_arabic_medium.ttf"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_tab_more.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_tab_more.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/xml_data_extraction_rules.xml.flat",
-        "source": "com.msa.android.app-main-92:/xml/data_extraction_rules.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_rating.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_rating.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_coins_01.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/coins_01.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_arrow_down.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_arrow_down.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_send.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_send.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_chevron.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_chevron.xml"
+        "merged": "com.msa.android.app-debug-93:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_launcher_background.xml"
+        "merged": "com.msa.android.app-debug-93:/font_ibm_plex_sans_arabic_bold.ttf.flat",
+        "source": "com.msa.android.app-main-95:/font/ibm_plex_sans_arabic_bold.ttf"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_organization.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_organization.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_notification.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_notification.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_send.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_send.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_organization.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_organization.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_insurance.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_insurance.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_gold_pile.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_gold_pile.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_silver_pile.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_silver_pile.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_bg_texture.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/bg_texture.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_back_arrow.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_back_arrow.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_arrow_up.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_arrow_up.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_tab_calculator.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_tab_calculator.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_tab_dollar.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_tab_dollar.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/raw_msa_notification.mp3.flat",
-        "source": "com.msa.android.app-main-92:/raw/msa_notification.mp3"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_help.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_help.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_help.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_help.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_refresh.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_refresh.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_faq.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_faq.png"
+        "merged": "com.msa.android.app-debug-93:/font_ibm_plex_sans_arabic_medium.ttf.flat",
+        "source": "com.msa.android.app-main-95:/font/ibm_plex_sans_arabic_medium.ttf"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_terms.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_terms.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_onboarding_placeholder.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/onboarding_placeholder.xml"
+        "merged": "com.msa.android.app-debug-93:/raw_dollar_changed.mp3.flat",
+        "source": "com.msa.android.app-main-95:/raw/dollar_changed.mp3"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_tab_news.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_tab_news.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_money_back.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_money_back.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_arrow_up.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_arrow_up.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/xml_backup_rules.xml.flat",
-        "source": "com.msa.android.app-main-92:/xml/backup_rules.xml"
+        "merged": "com.msa.android.app-debug-93:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "com.msa.android.app-debug-93:/raw_msa_notification.mp3.flat",
+        "source": "com.msa.android.app-main-95:/raw/msa_notification.mp3"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_tab_home.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_tab_home.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_msa_logo.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_msa_logo.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_notification.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_notification.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_chevron.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_chevron.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_bullion_placeholder.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/bullion_placeholder.xml"
+        "merged": "com.msa.android.app-debug-93:/xml_backup_rules.xml.flat",
+        "source": "com.msa.android.app-main-95:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_back_arrow.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_back_arrow.xml"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_netdania.jpg.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_netdania.jpg"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_lang_ar.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_lang_ar.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_splash_logo.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_splash_logo.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_world.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_world.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_calculator.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_calculator.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_msa_logo.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_msa_logo.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_msa_diamond.xml.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_msa_diamond.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_shared.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_shared.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_tab_news.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_tab_news.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_tab_home.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_tab_home.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_refresh.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_refresh.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_more_rating.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_more_rating.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_tab_dollar.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_tab_dollar.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_bg_texture.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/bg_texture.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_gold_pile.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_gold_pile.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_world.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_world.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_faq.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_faq.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/raw_dollar_changed.mp3.flat",
-        "source": "com.msa.android.app-main-92:/raw/dollar_changed.mp3"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_insurance.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_insurance.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.msa.android.app-debug-93:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.msa.android.app-main-95:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_lang_ar.png.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_lang_ar.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_terms.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_terms.png"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/drawable_ic_msa_diamond.xml.flat",
-        "source": "com.msa.android.app-main-92:/drawable/ic_msa_diamond.xml"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_netdania.jpg.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_netdania.jpg"
     },
     {
-        "merged": "com.msa.android.app-debug-90:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.msa.android.app-main-92:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.msa.android.app-debug-93:/drawable_ic_more_calculator.png.flat",
+        "source": "com.msa.android.app-main-95:/drawable/ic_more_calculator.png"
     }
 ]

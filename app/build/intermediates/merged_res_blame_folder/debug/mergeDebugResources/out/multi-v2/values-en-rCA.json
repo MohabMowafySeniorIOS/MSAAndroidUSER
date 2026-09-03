@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.msa.android.app-mergeDebugResources-88:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.msa.android.app-mergeDebugResources-91:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/Users/etisalat/.gradle/caches/9.5.1/transforms/ebb2e54f6561bfe77f3444eb8fce228a/transformed/core-1.13.1/res/values-en-rCA/values-en-rCA.xml",

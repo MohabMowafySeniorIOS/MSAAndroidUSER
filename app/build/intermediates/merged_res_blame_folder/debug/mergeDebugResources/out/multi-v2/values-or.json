@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.msa.android.app-mergeDebugResources-88:/values-or/values-or.xml",
+            "outputFile": "com.msa.android.app-mergeDebugResources-91:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/Users/etisalat/.gradle/caches/9.5.1/transforms/ebb2e54f6561bfe77f3444eb8fce228a/transformed/core-1.13.1/res/values-or/values-or.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.msa.android.app-mergeDebugResources-88:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.msa.android.app-mergeDebugResources-91:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "/Users/etisalat/.gradle/caches/9.5.1/transforms/7d97631855fc5f9ed5f901fe6d0671f8/transformed/play-services-base-18.5.0/res/values-pt-rBR/values.xml",

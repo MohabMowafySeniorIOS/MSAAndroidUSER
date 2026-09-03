@@ -35,6 +35,7 @@ import com.msa.android.presentation.common.NumberFormatter
 import com.msa.android.presentation.common.RelativeTimeFormatter
 import com.msa.android.presentation.common.components.MSABackground
 import com.msa.android.presentation.common.components.MSATopBar
+import com.msa.android.presentation.screens.home.banner.HomeBannerPopupHost
 import com.msa.android.presentation.theme.GoldenBorder
 import kotlin.math.abs
 
@@ -58,6 +59,21 @@ fun HomeScreen(
 
     MSABackground {
         Box(modifier = Modifier.fillMaxSize()) {
+
+            // ── popup البانر ────────────────────────────────────────────
+            // بيظهر في نص الشاشة أول ما الرئيسية تفتح، وبيقفل نفسه لوحده
+            // لو مفيش بانرات. مالوش أي تأثير على ترتيب المحتوى تحته لأنه
+            // بيتفتح في نافذة منفصلة (Dialog) مش جوه الـ layout.
+            //
+            // تكرار الظهور متظبط من `POPUP_POLICY` في BannerRepository.kt
+            // (الافتراضي: مرة واحدة كل يوم).
+            HomeBannerPopupHost(
+                onOpenLink = { url ->
+                    // TODO: افتح اللينك في الويب فيو بتاعك أو في المتصفح.
+                    // مثال: navController.navigate("web?url=" + Uri.encode(url))
+                }
+            )
+
             Column(
                 modifier = Modifier
                     .fillMaxSize()

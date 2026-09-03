@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.msa.android.app-mergeDebugResources-88:/values-v27/values-v27.xml",
+            "outputFile": "com.msa.android.app-mergeDebugResources-91:/values-v27/values-v27.xml",
             "map": [
                 {
                     "source": "/Users/etisalat/.gradle/caches/9.5.1/transforms/308d6873b9a84a8cac787ccd0b26d58d/transformed/core-splashscreen-1.0.1/res/values-v27/values-v27.xml",

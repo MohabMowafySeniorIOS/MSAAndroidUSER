@@ -68,6 +68,13 @@ import com.msa.android.presentation.screens.help.HelpViewModel;
 import com.msa.android.presentation.screens.help.HelpViewModel_HiltModules;
 import com.msa.android.presentation.screens.home.HomeViewModel;
 import com.msa.android.presentation.screens.home.HomeViewModel_HiltModules;
+import com.msa.android.presentation.screens.home.banner.BannerApi;
+import com.msa.android.presentation.screens.home.banner.BannerModule_ProvideBannerApiFactory;
+import com.msa.android.presentation.screens.home.banner.BannerModule_ProvideBannerOkHttpFactory;
+import com.msa.android.presentation.screens.home.banner.BannerModule_ProvideBannerRetrofitFactory;
+import com.msa.android.presentation.screens.home.banner.BannerRepository;
+import com.msa.android.presentation.screens.home.banner.BannerViewModel;
+import com.msa.android.presentation.screens.home.banner.BannerViewModel_HiltModules;
 import com.msa.android.presentation.screens.indicators.IndicatorsViewModel;
 import com.msa.android.presentation.screens.indicators.IndicatorsViewModel_HiltModules;
 import com.msa.android.presentation.screens.language.LanguageViewModel;
@@ -455,7 +462,7 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>builderWithExpectedSize(25).put(LazyClassKeyProvider.com_msa_android_presentation_screens_about_AboutViewModel, AboutViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel, AddPortfolioItemViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_AppStatusViewModel, AppStatusViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_banks_BanksViewModel, BanksViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_bullions_BullionViewModel, BullionViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_faq_FaqViewModel, FaqViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel, GoldValueViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel, GoldZakatViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_help_HelpViewModel, HelpViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_HomeViewModel, HomeViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_indicators_IndicatorsViewModel, IndicatorsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_language_LanguageViewModel, LanguageViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_more_MoreViewModel, MoreViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_common_NetworkStatusViewModel, NetworkStatusViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_news_NewsViewModel, NewsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_onboarding_OnBoardingViewModel, OnBoardingViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_policy_PolicyViewModel, PolicyViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_PortfolioViewModel, PortfolioViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel, PriceGapDetailsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_qr_ScanQRViewModel, ScanQRViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel, ScreenMaintenanceViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel, SilverValueViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel, SilverZakatViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_splash_SplashViewModel, SplashViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel, TechnicalAnalysisViewModel_HiltModules.KeyModule.provide()).build());
+      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>builderWithExpectedSize(26).put(LazyClassKeyProvider.com_msa_android_presentation_screens_about_AboutViewModel, AboutViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel, AddPortfolioItemViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_AppStatusViewModel, AppStatusViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_banks_BanksViewModel, BanksViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_banner_BannerViewModel, BannerViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_bullions_BullionViewModel, BullionViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_faq_FaqViewModel, FaqViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel, GoldValueViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel, GoldZakatViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_help_HelpViewModel, HelpViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_HomeViewModel, HomeViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_indicators_IndicatorsViewModel, IndicatorsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_language_LanguageViewModel, LanguageViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_more_MoreViewModel, MoreViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_common_NetworkStatusViewModel, NetworkStatusViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_news_NewsViewModel, NewsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_onboarding_OnBoardingViewModel, OnBoardingViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_policy_PolicyViewModel, PolicyViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_PortfolioViewModel, PortfolioViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel, PriceGapDetailsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_qr_ScanQRViewModel, ScanQRViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel, ScreenMaintenanceViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel, SilverValueViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel, SilverZakatViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_splash_SplashViewModel, SplashViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel, TechnicalAnalysisViewModel_HiltModules.KeyModule.provide()).build());
     }
 
     @Override
@@ -482,130 +489,135 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_msa_android_presentation_screens_help_HelpViewModel = "com.msa.android.presentation.screens.help.HelpViewModel";
-
-      static String com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel = "com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel";
-
-      static String com_msa_android_presentation_screens_home_HomeViewModel = "com.msa.android.presentation.screens.home.HomeViewModel";
-
-      static String com_msa_android_presentation_screens_news_NewsViewModel = "com.msa.android.presentation.screens.news.NewsViewModel";
-
-      static String com_msa_android_presentation_screens_language_LanguageViewModel = "com.msa.android.presentation.screens.language.LanguageViewModel";
-
-      static String com_msa_android_presentation_screens_qr_ScanQRViewModel = "com.msa.android.presentation.screens.qr.ScanQRViewModel";
-
-      static String com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel = "com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel";
-
-      static String com_msa_android_presentation_screens_portfolio_PortfolioViewModel = "com.msa.android.presentation.screens.portfolio.PortfolioViewModel";
-
-      static String com_msa_android_presentation_screens_banks_BanksViewModel = "com.msa.android.presentation.screens.banks.BanksViewModel";
-
-      static String com_msa_android_presentation_screens_policy_PolicyViewModel = "com.msa.android.presentation.screens.policy.PolicyViewModel";
-
-      static String com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel = "com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel";
-
-      static String com_msa_android_presentation_screens_appstatus_AppStatusViewModel = "com.msa.android.presentation.screens.appstatus.AppStatusViewModel";
-
-      static String com_msa_android_presentation_screens_indicators_IndicatorsViewModel = "com.msa.android.presentation.screens.indicators.IndicatorsViewModel";
-
-      static String com_msa_android_presentation_screens_onboarding_OnBoardingViewModel = "com.msa.android.presentation.screens.onboarding.OnBoardingViewModel";
-
-      static String com_msa_android_presentation_screens_about_AboutViewModel = "com.msa.android.presentation.screens.about.AboutViewModel";
-
-      static String com_msa_android_presentation_screens_splash_SplashViewModel = "com.msa.android.presentation.screens.splash.SplashViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel = "com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_bullions_BullionViewModel = "com.msa.android.presentation.screens.calculators.bullions.BullionViewModel";
-
       static String com_msa_android_presentation_common_NetworkStatusViewModel = "com.msa.android.presentation.common.NetworkStatusViewModel";
-
-      static String com_msa_android_presentation_screens_more_MoreViewModel = "com.msa.android.presentation.screens.more.MoreViewModel";
-
-      static String com_msa_android_presentation_screens_faq_FaqViewModel = "com.msa.android.presentation.screens.faq.FaqViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel = "com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel";
 
       static String com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel = "com.msa.android.presentation.screens.portfolio.AddPortfolioItemViewModel";
 
-      static String com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel = "com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel";
+      static String com_msa_android_presentation_screens_news_NewsViewModel = "com.msa.android.presentation.screens.news.NewsViewModel";
+
+      static String com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel = "com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel";
+
+      static String com_msa_android_presentation_screens_onboarding_OnBoardingViewModel = "com.msa.android.presentation.screens.onboarding.OnBoardingViewModel";
+
+      static String com_msa_android_presentation_screens_qr_ScanQRViewModel = "com.msa.android.presentation.screens.qr.ScanQRViewModel";
+
+      static String com_msa_android_presentation_screens_more_MoreViewModel = "com.msa.android.presentation.screens.more.MoreViewModel";
+
+      static String com_msa_android_presentation_screens_banks_BanksViewModel = "com.msa.android.presentation.screens.banks.BanksViewModel";
 
       static String com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel = "com.msa.android.presentation.screens.calculators.silvervalue.SilverValueViewModel";
 
-      @KeepFieldType
-      HelpViewModel com_msa_android_presentation_screens_help_HelpViewModel2;
+      static String com_msa_android_presentation_screens_appstatus_AppStatusViewModel = "com.msa.android.presentation.screens.appstatus.AppStatusViewModel";
 
-      @KeepFieldType
-      PriceGapDetailsViewModel com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel2;
+      static String com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel = "com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel";
 
-      @KeepFieldType
-      HomeViewModel com_msa_android_presentation_screens_home_HomeViewModel2;
+      static String com_msa_android_presentation_screens_home_banner_BannerViewModel = "com.msa.android.presentation.screens.home.banner.BannerViewModel";
 
-      @KeepFieldType
-      NewsViewModel com_msa_android_presentation_screens_news_NewsViewModel2;
+      static String com_msa_android_presentation_screens_faq_FaqViewModel = "com.msa.android.presentation.screens.faq.FaqViewModel";
 
-      @KeepFieldType
-      LanguageViewModel com_msa_android_presentation_screens_language_LanguageViewModel2;
+      static String com_msa_android_presentation_screens_about_AboutViewModel = "com.msa.android.presentation.screens.about.AboutViewModel";
 
-      @KeepFieldType
-      ScanQRViewModel com_msa_android_presentation_screens_qr_ScanQRViewModel2;
+      static String com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel = "com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel";
 
-      @KeepFieldType
-      ScreenMaintenanceViewModel com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel2;
+      static String com_msa_android_presentation_screens_home_HomeViewModel = "com.msa.android.presentation.screens.home.HomeViewModel";
 
-      @KeepFieldType
-      PortfolioViewModel com_msa_android_presentation_screens_portfolio_PortfolioViewModel2;
+      static String com_msa_android_presentation_screens_portfolio_PortfolioViewModel = "com.msa.android.presentation.screens.portfolio.PortfolioViewModel";
 
-      @KeepFieldType
-      BanksViewModel com_msa_android_presentation_screens_banks_BanksViewModel2;
+      static String com_msa_android_presentation_screens_language_LanguageViewModel = "com.msa.android.presentation.screens.language.LanguageViewModel";
 
-      @KeepFieldType
-      PolicyViewModel com_msa_android_presentation_screens_policy_PolicyViewModel2;
+      static String com_msa_android_presentation_screens_calculators_bullions_BullionViewModel = "com.msa.android.presentation.screens.calculators.bullions.BullionViewModel";
 
-      @KeepFieldType
-      TechnicalAnalysisViewModel com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel2;
+      static String com_msa_android_presentation_screens_help_HelpViewModel = "com.msa.android.presentation.screens.help.HelpViewModel";
 
-      @KeepFieldType
-      AppStatusViewModel com_msa_android_presentation_screens_appstatus_AppStatusViewModel2;
+      static String com_msa_android_presentation_screens_indicators_IndicatorsViewModel = "com.msa.android.presentation.screens.indicators.IndicatorsViewModel";
 
-      @KeepFieldType
-      IndicatorsViewModel com_msa_android_presentation_screens_indicators_IndicatorsViewModel2;
+      static String com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel = "com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel";
 
-      @KeepFieldType
-      OnBoardingViewModel com_msa_android_presentation_screens_onboarding_OnBoardingViewModel2;
+      static String com_msa_android_presentation_screens_policy_PolicyViewModel = "com.msa.android.presentation.screens.policy.PolicyViewModel";
 
-      @KeepFieldType
-      AboutViewModel com_msa_android_presentation_screens_about_AboutViewModel2;
+      static String com_msa_android_presentation_screens_splash_SplashViewModel = "com.msa.android.presentation.screens.splash.SplashViewModel";
 
-      @KeepFieldType
-      SplashViewModel com_msa_android_presentation_screens_splash_SplashViewModel2;
+      static String com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel = "com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel";
 
-      @KeepFieldType
-      GoldValueViewModel com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel2;
-
-      @KeepFieldType
-      BullionViewModel com_msa_android_presentation_screens_calculators_bullions_BullionViewModel2;
+      static String com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel = "com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel";
 
       @KeepFieldType
       NetworkStatusViewModel com_msa_android_presentation_common_NetworkStatusViewModel2;
 
       @KeepFieldType
+      AddPortfolioItemViewModel com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel2;
+
+      @KeepFieldType
+      NewsViewModel com_msa_android_presentation_screens_news_NewsViewModel2;
+
+      @KeepFieldType
+      ScreenMaintenanceViewModel com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel2;
+
+      @KeepFieldType
+      OnBoardingViewModel com_msa_android_presentation_screens_onboarding_OnBoardingViewModel2;
+
+      @KeepFieldType
+      ScanQRViewModel com_msa_android_presentation_screens_qr_ScanQRViewModel2;
+
+      @KeepFieldType
       MoreViewModel com_msa_android_presentation_screens_more_MoreViewModel2;
+
+      @KeepFieldType
+      BanksViewModel com_msa_android_presentation_screens_banks_BanksViewModel2;
+
+      @KeepFieldType
+      SilverValueViewModel com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel2;
+
+      @KeepFieldType
+      AppStatusViewModel com_msa_android_presentation_screens_appstatus_AppStatusViewModel2;
+
+      @KeepFieldType
+      PriceGapDetailsViewModel com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel2;
+
+      @KeepFieldType
+      BannerViewModel com_msa_android_presentation_screens_home_banner_BannerViewModel2;
 
       @KeepFieldType
       FaqViewModel com_msa_android_presentation_screens_faq_FaqViewModel2;
 
       @KeepFieldType
-      GoldZakatViewModel com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel2;
+      AboutViewModel com_msa_android_presentation_screens_about_AboutViewModel2;
 
       @KeepFieldType
-      AddPortfolioItemViewModel com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel2;
+      GoldValueViewModel com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel2;
+
+      @KeepFieldType
+      HomeViewModel com_msa_android_presentation_screens_home_HomeViewModel2;
+
+      @KeepFieldType
+      PortfolioViewModel com_msa_android_presentation_screens_portfolio_PortfolioViewModel2;
+
+      @KeepFieldType
+      LanguageViewModel com_msa_android_presentation_screens_language_LanguageViewModel2;
+
+      @KeepFieldType
+      BullionViewModel com_msa_android_presentation_screens_calculators_bullions_BullionViewModel2;
+
+      @KeepFieldType
+      HelpViewModel com_msa_android_presentation_screens_help_HelpViewModel2;
+
+      @KeepFieldType
+      IndicatorsViewModel com_msa_android_presentation_screens_indicators_IndicatorsViewModel2;
 
       @KeepFieldType
       SilverZakatViewModel com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel2;
 
       @KeepFieldType
-      SilverValueViewModel com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel2;
+      PolicyViewModel com_msa_android_presentation_screens_policy_PolicyViewModel2;
+
+      @KeepFieldType
+      SplashViewModel com_msa_android_presentation_screens_splash_SplashViewModel2;
+
+      @KeepFieldType
+      GoldZakatViewModel com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel2;
+
+      @KeepFieldType
+      TechnicalAnalysisViewModel com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel2;
     }
   }
 
@@ -623,6 +635,8 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
     private Provider<AppStatusViewModel> appStatusViewModelProvider;
 
     private Provider<BanksViewModel> banksViewModelProvider;
+
+    private Provider<BannerViewModel> bannerViewModelProvider;
 
     private Provider<BullionViewModel> bullionViewModelProvider;
 
@@ -683,32 +697,33 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
       this.addPortfolioItemViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.appStatusViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.banksViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
-      this.bullionViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
-      this.faqViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
-      this.goldValueViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
-      this.goldZakatViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
-      this.helpViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
-      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
-      this.indicatorsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
-      this.languageViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 11);
-      this.moreViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 12);
-      this.networkStatusViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 13);
-      this.newsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 14);
-      this.onBoardingViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 15);
-      this.policyViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 16);
-      this.portfolioViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 17);
-      this.priceGapDetailsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 18);
-      this.scanQRViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 19);
-      this.screenMaintenanceViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 20);
-      this.silverValueViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 21);
-      this.silverZakatViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 22);
-      this.splashViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 23);
-      this.technicalAnalysisViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 24);
+      this.bannerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.bullionViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
+      this.faqViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
+      this.goldValueViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
+      this.goldZakatViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
+      this.helpViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
+      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
+      this.indicatorsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 11);
+      this.languageViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 12);
+      this.moreViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 13);
+      this.networkStatusViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 14);
+      this.newsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 15);
+      this.onBoardingViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 16);
+      this.policyViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 17);
+      this.portfolioViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 18);
+      this.priceGapDetailsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 19);
+      this.scanQRViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 20);
+      this.screenMaintenanceViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 21);
+      this.silverValueViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 22);
+      this.silverZakatViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 23);
+      this.splashViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 24);
+      this.technicalAnalysisViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 25);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>builderWithExpectedSize(25).put(LazyClassKeyProvider.com_msa_android_presentation_screens_about_AboutViewModel, ((Provider) aboutViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel, ((Provider) addPortfolioItemViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_AppStatusViewModel, ((Provider) appStatusViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_banks_BanksViewModel, ((Provider) banksViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_bullions_BullionViewModel, ((Provider) bullionViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_faq_FaqViewModel, ((Provider) faqViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel, ((Provider) goldValueViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel, ((Provider) goldZakatViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_help_HelpViewModel, ((Provider) helpViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_HomeViewModel, ((Provider) homeViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_indicators_IndicatorsViewModel, ((Provider) indicatorsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_language_LanguageViewModel, ((Provider) languageViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_more_MoreViewModel, ((Provider) moreViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_common_NetworkStatusViewModel, ((Provider) networkStatusViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_news_NewsViewModel, ((Provider) newsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_onboarding_OnBoardingViewModel, ((Provider) onBoardingViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_policy_PolicyViewModel, ((Provider) policyViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_PortfolioViewModel, ((Provider) portfolioViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel, ((Provider) priceGapDetailsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_qr_ScanQRViewModel, ((Provider) scanQRViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel, ((Provider) screenMaintenanceViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel, ((Provider) silverValueViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel, ((Provider) silverZakatViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_splash_SplashViewModel, ((Provider) splashViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel, ((Provider) technicalAnalysisViewModelProvider)).build());
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>builderWithExpectedSize(26).put(LazyClassKeyProvider.com_msa_android_presentation_screens_about_AboutViewModel, ((Provider) aboutViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel, ((Provider) addPortfolioItemViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_AppStatusViewModel, ((Provider) appStatusViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_banks_BanksViewModel, ((Provider) banksViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_banner_BannerViewModel, ((Provider) bannerViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_bullions_BullionViewModel, ((Provider) bullionViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_faq_FaqViewModel, ((Provider) faqViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel, ((Provider) goldValueViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel, ((Provider) goldZakatViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_help_HelpViewModel, ((Provider) helpViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_home_HomeViewModel, ((Provider) homeViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_indicators_IndicatorsViewModel, ((Provider) indicatorsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_language_LanguageViewModel, ((Provider) languageViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_more_MoreViewModel, ((Provider) moreViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_common_NetworkStatusViewModel, ((Provider) networkStatusViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_news_NewsViewModel, ((Provider) newsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_onboarding_OnBoardingViewModel, ((Provider) onBoardingViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_policy_PolicyViewModel, ((Provider) policyViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_portfolio_PortfolioViewModel, ((Provider) portfolioViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel, ((Provider) priceGapDetailsViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_qr_ScanQRViewModel, ((Provider) scanQRViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel, ((Provider) screenMaintenanceViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel, ((Provider) silverValueViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel, ((Provider) silverZakatViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_splash_SplashViewModel, ((Provider) splashViewModelProvider)).put(LazyClassKeyProvider.com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel, ((Provider) technicalAnalysisViewModelProvider)).build());
     }
 
     @Override
@@ -718,130 +733,135 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel = "com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel";
-
-      static String com_msa_android_presentation_screens_appstatus_AppStatusViewModel = "com.msa.android.presentation.screens.appstatus.AppStatusViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel = "com.msa.android.presentation.screens.calculators.silvervalue.SilverValueViewModel";
-
-      static String com_msa_android_presentation_screens_home_HomeViewModel = "com.msa.android.presentation.screens.home.HomeViewModel";
-
-      static String com_msa_android_presentation_screens_language_LanguageViewModel = "com.msa.android.presentation.screens.language.LanguageViewModel";
-
-      static String com_msa_android_presentation_screens_qr_ScanQRViewModel = "com.msa.android.presentation.screens.qr.ScanQRViewModel";
-
-      static String com_msa_android_presentation_screens_banks_BanksViewModel = "com.msa.android.presentation.screens.banks.BanksViewModel";
-
-      static String com_msa_android_presentation_screens_more_MoreViewModel = "com.msa.android.presentation.screens.more.MoreViewModel";
-
-      static String com_msa_android_presentation_screens_splash_SplashViewModel = "com.msa.android.presentation.screens.splash.SplashViewModel";
-
-      static String com_msa_android_presentation_screens_help_HelpViewModel = "com.msa.android.presentation.screens.help.HelpViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel = "com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel";
-
-      static String com_msa_android_presentation_common_NetworkStatusViewModel = "com.msa.android.presentation.common.NetworkStatusViewModel";
-
-      static String com_msa_android_presentation_screens_news_NewsViewModel = "com.msa.android.presentation.screens.news.NewsViewModel";
-
-      static String com_msa_android_presentation_screens_faq_FaqViewModel = "com.msa.android.presentation.screens.faq.FaqViewModel";
-
-      static String com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel = "com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel";
-
-      static String com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel = "com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel";
-
-      static String com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel = "com.msa.android.presentation.screens.portfolio.AddPortfolioItemViewModel";
-
-      static String com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel = "com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel";
-
-      static String com_msa_android_presentation_screens_policy_PolicyViewModel = "com.msa.android.presentation.screens.policy.PolicyViewModel";
-
-      static String com_msa_android_presentation_screens_portfolio_PortfolioViewModel = "com.msa.android.presentation.screens.portfolio.PortfolioViewModel";
-
       static String com_msa_android_presentation_screens_about_AboutViewModel = "com.msa.android.presentation.screens.about.AboutViewModel";
-
-      static String com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel = "com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel";
 
       static String com_msa_android_presentation_screens_calculators_bullions_BullionViewModel = "com.msa.android.presentation.screens.calculators.bullions.BullionViewModel";
 
+      static String com_msa_android_presentation_screens_help_HelpViewModel = "com.msa.android.presentation.screens.help.HelpViewModel";
+
+      static String com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel = "com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel";
+
+      static String com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel = "com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel";
+
+      static String com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel = "com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel";
+
       static String com_msa_android_presentation_screens_indicators_IndicatorsViewModel = "com.msa.android.presentation.screens.indicators.IndicatorsViewModel";
+
+      static String com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel = "com.msa.android.presentation.screens.portfolio.AddPortfolioItemViewModel";
+
+      static String com_msa_android_presentation_screens_more_MoreViewModel = "com.msa.android.presentation.screens.more.MoreViewModel";
+
+      static String com_msa_android_presentation_screens_policy_PolicyViewModel = "com.msa.android.presentation.screens.policy.PolicyViewModel";
+
+      static String com_msa_android_presentation_screens_qr_ScanQRViewModel = "com.msa.android.presentation.screens.qr.ScanQRViewModel";
+
+      static String com_msa_android_presentation_screens_splash_SplashViewModel = "com.msa.android.presentation.screens.splash.SplashViewModel";
+
+      static String com_msa_android_presentation_screens_portfolio_PortfolioViewModel = "com.msa.android.presentation.screens.portfolio.PortfolioViewModel";
+
+      static String com_msa_android_presentation_screens_banks_BanksViewModel = "com.msa.android.presentation.screens.banks.BanksViewModel";
+
+      static String com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel = "com.msa.android.presentation.screens.calculators.silvervalue.SilverValueViewModel";
 
       static String com_msa_android_presentation_screens_onboarding_OnBoardingViewModel = "com.msa.android.presentation.screens.onboarding.OnBoardingViewModel";
 
-      @KeepFieldType
-      GoldValueViewModel com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel2;
+      static String com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel = "com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel";
 
-      @KeepFieldType
-      AppStatusViewModel com_msa_android_presentation_screens_appstatus_AppStatusViewModel2;
+      static String com_msa_android_presentation_screens_home_HomeViewModel = "com.msa.android.presentation.screens.home.HomeViewModel";
 
-      @KeepFieldType
-      SilverValueViewModel com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel2;
+      static String com_msa_android_presentation_screens_home_banner_BannerViewModel = "com.msa.android.presentation.screens.home.banner.BannerViewModel";
 
-      @KeepFieldType
-      HomeViewModel com_msa_android_presentation_screens_home_HomeViewModel2;
+      static String com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel = "com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel";
 
-      @KeepFieldType
-      LanguageViewModel com_msa_android_presentation_screens_language_LanguageViewModel2;
+      static String com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel = "com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel";
 
-      @KeepFieldType
-      ScanQRViewModel com_msa_android_presentation_screens_qr_ScanQRViewModel2;
+      static String com_msa_android_presentation_common_NetworkStatusViewModel = "com.msa.android.presentation.common.NetworkStatusViewModel";
 
-      @KeepFieldType
-      BanksViewModel com_msa_android_presentation_screens_banks_BanksViewModel2;
+      static String com_msa_android_presentation_screens_appstatus_AppStatusViewModel = "com.msa.android.presentation.screens.appstatus.AppStatusViewModel";
 
-      @KeepFieldType
-      MoreViewModel com_msa_android_presentation_screens_more_MoreViewModel2;
+      static String com_msa_android_presentation_screens_news_NewsViewModel = "com.msa.android.presentation.screens.news.NewsViewModel";
 
-      @KeepFieldType
-      SplashViewModel com_msa_android_presentation_screens_splash_SplashViewModel2;
+      static String com_msa_android_presentation_screens_language_LanguageViewModel = "com.msa.android.presentation.screens.language.LanguageViewModel";
 
-      @KeepFieldType
-      HelpViewModel com_msa_android_presentation_screens_help_HelpViewModel2;
-
-      @KeepFieldType
-      GoldZakatViewModel com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel2;
-
-      @KeepFieldType
-      NetworkStatusViewModel com_msa_android_presentation_common_NetworkStatusViewModel2;
-
-      @KeepFieldType
-      NewsViewModel com_msa_android_presentation_screens_news_NewsViewModel2;
-
-      @KeepFieldType
-      FaqViewModel com_msa_android_presentation_screens_faq_FaqViewModel2;
-
-      @KeepFieldType
-      TechnicalAnalysisViewModel com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel2;
-
-      @KeepFieldType
-      SilverZakatViewModel com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel2;
-
-      @KeepFieldType
-      AddPortfolioItemViewModel com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel2;
-
-      @KeepFieldType
-      ScreenMaintenanceViewModel com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel2;
-
-      @KeepFieldType
-      PolicyViewModel com_msa_android_presentation_screens_policy_PolicyViewModel2;
-
-      @KeepFieldType
-      PortfolioViewModel com_msa_android_presentation_screens_portfolio_PortfolioViewModel2;
+      static String com_msa_android_presentation_screens_faq_FaqViewModel = "com.msa.android.presentation.screens.faq.FaqViewModel";
 
       @KeepFieldType
       AboutViewModel com_msa_android_presentation_screens_about_AboutViewModel2;
 
       @KeepFieldType
-      PriceGapDetailsViewModel com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel2;
+      BullionViewModel com_msa_android_presentation_screens_calculators_bullions_BullionViewModel2;
 
       @KeepFieldType
-      BullionViewModel com_msa_android_presentation_screens_calculators_bullions_BullionViewModel2;
+      HelpViewModel com_msa_android_presentation_screens_help_HelpViewModel2;
+
+      @KeepFieldType
+      TechnicalAnalysisViewModel com_msa_android_presentation_screens_technicalanalysis_TechnicalAnalysisViewModel2;
+
+      @KeepFieldType
+      GoldValueViewModel com_msa_android_presentation_screens_calculators_goldvalue_GoldValueViewModel2;
+
+      @KeepFieldType
+      GoldZakatViewModel com_msa_android_presentation_screens_calculators_goldzakat_GoldZakatViewModel2;
 
       @KeepFieldType
       IndicatorsViewModel com_msa_android_presentation_screens_indicators_IndicatorsViewModel2;
 
       @KeepFieldType
+      AddPortfolioItemViewModel com_msa_android_presentation_screens_portfolio_AddPortfolioItemViewModel2;
+
+      @KeepFieldType
+      MoreViewModel com_msa_android_presentation_screens_more_MoreViewModel2;
+
+      @KeepFieldType
+      PolicyViewModel com_msa_android_presentation_screens_policy_PolicyViewModel2;
+
+      @KeepFieldType
+      ScanQRViewModel com_msa_android_presentation_screens_qr_ScanQRViewModel2;
+
+      @KeepFieldType
+      SplashViewModel com_msa_android_presentation_screens_splash_SplashViewModel2;
+
+      @KeepFieldType
+      PortfolioViewModel com_msa_android_presentation_screens_portfolio_PortfolioViewModel2;
+
+      @KeepFieldType
+      BanksViewModel com_msa_android_presentation_screens_banks_BanksViewModel2;
+
+      @KeepFieldType
+      SilverValueViewModel com_msa_android_presentation_screens_calculators_silvervalue_SilverValueViewModel2;
+
+      @KeepFieldType
       OnBoardingViewModel com_msa_android_presentation_screens_onboarding_OnBoardingViewModel2;
+
+      @KeepFieldType
+      SilverZakatViewModel com_msa_android_presentation_screens_calculators_silverzakat_SilverZakatViewModel2;
+
+      @KeepFieldType
+      HomeViewModel com_msa_android_presentation_screens_home_HomeViewModel2;
+
+      @KeepFieldType
+      BannerViewModel com_msa_android_presentation_screens_home_banner_BannerViewModel2;
+
+      @KeepFieldType
+      PriceGapDetailsViewModel com_msa_android_presentation_screens_pricegap_PriceGapDetailsViewModel2;
+
+      @KeepFieldType
+      ScreenMaintenanceViewModel com_msa_android_presentation_screens_appstatus_ScreenMaintenanceViewModel2;
+
+      @KeepFieldType
+      NetworkStatusViewModel com_msa_android_presentation_common_NetworkStatusViewModel2;
+
+      @KeepFieldType
+      AppStatusViewModel com_msa_android_presentation_screens_appstatus_AppStatusViewModel2;
+
+      @KeepFieldType
+      NewsViewModel com_msa_android_presentation_screens_news_NewsViewModel2;
+
+      @KeepFieldType
+      LanguageViewModel com_msa_android_presentation_screens_language_LanguageViewModel2;
+
+      @KeepFieldType
+      FaqViewModel com_msa_android_presentation_screens_faq_FaqViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -877,67 +897,70 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
           case 3: // com.msa.android.presentation.screens.banks.BanksViewModel 
           return (T) new BanksViewModel(singletonCImpl.banksRepositoryImplProvider.get(), singletonCImpl.bankNotificationPreferencesProvider.get());
 
-          case 4: // com.msa.android.presentation.screens.calculators.bullions.BullionViewModel 
+          case 4: // com.msa.android.presentation.screens.home.banner.BannerViewModel 
+          return (T) new BannerViewModel(singletonCImpl.bannerRepositoryProvider.get());
+
+          case 5: // com.msa.android.presentation.screens.calculators.bullions.BullionViewModel 
           return (T) new BullionViewModel(singletonCImpl.bullionRepositoryImplProvider.get(), singletonCImpl.metalsRepositoryImplProvider.get());
 
-          case 5: // com.msa.android.presentation.screens.faq.FaqViewModel 
+          case 6: // com.msa.android.presentation.screens.faq.FaqViewModel 
           return (T) new FaqViewModel(singletonCImpl.faqRepositoryImplProvider.get(), singletonCImpl.languagePreferencesProvider.get());
 
-          case 6: // com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel 
+          case 7: // com.msa.android.presentation.screens.calculators.goldvalue.GoldValueViewModel 
           return (T) new GoldValueViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.goldValueCalculatorProvider.get());
 
-          case 7: // com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel 
+          case 8: // com.msa.android.presentation.screens.calculators.goldzakat.GoldZakatViewModel 
           return (T) new GoldZakatViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.zakatCalculatorProvider.get());
 
-          case 8: // com.msa.android.presentation.screens.help.HelpViewModel 
+          case 9: // com.msa.android.presentation.screens.help.HelpViewModel 
           return (T) new HelpViewModel(singletonCImpl.contactRepositoryImplProvider.get());
 
-          case 9: // com.msa.android.presentation.screens.home.HomeViewModel 
+          case 10: // com.msa.android.presentation.screens.home.HomeViewModel 
           return (T) new HomeViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.banksRepositoryImplProvider.get(), singletonCImpl.priceCalculatorProvider.get());
 
-          case 10: // com.msa.android.presentation.screens.indicators.IndicatorsViewModel 
+          case 11: // com.msa.android.presentation.screens.indicators.IndicatorsViewModel 
           return (T) new IndicatorsViewModel(singletonCImpl.priceDataGeneratorProvider.get());
 
-          case 11: // com.msa.android.presentation.screens.language.LanguageViewModel 
+          case 12: // com.msa.android.presentation.screens.language.LanguageViewModel 
           return (T) new LanguageViewModel(singletonCImpl.languagePreferencesProvider.get());
 
-          case 12: // com.msa.android.presentation.screens.more.MoreViewModel 
+          case 13: // com.msa.android.presentation.screens.more.MoreViewModel 
           return (T) new MoreViewModel(singletonCImpl.versionRepositoryImplProvider.get());
 
-          case 13: // com.msa.android.presentation.common.NetworkStatusViewModel 
+          case 14: // com.msa.android.presentation.common.NetworkStatusViewModel 
           return (T) new NetworkStatusViewModel(singletonCImpl.connectivityObserverProvider.get());
 
-          case 14: // com.msa.android.presentation.screens.news.NewsViewModel 
+          case 15: // com.msa.android.presentation.screens.news.NewsViewModel 
           return (T) new NewsViewModel(singletonCImpl.newsRepositoryImplProvider.get());
 
-          case 15: // com.msa.android.presentation.screens.onboarding.OnBoardingViewModel 
+          case 16: // com.msa.android.presentation.screens.onboarding.OnBoardingViewModel 
           return (T) new OnBoardingViewModel(singletonCImpl.onBoardingRepositoryImplProvider.get(), singletonCImpl.languagePreferencesProvider.get());
 
-          case 16: // com.msa.android.presentation.screens.policy.PolicyViewModel 
+          case 17: // com.msa.android.presentation.screens.policy.PolicyViewModel 
           return (T) new PolicyViewModel(singletonCImpl.pagesRepositoryImplProvider.get(), singletonCImpl.languagePreferencesProvider.get());
 
-          case 17: // com.msa.android.presentation.screens.portfolio.PortfolioViewModel 
+          case 18: // com.msa.android.presentation.screens.portfolio.PortfolioViewModel 
           return (T) new PortfolioViewModel(singletonCImpl.portfolioRepositoryImplProvider.get(), singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.priceCalculatorProvider.get(), singletonCImpl.calculatePortfolioValueProvider.get());
 
-          case 18: // com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel 
+          case 19: // com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel 
           return (T) new PriceGapDetailsViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.banksRepositoryImplProvider.get());
 
-          case 19: // com.msa.android.presentation.screens.qr.ScanQRViewModel 
+          case 20: // com.msa.android.presentation.screens.qr.ScanQRViewModel 
           return (T) new ScanQRViewModel(singletonCImpl.qRRepositoryImplProvider.get());
 
-          case 20: // com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel 
+          case 21: // com.msa.android.presentation.screens.appstatus.ScreenMaintenanceViewModel 
           return (T) new ScreenMaintenanceViewModel(singletonCImpl.versionRepositoryImplProvider.get(), singletonCImpl.languagePreferencesProvider.get());
 
-          case 21: // com.msa.android.presentation.screens.calculators.silvervalue.SilverValueViewModel 
+          case 22: // com.msa.android.presentation.screens.calculators.silvervalue.SilverValueViewModel 
           return (T) new SilverValueViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.silverValueCalculatorProvider.get());
 
-          case 22: // com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel 
+          case 23: // com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatViewModel 
           return (T) new SilverZakatViewModel(singletonCImpl.metalsRepositoryImplProvider.get(), singletonCImpl.zakatCalculatorProvider.get());
 
-          case 23: // com.msa.android.presentation.screens.splash.SplashViewModel 
+          case 24: // com.msa.android.presentation.screens.splash.SplashViewModel 
           return (T) new SplashViewModel();
 
-          case 24: // com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel 
+          case 25: // com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel 
           return (T) new TechnicalAnalysisViewModel(singletonCImpl.technicalAnalysisDataSourceProvider.get());
 
           default: throw new AssertionError(id);
@@ -1040,6 +1063,14 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
 
     private Provider<BankNotificationPreferences> bankNotificationPreferencesProvider;
 
+    private Provider<OkHttpClient> provideBannerOkHttpProvider;
+
+    private Provider<Retrofit> provideBannerRetrofitProvider;
+
+    private Provider<BannerApi> provideBannerApiProvider;
+
+    private Provider<BannerRepository> bannerRepositoryProvider;
+
     private Provider<BullionRepositoryImpl> bullionRepositoryImplProvider;
 
     private Provider<MetalsRepositoryImpl> metalsRepositoryImplProvider;
@@ -1096,29 +1127,33 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
       this.versionRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<VersionRepositoryImpl>(singletonCImpl, 7));
       this.banksRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<BanksRepositoryImpl>(singletonCImpl, 8));
       this.bankNotificationPreferencesProvider = DoubleCheck.provider(new SwitchingProvider<BankNotificationPreferences>(singletonCImpl, 9));
-      this.bullionRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<BullionRepositoryImpl>(singletonCImpl, 10));
-      this.metalsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<MetalsRepositoryImpl>(singletonCImpl, 11));
-      this.faqRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<FaqRepositoryImpl>(singletonCImpl, 12));
-      this.priceCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<PriceCalculator>(singletonCImpl, 14));
-      this.goldValueCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<GoldValueCalculator>(singletonCImpl, 13));
-      this.zakatCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<ZakatCalculator>(singletonCImpl, 15));
-      this.contactRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<ContactRepositoryImpl>(singletonCImpl, 16));
-      this.priceDataGeneratorProvider = DoubleCheck.provider(new SwitchingProvider<PriceDataGenerator>(singletonCImpl, 17));
-      this.provideHttpLoggingInterceptorProvider = DoubleCheck.provider(new SwitchingProvider<HttpLoggingInterceptor>(singletonCImpl, 22));
-      this.provideOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 21));
-      this.provideMoshiProvider = DoubleCheck.provider(new SwitchingProvider<Moshi>(singletonCImpl, 23));
-      this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 20));
-      this.provideMsaApiProvider = DoubleCheck.provider(new SwitchingProvider<MsaApi>(singletonCImpl, 19));
-      this.newsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<NewsRepositoryImpl>(singletonCImpl, 18));
-      this.onBoardingRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<OnBoardingRepositoryImpl>(singletonCImpl, 24));
-      this.calculatePortfolioValueProvider = DoubleCheck.provider(new SwitchingProvider<CalculatePortfolioValue>(singletonCImpl, 25));
-      this.qRRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<QRRepositoryImpl>(singletonCImpl, 26));
-      this.silverValueCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<SilverValueCalculator>(singletonCImpl, 27));
-      this.technicalAnalysisDataSourceProvider = DoubleCheck.provider(new SwitchingProvider<TechnicalAnalysisDataSource>(singletonCImpl, 28));
+      this.provideBannerOkHttpProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 13));
+      this.provideBannerRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 12));
+      this.provideBannerApiProvider = DoubleCheck.provider(new SwitchingProvider<BannerApi>(singletonCImpl, 11));
+      this.bannerRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<BannerRepository>(singletonCImpl, 10));
+      this.bullionRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<BullionRepositoryImpl>(singletonCImpl, 14));
+      this.metalsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<MetalsRepositoryImpl>(singletonCImpl, 15));
+      this.faqRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<FaqRepositoryImpl>(singletonCImpl, 16));
+      this.priceCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<PriceCalculator>(singletonCImpl, 18));
+      this.goldValueCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<GoldValueCalculator>(singletonCImpl, 17));
+      this.zakatCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<ZakatCalculator>(singletonCImpl, 19));
+      this.contactRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<ContactRepositoryImpl>(singletonCImpl, 20));
+      this.priceDataGeneratorProvider = DoubleCheck.provider(new SwitchingProvider<PriceDataGenerator>(singletonCImpl, 21));
+      this.provideHttpLoggingInterceptorProvider = DoubleCheck.provider(new SwitchingProvider<HttpLoggingInterceptor>(singletonCImpl, 26));
+      this.provideOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 25));
+      this.provideMoshiProvider = DoubleCheck.provider(new SwitchingProvider<Moshi>(singletonCImpl, 27));
+      this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 24));
+      this.provideMsaApiProvider = DoubleCheck.provider(new SwitchingProvider<MsaApi>(singletonCImpl, 23));
+      this.newsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<NewsRepositoryImpl>(singletonCImpl, 22));
+      this.onBoardingRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<OnBoardingRepositoryImpl>(singletonCImpl, 28));
+      this.calculatePortfolioValueProvider = DoubleCheck.provider(new SwitchingProvider<CalculatePortfolioValue>(singletonCImpl, 29));
+      this.qRRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<QRRepositoryImpl>(singletonCImpl, 30));
+      this.silverValueCalculatorProvider = DoubleCheck.provider(new SwitchingProvider<SilverValueCalculator>(singletonCImpl, 31));
+      this.technicalAnalysisDataSourceProvider = DoubleCheck.provider(new SwitchingProvider<TechnicalAnalysisDataSource>(singletonCImpl, 32));
     }
 
     @Override
-    public void injectMSAApplication(MSAApplication arg0) {
+    public void injectMSAApplication(MSAApplication mSAApplication) {
     }
 
     @Override
@@ -1180,61 +1215,73 @@ public final class DaggerMSAApplication_HiltComponents_SingletonC {
           case 9: // com.msa.android.data.source.local.BankNotificationPreferences 
           return (T) new BankNotificationPreferences(singletonCImpl.provideDataStoreProvider.get());
 
-          case 10: // com.msa.android.data.repository.BullionRepositoryImpl 
+          case 10: // com.msa.android.presentation.screens.home.banner.BannerRepository 
+          return (T) new BannerRepository(singletonCImpl.provideBannerApiProvider.get());
+
+          case 11: // com.msa.android.presentation.screens.home.banner.BannerApi 
+          return (T) BannerModule_ProvideBannerApiFactory.provideBannerApi(singletonCImpl.provideBannerRetrofitProvider.get());
+
+          case 12: // @com.msa.android.presentation.screens.home.banner.BannerRetrofit retrofit2.Retrofit 
+          return (T) BannerModule_ProvideBannerRetrofitFactory.provideBannerRetrofit(singletonCImpl.provideBannerOkHttpProvider.get());
+
+          case 13: // @com.msa.android.presentation.screens.home.banner.BannerRetrofit okhttp3.OkHttpClient 
+          return (T) BannerModule_ProvideBannerOkHttpFactory.provideBannerOkHttp();
+
+          case 14: // com.msa.android.data.repository.BullionRepositoryImpl 
           return (T) new BullionRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 11: // com.msa.android.data.repository.MetalsRepositoryImpl 
+          case 15: // com.msa.android.data.repository.MetalsRepositoryImpl 
           return (T) new MetalsRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 12: // com.msa.android.data.repository.FaqRepositoryImpl 
+          case 16: // com.msa.android.data.repository.FaqRepositoryImpl 
           return (T) new FaqRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 13: // com.msa.android.domain.usecase.GoldValueCalculator 
+          case 17: // com.msa.android.domain.usecase.GoldValueCalculator 
           return (T) new GoldValueCalculator(singletonCImpl.priceCalculatorProvider.get());
 
-          case 14: // com.msa.android.domain.usecase.PriceCalculator 
+          case 18: // com.msa.android.domain.usecase.PriceCalculator 
           return (T) new PriceCalculator();
 
-          case 15: // com.msa.android.domain.usecase.ZakatCalculator 
+          case 19: // com.msa.android.domain.usecase.ZakatCalculator 
           return (T) new ZakatCalculator();
 
-          case 16: // com.msa.android.data.repository.ContactRepositoryImpl 
+          case 20: // com.msa.android.data.repository.ContactRepositoryImpl 
           return (T) new ContactRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 17: // com.msa.android.data.source.local.PriceDataGenerator 
+          case 21: // com.msa.android.data.source.local.PriceDataGenerator 
           return (T) new PriceDataGenerator();
 
-          case 18: // com.msa.android.data.repository.NewsRepositoryImpl 
+          case 22: // com.msa.android.data.repository.NewsRepositoryImpl 
           return (T) new NewsRepositoryImpl(singletonCImpl.provideFirestoreProvider.get(), singletonCImpl.provideMsaApiProvider.get(), singletonCImpl.languagePreferencesProvider.get());
 
-          case 19: // com.msa.android.data.source.network.MsaApi 
+          case 23: // com.msa.android.data.source.network.MsaApi 
           return (T) NetworkModule_ProvideMsaApiFactory.provideMsaApi(singletonCImpl.provideRetrofitProvider.get());
 
-          case 20: // retrofit2.Retrofit 
+          case 24: // retrofit2.Retrofit 
           return (T) NetworkModule_ProvideRetrofitFactory.provideRetrofit(singletonCImpl.provideOkHttpClientProvider.get(), singletonCImpl.provideMoshiProvider.get());
 
-          case 21: // okhttp3.OkHttpClient 
+          case 25: // okhttp3.OkHttpClient 
           return (T) NetworkModule_ProvideOkHttpClientFactory.provideOkHttpClient(singletonCImpl.provideHttpLoggingInterceptorProvider.get());
 
-          case 22: // okhttp3.logging.HttpLoggingInterceptor 
+          case 26: // okhttp3.logging.HttpLoggingInterceptor 
           return (T) NetworkModule_ProvideHttpLoggingInterceptorFactory.provideHttpLoggingInterceptor();
 
-          case 23: // com.squareup.moshi.Moshi 
+          case 27: // com.squareup.moshi.Moshi 
           return (T) NetworkModule_ProvideMoshiFactory.provideMoshi();
 
-          case 24: // com.msa.android.data.repository.OnBoardingRepositoryImpl 
+          case 28: // com.msa.android.data.repository.OnBoardingRepositoryImpl 
           return (T) new OnBoardingRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 25: // com.msa.android.domain.usecase.CalculatePortfolioValue 
+          case 29: // com.msa.android.domain.usecase.CalculatePortfolioValue 
           return (T) new CalculatePortfolioValue();
 
-          case 26: // com.msa.android.data.repository.QRRepositoryImpl 
+          case 30: // com.msa.android.data.repository.QRRepositoryImpl 
           return (T) new QRRepositoryImpl(singletonCImpl.provideFirestoreProvider.get());
 
-          case 27: // com.msa.android.domain.usecase.SilverValueCalculator 
+          case 31: // com.msa.android.domain.usecase.SilverValueCalculator 
           return (T) new SilverValueCalculator();
 
-          case 28: // com.msa.android.data.source.local.TechnicalAnalysisDataSource 
+          case 32: // com.msa.android.data.source.local.TechnicalAnalysisDataSource 
           return (T) new TechnicalAnalysisDataSource();
 
           default: throw new AssertionError(id);

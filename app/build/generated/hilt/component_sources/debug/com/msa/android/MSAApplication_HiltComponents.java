@@ -17,6 +17,8 @@ import com.msa.android.presentation.screens.calculators.silverzakat.SilverZakatV
 import com.msa.android.presentation.screens.faq.FaqViewModel_HiltModules;
 import com.msa.android.presentation.screens.help.HelpViewModel_HiltModules;
 import com.msa.android.presentation.screens.home.HomeViewModel_HiltModules;
+import com.msa.android.presentation.screens.home.banner.BannerModule;
+import com.msa.android.presentation.screens.home.banner.BannerViewModel_HiltModules;
 import com.msa.android.presentation.screens.indicators.IndicatorsViewModel_HiltModules;
 import com.msa.android.presentation.screens.language.LanguageViewModel_HiltModules;
 import com.msa.android.presentation.screens.more.MoreViewModel_HiltModules;
@@ -154,6 +156,7 @@ public final class MSAApplication_HiltComponents {
   @Component(
       modules = {
           ApplicationContextModule.class,
+          BannerModule.class,
           FirebaseModule.class,
           HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,
           LocalPreferencesModule.class,
@@ -187,6 +190,7 @@ public final class MSAApplication_HiltComponents {
           AddPortfolioItemViewModel_HiltModules.KeyModule.class,
           AppStatusViewModel_HiltModules.KeyModule.class,
           BanksViewModel_HiltModules.KeyModule.class,
+          BannerViewModel_HiltModules.KeyModule.class,
           BullionViewModel_HiltModules.KeyModule.class,
           FaqViewModel_HiltModules.KeyModule.class,
           GoldValueViewModel_HiltModules.KeyModule.class,
@@ -251,6 +255,7 @@ public final class MSAApplication_HiltComponents {
           AddPortfolioItemViewModel_HiltModules.BindsModule.class,
           AppStatusViewModel_HiltModules.BindsModule.class,
           BanksViewModel_HiltModules.BindsModule.class,
+          BannerViewModel_HiltModules.BindsModule.class,
           BullionViewModel_HiltModules.BindsModule.class,
           FaqViewModel_HiltModules.BindsModule.class,
           GoldValueViewModel_HiltModules.BindsModule.class,

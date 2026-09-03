@@ -123,6 +123,12 @@ implementation("com.google.firebase:firebase-analytics-ktx")
 
 implementation("com.google.firebase:firebase-firestore-ktx")
 
+// Media3 ExoPlayer — for video playback in BannerFullScreen
+val media3Version = "1.4.1"
+implementation("androidx.media3:media3-exoplayer:$media3Version")
+implementation("androidx.media3:media3-ui:$media3Version")
+implementation("androidx.media3:media3-common:$media3Version")
+
 // QR scanner — CameraX for the live preview, ML Kit's BUNDLED barcode model
 // for decoding. We pick the bundled variant (not play-services-mlkit-barcode-
 // scanning) so:
@@ -157,6 +163,7 @@ implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 // of poking at JSONObject by hand.
 implementation("com.squareup.retrofit2:retrofit:2.11.0")
 implementation("com.squareup.retrofit2:converter-moshi:2.11.0")
+implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
 
 implementation("io.coil-kt:coil-compose:2.7.0")
@@ -166,6 +173,7 @@ implementation("io.coil-kt:coil-compose:2.7.0")
 // Replace with real IDs from admob.google.com before publishing.
 implementation("com.google.android.gms:play-services-ads:23.5.0")
 
+implementation("com.google.code.gson:gson:2.11.0")
 implementation("org.json:json:20240303")
 
 // ── QR scanning ──────────────────────────────────────────────────────────

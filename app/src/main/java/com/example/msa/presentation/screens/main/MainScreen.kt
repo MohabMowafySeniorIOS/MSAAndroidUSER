@@ -41,7 +41,7 @@ import com.msa.android.presentation.screens.calculators.bullions.BullionScreen
 import com.msa.android.presentation.screens.home.HomeScreen
 import com.msa.android.presentation.screens.more.MoreScreen
 import com.msa.android.presentation.screens.news.NewsScreen
-
+import androidx.compose.foundation.layout.aspectRatio
 /**
  * Tab host — exactly like iOS UITabBarController flow.
  * Plus a floating FAB above the bottom bar opening the NetDania WebView (matches iOS).

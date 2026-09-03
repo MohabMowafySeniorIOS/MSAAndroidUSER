@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:2:1-82:12
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:2:1-82:12
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/eafc2776f0a195bb15600713a87d7335/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.datastore:datastore-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/772f32f461319090164806419972165f/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.datastore:datastore-core-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/e915eacfc6c368280439e9567ac636dc/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
@@ -25,6 +25,14 @@ MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/etisalat/.g
 MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/2384ecc22d850bece2f7aa4a3854828c/transformed/vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:common:18.11.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/ce8cfddc4da9a37545502939ce8aa74d/transformed/common-18.11.0/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/fa3a0cc04c7663f44f99e5b5e7abc6ec/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.media3:media3-ui:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/847e4a3a6b903264bc88bcc831cc8c93/transformed/media3-ui-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-extractor:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/deec5f9db15ec215e1a1bdc24c8b8d67/transformed/media3-extractor-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-container:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a0d1ac4153d5c2d47f96be3fbd444034/transformed/media3-container-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-datasource:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/9e13dec0bf732edd96ef109996a17edb/transformed/media3-datasource-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-decoder:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/8b2145aa6ed3629c25261be750620837/transformed/media3-decoder-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-database:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a4f2a1e99738d0bb86840636a813ef33/transformed/media3-database-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/c121b2e87f260163dd53d71a3ba07667/transformed/media3-common-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/f87801cdb94d47bdf36d4bb541b7c5bb/transformed/media3-exoplayer-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7b65a363c20878455e53d171fb48d634/transformed/play-services-ads-23.5.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/97cab28a3dc1972ee2d24aac243693db/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/32502ad16d7020da6cdae2b7bee9b562/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
@@ -122,9 +130,10 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/etisalat/.gradle/c
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/b35c11f4a797dc797a2a580a127ec763/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/2b0116b4fc21689dd82e18f0ccadac11/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7c90015ce59d2d3f1ee1c6259ac91519/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/615959c3e79b810eeaca5ca9bb4b07b5/transformed/recyclerview-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5a6bb66b61a278cc495b42358d7d69e0/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.webkit:webkit:1.11.0-alpha02] /Users/etisalat/.gradle/caches/9.5.1/transforms/729d0418fedc52739621f82a20267e69/transformed/webkit-1.11.0-alpha02/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/9cd12f3abb2be77ad20f6c6faf5d3f0b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/6611f3f029cf2011a8a8d1f6466bae40/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/d7ce6159d690f42f988154b7633471df/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/c278d3a6f7aded80d8df8c706cd42a93/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.13.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/ebb2e54f6561bfe77f3444eb8fce228a/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
@@ -159,17 +168,17 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /Users/etisalat/.gradle/c
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/etisalat/.gradle/caches/9.5.1/transforms/def288a08638c244d1bd7c209419c9b4/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/f70115bce9a410ffc8f6fc0f4efb74c6/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/683d78a2a6f8d70e834fad1e33c7ff7b/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/683d78a2a6f8d70e834fad1e33c7ff7b/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/0d1d0dcc2fc499b86337963bfe4a998f/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:23:5-67
@@ -191,9 +200,13 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /U
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/etisalat/.gradle/caches/9.5.1/transforms/49e4ea00924c5023f11481161ead1137/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/etisalat/.gradle/caches/9.5.1/transforms/49e4ea00924c5023f11481161ead1137/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/c121b2e87f260163dd53d71a3ba07667/transformed/media3-common-1.4.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/c121b2e87f260163dd53d71a3ba07667/transformed/media3-common-1.4.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/f87801cdb94d47bdf36d4bb541b7c5bb/transformed/media3-exoplayer-1.4.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/f87801cdb94d47bdf36d4bb541b7c5bb/transformed/media3-exoplayer-1.4.1/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/683d78a2a6f8d70e834fad1e33c7ff7b/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/683d78a2a6f8d70e834fad1e33c7ff7b/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/0745e7be1840b5e467ac6300cbbd2122/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:22:5-79
@@ -223,30 +236,30 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/et
 MERGED from [io.grpc:grpc-android:1.57.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/2d4d53387ed5098eb283e64f32a0e695/transformed/grpc-android-1.57.2/AndroidManifest.xml:7:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/2d4d53387ed5098eb283e64f32a0e695/transformed/grpc-android-1.57.2/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:7:5-77
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:7:5-77
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/0745e7be1840b5e467ac6300cbbd2122/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:23:5-77
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/0745e7be1840b5e467ac6300cbbd2122/transformed/firebase-messaging-24.0.0/AndroidManifest.xml:23:5-77
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:7:22-74
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:7:22-74
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:8:22-63
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:8:22-63
 uses-permission#android.permission.CAMERA
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:12:5-65
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:12:5-65
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:12:22-62
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:12:22-62
 uses-feature#android.hardware.camera.any
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:13:5-89
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:13:5-89
 	android:required
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:13:62-86
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:13:62-86
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:13:19-61
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:13:19-61
 application
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:15:5-80:19
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:15:5-80:19
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:15:5-80:19
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:15:5-80:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/e639ed777fa6dfe09e30ed2b550758ac/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/e639ed777fa6dfe09e30ed2b550758ac/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.camera:camera-camera2:1.4.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/87dbc54a5286886098849fb2aa270ea5/transformed/camera-camera2-1.4.2/AndroidManifest.xml:23:5-34:19
@@ -346,107 +359,107 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/et
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/etisalat/.gradle/caches/9.5.1/transforms/def288a08638c244d1bd7c209419c9b4/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/etisalat/.gradle/caches/9.5.1/transforms/def288a08638c244d1bd7c209419c9b4/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/ebb2e54f6561bfe77f3444eb8fce228a/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:23:9-35
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:23:9-35
 	android:label
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:21:9-41
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:21:9-41
 	android:fullBackupContent
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:19:9-54
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:19:9-54
 	android:roundIcon
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:22:9-54
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:22:9-54
 	tools:targetApi
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:26:9-29
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:26:9-29
 	android:icon
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:20:9-43
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:20:9-43
 	android:allowBackup
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:24:9-48
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:24:9-48
 	android:dataExtractionRules
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:18:9-65
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:18:9-65
 	android:usesCleartextTraffic
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:25:9-44
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:25:9-44
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:16:9-54
 property#android.adservices.AD_SERVICES_CONFIG
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:28:9-34:48
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:28:9-34:48
 MERGED from [com.google.android.gms:play-services-ads-lite:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5cc029c2afe8e1e020925390bb64a429/transformed/play-services-ads-lite-23.5.0/AndroidManifest.xml:107:9-109:62
 MERGED from [com.google.android.gms:play-services-ads-lite:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5cc029c2afe8e1e020925390bb64a429/transformed/play-services-ads-lite-23.5.0/AndroidManifest.xml:107:9-109:62
 MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/26a660522f7b5cf0d6b42562f76dd207/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:30:9-32:61
 MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/26a660522f7b5cf0d6b42562f76dd207/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:30:9-32:61
 	android:resource
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:32:13-59
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:32:13-59
 		REJECTED from [com.google.android.gms:play-services-ads-lite:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5cc029c2afe8e1e020925390bb64a429/transformed/play-services-ads-lite-23.5.0/AndroidManifest.xml:109:13-59
 		REJECTED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/26a660522f7b5cf0d6b42562f76dd207/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:32:13-58
 	tools:replace
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:34:13-45
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:34:13-45
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:30:13-65
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:30:13-65
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:43:9-45:70
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:43:9-45:70
 	android:value
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:45:13-67
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:45:13-67
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:44:13-69
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:44:13-69
 activity#com.msa.android.MainActivity
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:47:9-57:20
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:47:9-57:20
 	android:windowSoftInputMode
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:51:13-55
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:51:13-55
 	android:exported
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:49:13-36
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:49:13-36
 	android:configChanges
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:50:13-129
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:50:13-129
 	android:theme
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:52:13-52
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:52:13-52
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:48:13-56
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:48:13-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:53:13-56:29
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:53:13-56:29
 action#android.intent.action.MAIN
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:54:17-69
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:54:17-69
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:54:25-66
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:54:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:55:17-77
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:55:27-74
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:55:27-74
 service#com.msa.android.presentation.service.MSAFirebaseMessagingService
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:60:9-66:19
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:60:9-66:19
 	android:exported
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:62:13-37
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:61:13-92
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:61:13-92
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:63:13-65:29
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:63:13-65:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:64:17-78
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:64:17-78
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:64:25-75
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:64:25-75
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:68:9-70:60
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:68:9-70:60
 	android:resource
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:70:13-57
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:70:13-57
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:69:13-83
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:69:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:72:9-74:59
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:72:9-74:59
 	android:resource
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:74:13-56
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:74:13-56
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:73:13-84
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:73:13-84
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:76:9-78:51
+ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:76:9-78:51
 	android:value
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:78:13-48
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:78:13-48
 	android:name
-		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml:77:13-89
+		ADDED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml:77:13-89
 uses-sdk
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
-INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
+INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/eafc2776f0a195bb15600713a87d7335/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/eafc2776f0a195bb15600713a87d7335/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.datastore:datastore-android:1.1.4] /Users/etisalat/.gradle/caches/9.5.1/transforms/772f32f461319090164806419972165f/transformed/datastore-release/AndroidManifest.xml:20:5-44
@@ -489,6 +502,22 @@ MERGED from [com.google.mlkit:common:18.11.0] /Users/etisalat/.gradle/caches/9.5
 MERGED from [com.google.mlkit:common:18.11.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/ce8cfddc4da9a37545502939ce8aa74d/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/fa3a0cc04c7663f44f99e5b5e7abc6ec/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/fa3a0cc04c7663f44f99e5b5e7abc6ec/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.media3:media3-ui:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/847e4a3a6b903264bc88bcc831cc8c93/transformed/media3-ui-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/847e4a3a6b903264bc88bcc831cc8c93/transformed/media3-ui-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/deec5f9db15ec215e1a1bdc24c8b8d67/transformed/media3-extractor-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/deec5f9db15ec215e1a1bdc24c8b8d67/transformed/media3-extractor-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a0d1ac4153d5c2d47f96be3fbd444034/transformed/media3-container-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a0d1ac4153d5c2d47f96be3fbd444034/transformed/media3-container-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/9e13dec0bf732edd96ef109996a17edb/transformed/media3-datasource-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/9e13dec0bf732edd96ef109996a17edb/transformed/media3-datasource-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/8b2145aa6ed3629c25261be750620837/transformed/media3-decoder-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/8b2145aa6ed3629c25261be750620837/transformed/media3-decoder-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a4f2a1e99738d0bb86840636a813ef33/transformed/media3-database-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/a4f2a1e99738d0bb86840636a813ef33/transformed/media3-database-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/c121b2e87f260163dd53d71a3ba07667/transformed/media3-common-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/c121b2e87f260163dd53d71a3ba07667/transformed/media3-common-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/f87801cdb94d47bdf36d4bb541b7c5bb/transformed/media3-exoplayer-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/etisalat/.gradle/caches/9.5.1/transforms/f87801cdb94d47bdf36d4bb541b7c5bb/transformed/media3-exoplayer-1.4.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7b65a363c20878455e53d171fb48d634/transformed/play-services-ads-23.5.0/AndroidManifest.xml:21:5-23:52
 MERGED from [com.google.android.gms:play-services-ads:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7b65a363c20878455e53d171fb48d634/transformed/play-services-ads-23.5.0/AndroidManifest.xml:21:5-23:52
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/97cab28a3dc1972ee2d24aac243693db/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
@@ -683,12 +712,14 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/etisa
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/2b0116b4fc21689dd82e18f0ccadac11/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7c90015ce59d2d3f1ee1c6259ac91519/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7c90015ce59d2d3f1ee1c6259ac91519/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/615959c3e79b810eeaca5ca9bb4b07b5/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/615959c3e79b810eeaca5ca9bb4b07b5/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5a6bb66b61a278cc495b42358d7d69e0/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/5a6bb66b61a278cc495b42358d7d69e0/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.11.0-alpha02] /Users/etisalat/.gradle/caches/9.5.1/transforms/729d0418fedc52739621f82a20267e69/transformed/webkit-1.11.0-alpha02/AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.11.0-alpha02] /Users/etisalat/.gradle/caches/9.5.1/transforms/729d0418fedc52739621f82a20267e69/transformed/webkit-1.11.0-alpha02/AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/9cd12f3abb2be77ad20f6c6faf5d3f0b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/9cd12f3abb2be77ad20f6c6faf5d3f0b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/6611f3f029cf2011a8a8d1f6466bae40/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/6611f3f029cf2011a8a8d1f6466bae40/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/d7ce6159d690f42f988154b7633471df/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/d7ce6159d690f42f988154b7633471df/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/c278d3a6f7aded80d8df8c706cd42a93/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -758,9 +789,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/etisa
 	tools:overrideLibrary
 		ADDED from [com.google.android.gms:play-services-ads:23.5.0] /Users/etisalat/.gradle/caches/9.5.1/transforms/7b65a363c20878455e53d171fb48d634/transformed/play-services-ads-23.5.0/AndroidManifest.xml:23:9-49
 	android:targetSdkVersion
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA New/MSA Support/MSAAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/etisalat/Desktop/Learn Sorce Control/MSA-25-8-2026/MSA Android/MSA USER/app/src/main/AndroidManifest.xml
 service#androidx.camera.core.impl.MetadataHolderService
 ADDED from [androidx.camera:camera-camera2:1.4.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/87dbc54a5286886098849fb2aa270ea5/transformed/camera-camera2-1.4.2/AndroidManifest.xml:24:9-33:19
 MERGED from [androidx.camera:camera-core:1.4.2] /Users/etisalat/.gradle/caches/9.5.1/transforms/327af9c93be54cf4e69301bad26e1746/transformed/camera-core-1.4.2/AndroidManifest.xml:29:9-33:78
