@@ -23,7 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MSA.Splash"
         android:usesCleartextTraffic="true"
-        tools:targetApi="35">
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="36">
 
         <property
 

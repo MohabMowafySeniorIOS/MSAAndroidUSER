@@ -28,33 +28,54 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.msa.android.R
 import com.msa.android.presentation.common.components.GoldButton
 import com.msa.android.presentation.common.components.MSABackground
+import com.msa.android.presentation.common.components.MSATopBar
 import com.msa.android.presentation.theme.GoldenBorder
 
+/**
+ * شاشة اللغة — نفس `ChooseLanguageVCFirst` في iOS.
+ *
+ * بتشتغل في وضعين زي الآيفون بالظبط (`is_fro_side`):
+ *   • `onBack == null` → وضع أول تشغيل: ترحيب من غير رجوع.
+ *   • `onBack != null` → مفتوحة من «المزيد»: توب بار وزرار رجوع.
+ *
+ * ملحوظة: التطبيق مترجم للعربي والإنجليزي بس (`resourceConfigurations`
+ * فيها "en" و"ar")، فمفيش أردو هنا زي الآيفون — لو اتضافت `values-ur`
+ * ضيف صف تالت هنا.
+ */
 @Composable
 fun LanguageScreen(
     onApplied: () -> Unit,
+    onBack: (() -> Unit)? = null,
     vm: LanguageViewModel = hiltViewModel()
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
     MSABackground {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .statusBarsPadding()
-                .padding(horizontal = 24.dp)
-                .padding(top = 40.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
+        Column(Modifier.fillMaxSize()) {
+
+            if (onBack != null) {
+                MSATopBar(title = stringResource(R.string.language_title), onBack = onBack)
+            }
+
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .then(if (onBack == null) Modifier.statusBarsPadding() else Modifier)
+                    .padding(horizontal = 24.dp)
+                    .padding(top = if (onBack == null) 40.dp else 8.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
             Spacer(Modifier.weight(0.3f))
 
-            Text(
-                text = stringResource(R.string.welcome_msa_emoji),
-                color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
-            Spacer(Modifier.height(14.dp))
+            if (onBack == null) {
+                Text(
+                    text = stringResource(R.string.welcome_msa_emoji),
+                    color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
+                Spacer(Modifier.height(14.dp))
+            }
             Text(
                 text = stringResource(R.string.choose_language_hint),
                 color = Color.White, fontSize = 14.sp,
@@ -76,6 +97,7 @@ fun LanguageScreen(
                 }
             }
             Spacer(Modifier.height(40.dp))
+            }
         }
     }
 }

@@ -54,6 +54,8 @@ object Routes {
     const val QR_SCANNER = "qr_scanner"
     const val PORTFOLIO = "portfolio"
     const val PORTFOLIO_ADD = "portfolio_add"
+    const val SETTINGS = "settings"
+    const val LANGUAGE = "language"
 }
 
 @Composable
@@ -93,9 +95,26 @@ fun MSANavGraph() {
                     },
                     onOpenCurrencyPicker = { nav.navigate(Routes.CURRENCY_PICKER) },
                     onOpenQrScanner = { nav.navigate(Routes.QR_SCANNER) },
-                    onOpenPortfolio = { nav.navigate(Routes.PORTFOLIO) }
+                    onOpenPortfolio = { nav.navigate(Routes.PORTFOLIO) },
+                    onOpenSettings = { nav.navigate(Routes.SETTINGS) },
+                    onOpenLanguage = { nav.navigate(Routes.LANGUAGE) }
                 )
             }
+        }
+
+        // اللغة — مفتوحة من «المزيد»، فبتظهر بتوب بار وزرار رجوع
+        composable(Routes.LANGUAGE) {
+            com.msa.android.presentation.screens.language.LanguageScreen(
+                onApplied = { nav.popBackStack() },
+                onBack = { nav.popBackStack() }
+            )
+        }
+
+        // الإعدادات — تحكّم منفصل لكل نوع إشعار
+        composable(Routes.SETTINGS) {
+            com.msa.android.presentation.screens.settings.SettingsScreen(
+                onBack = { nav.popBackStack() }
+            )
         }
 
         composable(Routes.PRICE_GAP) {

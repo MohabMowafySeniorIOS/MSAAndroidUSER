@@ -9,9 +9,10 @@ import android.net.Uri
 import android.os.Build
 import com.msa.android.R
 import com.google.firebase.FirebaseApp
-import com.google.firebase.messaging.FirebaseMessaging
 import com.google.android.gms.ads.MobileAds
+import com.msa.android.data.source.local.NotificationPreferences
 import dagger.hilt.android.HiltAndroidApp
+import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -19,6 +20,8 @@ import kotlinx.coroutines.launch
 
 @HiltAndroidApp
 class MSAApplication : Application() {
+
+    @Inject lateinit var notificationPreferences: NotificationPreferences
 
     companion object {
         // Channel IDs — referenced both here (channel creation) and inside
@@ -32,7 +35,7 @@ class MSAApplication : Application() {
         super.onCreate()
         FirebaseApp.initializeApp(this)
         createNotificationChannels()
-        subscribeFcmTopics()
+        applyNotificationPreferences()
         initializeAdMob()
     }
 
@@ -110,14 +113,17 @@ class MSAApplication : Application() {
         )
     }
 
-    private fun subscribeFcmTopics() {
-        // Match iOS subscriptions
-        val msg = FirebaseMessaging.getInstance()
-        msg.subscribeToTopic("gold_ar")
-        msg.subscribeToTopic("silver_ar")
-        msg.subscribeToTopic("gold_en")
-        msg.subscribeToTopic("silver_en")
-        msg.subscribeToTopic("dollar_prices")
-      //  msg.subscribeToTopic("news_ar")
+    /**
+     * بيطبّق اختيارات المستخدم من شاشة الإعدادات على اشتراكات FCM.
+     *
+     * قبل كده كان الكود بيشترك في كل التوبيكس عند كل فتحة للتطبيق، وده كان
+     * هيلغي أي قفل عمله المستخدم من الإعدادات. دلوقتي بنقرا المحفوظ ونطبّقه —
+     * والافتراضي لو مفيش حاجة محفوظة إن كل الأنواع مفعّلة، فسلوك المستخدم
+     * القديم زي ما هو.
+     */
+    private fun applyNotificationPreferences() {
+        CoroutineScope(SupervisorJob() + Dispatchers.IO).launch {
+            notificationPreferences.applyAll()
+        }
     }
 }

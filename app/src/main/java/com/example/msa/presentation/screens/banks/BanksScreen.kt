@@ -179,7 +179,7 @@ private fun BankRow(
 
     val isCentralBank = item.name.contains("المركز") || item.name.contains("Central")
 
-    val rowBg = if (isCentralBank) Color(0xFFC9A05A) else Color.Transparent
+    val rowBg = if (isCentralBank) Color(0xFFB58934) else Color.Transparent
 
     Column(
 

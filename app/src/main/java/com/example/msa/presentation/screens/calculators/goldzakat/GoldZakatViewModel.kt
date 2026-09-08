@@ -29,7 +29,8 @@ class GoldZakatViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             metalsRepo.observeMetals().collect { metals: List<Metal> ->
-                val base21 = metals.firstOrNull { it.type == "gold_21" || it.name?.contains("21") == true }
+                // نفس تصحيح شاشة حساب قيمة الذهب: المستند اسمه "gold" مش "gold_21"
+                val base21 = metals.firstOrNull { it.type == "gold" }
                     ?.salePrice?.toDoubleOrNull() ?: 0.0
                 val price24 = base21 * (24.0 / 21.0)
                 _state.update { it.copy(pricePerGram24 = price24) }

@@ -102,7 +102,7 @@ fun GoldSoftCard(
         modifier = modifier
             .fillMaxWidth()
             .clip(RoundedCornerShape(28.dp))
-            .background(Color(0xFFC9A05A))
+            .background(Color(0xFFB58934))
             .padding(horizontal = 20.dp, vertical = 24.dp)
     ) {
         content()

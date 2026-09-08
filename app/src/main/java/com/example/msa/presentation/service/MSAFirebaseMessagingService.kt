@@ -15,7 +15,14 @@ import com.msa.android.MSAApplication.Companion.CHANNEL_DOLLAR
 import com.msa.android.MSAApplication.Companion.CHANNEL_MSA_SOUND
 import com.msa.android.MainActivity
 import com.msa.android.R
+import com.msa.android.data.source.local.NotificationPreferences
 import com.google.firebase.messaging.FirebaseMessagingService
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 import com.google.firebase.messaging.RemoteMessage
 
 /**
@@ -47,7 +54,10 @@ import com.google.firebase.messaging.RemoteMessage
  * appropriate pre-created channel. On Android < 8 we set the sound URI directly
  * on the builder.
  */
+@AndroidEntryPoint
 class MSAFirebaseMessagingService : FirebaseMessagingService() {
+
+    @Inject lateinit var notificationPreferences: NotificationPreferences
 
     companion object {
         private const val TAG = "MSAFcm"
@@ -77,8 +87,11 @@ class MSAFirebaseMessagingService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
         super.onNewToken(token)
         Log.d(TAG, "New FCM token: $token")
-        // Resubscribe to topics in case the token rotation requires it.
-        MSAApplication.let { /* topics are subscribed app-wide in MSAApplication.onCreate */ }
+        // التوكن اتغيّر — نعيد تطبيق اختيارات المستخدم المحفوظة من شاشة
+        // الإعدادات، مش الاشتراك في كل التوبيكس.
+        CoroutineScope(SupervisorJob() + Dispatchers.IO).launch {
+            notificationPreferences.applyAll()
+        }
     }
 
     private fun postNotification(title: String, body: String, rawSound: String?) {

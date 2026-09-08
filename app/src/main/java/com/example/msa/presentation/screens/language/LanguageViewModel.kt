@@ -21,6 +21,16 @@ class LanguageViewModel @Inject constructor(
     private val _state = MutableStateFlow(LanguageState())
     val state: StateFlow<LanguageState> = _state.asStateFlow()
 
+    init {
+        // نحمّل اللغة المحفوظة عشان الشاشة تفتح والاختيار الحالي مظلّل.
+        // من غير كده كانت بتفتح دايماً على "عربي" حتى لو التطبيق إنجليزي —
+        // وده مكانش باين لأن الشاشة مكانتش موصولة بأي حتة.
+        viewModelScope.launch {
+            val current = prefs.currentLanguage()
+            _state.update { it.copy(selected = current) }
+        }
+    }
+
     fun select(lang: String) { _state.update { it.copy(selected = lang) } }
 
     fun apply(onDone: () -> Unit) {

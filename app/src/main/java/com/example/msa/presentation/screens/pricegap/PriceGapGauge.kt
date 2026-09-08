@@ -123,7 +123,7 @@ fun PriceGapGauge(
             val nex = cx + needleLen * cos(needleAngleRad).toFloat()
             val ney = cy + needleLen * sin(needleAngleRad).toFloat()
             drawLine(
-                color = Color(0xFFD4AF37),
+                color = Color(0xFFE8B138),
                 start = Offset(cx, cy),
                 end = Offset(nex, ney),
                 strokeWidth = 4.dp.toPx(),
@@ -132,14 +132,14 @@ fun PriceGapGauge(
 
             // Tip ball at end of needle
             drawCircle(
-                color = Color(0xFFD4AF37),
+                color = Color(0xFFE8B138),
                 radius = 7.dp.toPx(),
                 center = Offset(nex, ney)
             )
 
             // Center pivot
             drawCircle(
-                color = Color(0xFFD4AF37),
+                color = Color(0xFFE8B138),
                 radius = 8.dp.toPx(),
                 center = Offset(cx, cy)
             )

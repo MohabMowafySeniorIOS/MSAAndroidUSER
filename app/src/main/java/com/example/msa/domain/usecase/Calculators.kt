@@ -16,13 +16,14 @@ import javax.inject.Singleton
  *   zakat = 2.5% of total pure gold * price per gram 24k (if >= nisab)
  *
  *  Silver Zakat:
- *   pure silver equivalents converted from base 999:
- *     g999 = g999 * 1.0
- *     g925 = g925 * 925/999
- *     g900 = g900 * 900/999
- *     g800 = g800 * 800/999
- *     g600 = g600 * 600/999
- *   nisab = 595 grams (999)
+ *   نقاء الفضة بمقياس الألف (millesimal fineness) — عيار 925 معناه
+ *   925 جزء من 1000، يعني 92.5% فضة خالصة. فالقسمة على 1000 مش على 999:
+ *     g999 = g999 * 999/1000
+ *     g925 = g925 * 925/1000
+ *     g900 = g900 * 900/1000
+ *     g800 = g800 * 800/1000
+ *     g600 = g600 * 600/1000
+ *   nisab = 595 grams من الفضة الخالصة
  *   zakat = 2.5% of total pure silver * price per gram 999 (if >= nisab)
  */
 @Singleton
@@ -66,11 +67,13 @@ class ZakatCalculator @Inject constructor() {
     }
 
     fun silverZakat(input: SilverZakatInput, pricePerGram999: Double): SilverZakatResult {
-        val pure = input.g999 * 1.0 +
-                input.g925 * (925.0 / 999.0) +
-                input.g900 * (900.0 / 999.0) +
-                input.g800 * (800.0 / 999.0) +
-                input.g600 * (600.0 / 999.0)
+        // القسمة على 1000 هي تعريف مقياس النقاء للفضة — القسمة على 999
+        // كانت بتحسب عيار 999 كأنه خالص 100% وبتزوّد باقي العيارات ~0.1%
+        val pure = input.g999 * (999.0 / 1000.0) +
+                input.g925 * (925.0 / 1000.0) +
+                input.g900 * (900.0 / 1000.0) +
+                input.g800 * (800.0 / 1000.0) +
+                input.g600 * (600.0 / 1000.0)
         val obligatory = pure >= 595.0
         val zg = if (obligatory) pure * 0.025 else 0.0
         return SilverZakatResult(

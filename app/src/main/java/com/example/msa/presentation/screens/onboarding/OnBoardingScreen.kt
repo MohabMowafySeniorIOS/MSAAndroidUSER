@@ -96,7 +96,7 @@ fun OnBoardingScreen(
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
                     .clip(RoundedCornerShape(24.dp))
-                    .background(Color(0xFFC9A05A))
+                    .background(Color(0xFFB58934))
                     .padding(horizontal = 24.dp, vertical = 28.dp)
             ) {
                 Column(

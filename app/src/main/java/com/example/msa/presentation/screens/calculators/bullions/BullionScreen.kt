@@ -53,30 +53,25 @@ import kotlin.times
 @Composable
 fun BullionScreen(
     onBack: () -> Unit,
+    /** السبائك تبويب أساسي في الشريط السفلي، فمفيش شاشة ترجع لها — زي iOS. */
+    showBack: Boolean = true,
     vm: BullionViewModel = hiltViewModel()
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
-    // iOS imageName: starts "MSA", becomes company name on company select.
-    // Try to find a drawable matching the company name; fall back to ic_msa_logo.
+    // iOS: imageName يبدأ "MSA" وبيتغيّر لاسم الشركة عند الاختيار.
+    // الربط بالاسم صريح في CompanyImages — البحث بـ getIdentifier كان بيفشل
+    // مع الأسماء اللي فيها مسافات والأسماء العربية.
     val productImageRes = remember(state.imageName) {
-        if (state.imageName.isBlank() || state.imageName == "MSA") {
-            R.drawable.ic_msa_logo
-        } else {
-            val resName = state.imageName
-                .lowercase()
-                .replace(" ", "_")
-                .replace("-", "_")
-            val id = context.resources.getIdentifier(resName, "drawable", context.packageName)
-            if (id != 0) id else R.drawable.ic_msa_logo
-        }
+        CompanyImages.forCompany(state.imageName)
     }
 
     MSABackground {
         Column(Modifier.fillMaxSize()) {
             MSATopBar(
                 title = stringResource(R.string.bullions),
+                showBack = showBack,
                 onBack = onBack,
                 showShare = true,
                 onShare = { com.msa.android.presentation.common.shareApp(context) }
@@ -108,7 +103,7 @@ fun BullionScreen(
     // Pickers (white rounded bottom-sheet-style modal — matches iOS Menu)
     if (state.metalPickerVisible) {
         PickerDialog(
-            title = "العيار",
+            title = stringResource(R.string.bullion_karat),
             items = state.metals.map { it.name },
             onSelect = { idx -> vm.selectMetal(state.metals[idx]) },
             onDismiss = vm::dismissPickers
@@ -116,7 +111,7 @@ fun BullionScreen(
     }
     if (state.companyPickerVisible) {
         PickerDialog(
-            title = "الشركة المُصنعة",
+            title = stringResource(R.string.bullion_manufacturer),
             items = state.companies,
             onSelect = { idx -> vm.selectCompany(state.companies[idx]) },
             onDismiss = vm::dismissPickers
@@ -124,7 +119,7 @@ fun BullionScreen(
     }
     if (state.gramPickerVisible) {
         PickerDialog(
-            title = "المنتج",
+            title = stringResource(R.string.bullion_product),
             items = state.grams.map { it.name },
             onSelect = { idx -> vm.selectGram(state.grams[idx]) },
             onDismiss = vm::dismissPickers
@@ -163,17 +158,17 @@ private fun ProductCard(
             verticalArrangement = Arrangement.spacedBy(15.dp)
         ) {
             DropdownLabel(
-                title = "عيار",
+                title = stringResource(R.string.bullion_karat),
                 value = state.selectedMetal?.name ?: "",
                 onClick = onPickMetal
             )
             DropdownLabel(
-                title = "الشركة المُصنعة",
+                title = stringResource(R.string.bullion_manufacturer),
                 value = state.selectedCompany,
                 onClick = onPickCompany
             )
             DropdownLabel(
-                title = "المنتج",
+                title = stringResource(R.string.bullion_product),
                 value = state.selectedGram?.name ?: "",
                 onClick = onPickGram
             )
@@ -185,6 +180,10 @@ private fun ProductCard(
         Image(
             painter = painterResource(productImageRes),
             contentDescription = null,
+            // iOS: .resizable().scaledToFit().frame(80x80)
+            // الشعارات نِسبها مختلفة (من 31×32 لحد 260×148) فلازم Fit
+            // عشان تظهر كاملة من غير قص ولا تشويه.
+            contentScale = ContentScale.Fit,
             modifier = Modifier.size(80.dp)
         )
     }
@@ -241,21 +240,26 @@ private fun PriceGrid(state: BullionState, prices: Pair<Double, Double>) {
 
     Column(verticalArrangement = Arrangement.spacedBy(15.dp)) {
         Text(
-            text = "ملاحظة هامة: تكاليف التصنيع المُذكورة هي الأقل وفقًا لآخر تحديث " +
-                    "من الشركة المنتجة. يتم تحديث سعر الجرام للذهب وفقًا لآخر سعر في " +
-                    "سوق الذهب وليس مأخوذًا من الشركة المنتجة.",
+            text = stringResource(R.string.bullion_important_note),
             color = Color.White,
             fontSize = 13.sp,
             fontWeight = FontWeight.Bold
         )
 
-        PriceCard("سعر الجرام",   "${formatNum(gramSalePrice)} جنيه")
-        PriceCard("التصنيع",      "${formatNum(gram.manufacturing)} جنيه")
-        PriceCard("الإجمالي",     "${formatNum(round(total))} جنيه")
-        PriceCard("الكاش باك",    "${formatNum(gram.cashBack)} جنيه")
-        PriceCard("إعادة البيع",  "${formatNum(round(resale))} جنيه")
+        // amount() بيلزق العملة حسب اللغة — "جنيه" بعد الرقم بالعربي
+        // و"Pound" بعده بالإنجليزي، من مورد واحد فيه placeholder.
+        PriceCard(stringResource(R.string.bullion_price_per_gram), amount(gramSalePrice))
+        PriceCard(stringResource(R.string.bullion_manufacturing),  amount(gram.manufacturing))
+        PriceCard(stringResource(R.string.bullion_total),          amount(round(total)))
+        PriceCard(stringResource(R.string.bullion_cash_back),      amount(gram.cashBack))
+        PriceCard(stringResource(R.string.bullion_resale),         amount(round(resale)))
     }
 }
+
+/** الرقم + اسم العملة حسب لغة الواجهة */
+@Composable
+private fun amount(v: Double): String =
+    stringResource(R.string.bullion_amount, formatNum(v))
 
 private fun formatNum(v: Double): String =
     if (v == v.toLong().toDouble()) v.toLong().toString()

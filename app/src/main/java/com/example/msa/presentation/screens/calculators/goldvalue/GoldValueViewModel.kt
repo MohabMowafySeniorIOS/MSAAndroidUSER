@@ -32,7 +32,10 @@ class GoldValueViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             metalsRepo.observeMetals().collect { metals: List<Metal> ->
-                val base = metals.firstOrNull { it.type == "gold_21" || it.name?.contains("21") == true }
+                // مستند Firestore اسمه "gold" (الـ type = doc.id)، وسعره هو سعر عيار 21
+                // — نفس اللي بتستخدمه الشاشة الرئيسية والسبائك والمحفظة.
+                // كان مكتوب "gold_21" وده مستند مش موجود، فالسعر كان بيرجع صفر دايماً.
+                val base = metals.firstOrNull { it.type == "gold" }
                 val baseSell = base?.salePrice?.toDoubleOrNull() ?: 0.0
                 _state.update { it.copy(base21Sell = baseSell) }
             }

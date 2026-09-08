@@ -30,7 +30,7 @@ fun <T> SegmentedToggle(
     outerCorner: Dp = 27.dp,
     innerCorner: Dp = 24.dp,
     outerBg: Color = Color(0xFF1A1A1A),
-    selectedBg: Color = Color(0xFFC9A05A),
+    selectedBg: Color = Color(0xFFB58934),
     selectedFg: Color = Color.Black,
     unselectedFg: Color = Color.White,
     fontSize: Int = 16

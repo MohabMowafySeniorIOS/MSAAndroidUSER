@@ -4,32 +4,33 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
 // MARK: - Brand Colors (matching iOS GoldenScreen.swift)
-val Gold              = Color(0xFFF2C94C)
-val GoldDark          = Color(0xFFB8962E)
-val GoldLight         = Color(0xFFE5C76B)
-val GoldMain          = Color(0xFFC9A23F)
-val GoldDarker        = Color(0xFFB8922F)
-val GoldenBorder      = Color(0xFFD8BE8A)
-val GoldenBorderSoft  = Color(0x80D8BE8A)
+val Gold              = Color(0xFFE8B138)
+val GoldDark          = Color(0xFFA77F28)
+val GoldLight         = Color(0xFFEFC874)
+val GoldMain          = Color(0xFFE8B138)
+val GoldDarker        = Color(0xFF906E23)
+val GoldenBorder      = Color(0xFFF2D28C)
+val GoldenBorderSoft  = Color(0x80F2D28C)
 
 // Backgrounds (gradient base)
-val BgBlack           = Color(0xFF121212)
-val BgDarkGold1       = Color(0xFF1A1305)
+val BgBlack           = Color(0xFF181111)
+val BgDarkGold1       = Color(0xFF231918)
 val BgDarkGold2       = Color(0xFF0E0E0E)
 val BgDarkGold3       = Color(0xFF000000)
 
-val SelectionBackground = Color(0xFF1E1A0C)
-val SelectionBorder   = Color(0xFFD4AF37)
+val SelectionBackground = Color(0xFF1C1414)
+val SelectionBorder   = Color(0xFFE8B138)
 
 val CardBlackAlpha    = Color(0x66000000)
-val CardGold          = Color(0xFFC9A05A)
-val CardGoldAlpha     = Color(0x80C9A05A)
+val CardGold          = Color(0xFFB58934)
+val CardGoldAlpha     = Color(0x80B58934)
 val CardGray          = Color(0xFFE5E5E5)
-val CardDarkGray      = Color(0xFF2C2C2E)
+val CardDarkGray      = Color(0xFF261B1A)
 
 val WhiteSoft         = Color(0xFFF5F6F9)
 val WhiteFull         = Color(0xFFFFFFFF)
 
+val Accent            = Color(0xFFD4B6FF)   // اللافندر من الهوية
 val GreenTrend        = Color(0xFF18A957)
 val RedTrend          = Color(0xFFE53935)
 
@@ -38,8 +39,8 @@ val TextSecondary     = Color(0xFFCCCCCC)
 val TextHint          = Color(0xFF9E9E9E)
 
 // Tab bar
-val TabBarBg          = Color(0xCC1C1C1E)
-val TabBarSelectedBg  = Color(0x33D4AF37)
+val TabBarBg          = Color(0xCC1C1414)
+val TabBarSelectedBg  = Color(0x33E8B138)
 
 // MSA app background — EXACTLY matches iOS BGSwiftUIView.swift:
 //
@@ -48,15 +49,15 @@ val TabBarSelectedBg  = Color(0x33D4AF37)
 //       Color(red: 0.12, green: 0.12, blue: 0.12),  // ~#1F1F1F
 //       Color(red: 0.18, green: 0.18, blue: 0.18)   // ~#2E2E2E
 //   ], startPoint: .topLeading, endPoint: .bottomTrailing)
-val MSABaseTop      = Color(red = 0.07f, green = 0.07f, blue = 0.07f)
-val MSABaseMid      = Color(red = 0.12f, green = 0.12f, blue = 0.12f)
-val MSABaseBottom   = Color(red = 0.18f, green = 0.18f, blue = 0.18f)
+val MSABaseTop      = Color(0xFF181111)
+val MSABaseMid      = Color(0xFF231918)
+val MSABaseBottom   = Color(0xFF2F2221)
 
 val MSAGradient = listOf(MSABaseTop, MSABaseMid, MSABaseBottom)
 
 // Gold light effect overlay — iOS:
 //   Color(red: 0.83, green: 0.69, blue: 0.22).opacity(0.4) → .clear
-val MSAGoldLight    = Color(red = 0.83f, green = 0.69f, blue = 0.22f, alpha = 0.40f)
+val MSAGoldLight    = Color(0x66E8B138)
 
 val GoldGradientColors = listOf(
     GoldLight, GoldMain, GoldDarker

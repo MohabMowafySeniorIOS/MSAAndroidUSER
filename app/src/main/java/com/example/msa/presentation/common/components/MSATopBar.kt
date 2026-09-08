@@ -23,7 +23,7 @@ import com.msa.android.R
 
 /**
  * Top bar that exactly mimics iOS:
- *  • Centered title with the MSA brand logo next to it
+ *  • Centered title
  *  • White rounded-square back button at the START (RTL = right side)
  *  • Optional share button at the END (RTL = left side)
  *  • Sits BELOW the system status bar (safe area, like iOS)
@@ -39,7 +39,6 @@ import com.msa.android.R
 @Composable
 fun MSATopBar(
     title: String,
-    showLogo: Boolean = true,
     showBack: Boolean = true,
     onBack: () -> Unit = {},
     showShare: Boolean = false,
@@ -90,26 +89,14 @@ fun MSATopBar(
             }
         }
 
-        Row(
+        // العنوان لوحده — لوجو الهيدر اتشال من كل الشاشات
+        Text(
+            text = title,
             modifier = Modifier.align(Alignment.Center),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = title,
-                color = Color.White,
-                fontSize = 22.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
-            if (showLogo) {
-                Spacer(Modifier.width(10.dp))
-                // iOS header logo is large (~56dp) — match it.
-                Image(
-                    painter = painterResource(R.drawable.ic_msa_logo),
-                    contentDescription = null,
-                    modifier = Modifier.size(56.dp)
-                )
-            }
-        }
+            color = Color.White,
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center
+        )
     }
 }

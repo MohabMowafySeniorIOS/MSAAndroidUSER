@@ -48,6 +48,8 @@ fun MoreScreen(
     onIndicators: () -> Unit,
     onTechnicalAnalysis: () -> Unit,
     onPortfolio: () -> Unit,
+    onSettings: () -> Unit,
+    onLanguage: () -> Unit,
     vm: MoreViewModel = hiltViewModel()
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
@@ -77,6 +79,8 @@ fun MoreScreen(
                 // calculator hub (gold value / gold zakat / silver value / silver zakat).
                // MoreItem(stringResource(R.string.more_portfolio), R.drawable.ic_more_money_back, onClick = onPortfolio)
                 MoreItem(stringResource(R.string.more_gold_silver_calculator), R.drawable.coins_01, onClick = onGoldSilverCalculator)
+                MoreItem(stringResource(R.string.settings_title), R.drawable.ic_more_settings,    onClick = onSettings)
+                MoreItem(stringResource(R.string.language_title), R.drawable.ic_more_language,    onClick = onLanguage)
                 MoreItem(stringResource(R.string.help),           R.drawable.ic_more_help,         onClick = onHelp)
                 MoreItem(stringResource(R.string.faq),            R.drawable.ic_more_info,         onClick = onFaq)
                 MoreItem(stringResource(R.string.about_us),       R.drawable.ic_more_organization, onClick = onAbout)

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="notification_gold">#C9A23F</color>
-    <color name="splash_bg">#000000</color>
+    <color name="brand_accent">#D4B6FF</color>
+    <color name="brand_brown">#3F2D2C</color>
+    <color name="brand_charcoal">#333333</color>
+    <color name="brand_gold">#E8B138</color>
+    <color name="brand_grey">#C6C6C6</color>
+    <color name="notification_gold">#E8B138</color>
+    <color name="splash_bg">#181111</color>
     <color name="white">#FFFFFFFF</color>
     <plurals name="days_ago">
         <item quantity="one">A day ago</item>
@@ -23,6 +28,17 @@
     <string name="bank">Bank</string>
     <string name="bank_dollar">Bank Dollar</string>
     <string name="bank_price_notifications">Price change notifications</string>
+    <string name="bullion_amount">%1$s Pound</string>
+    <string name="bullion_cash_back">Cash Back</string>
+    <string name="bullion_important_note">Important note: The manufacturing costs listed are the lowest according to the latest update from the producing company. The price per gram of gold is updated according to the latest price in the gold market and is not derived from the producing company.</string>
+    <string name="bullion_karat">Karat</string>
+    <string name="bullion_manufacturer">Manufacturer</string>
+    <string name="bullion_manufacturing">Manufacturing</string>
+    <string name="bullion_pound">Pound</string>
+    <string name="bullion_price_per_gram">Price per gram</string>
+    <string name="bullion_product">Product</string>
+    <string name="bullion_resale">Resale</string>
+    <string name="bullion_total">Total</string>
     <string name="bullions">Bullions</string>
     <string name="buy">Buy</string>
     <string name="buy_price">Buy</string>
@@ -105,6 +121,7 @@
     <string name="label_gold24_global">Gold 24K Global (per gram):</string>
     <string name="label_gold24_local">Gold 24K Local (per gram):</string>
     <string name="label_gold_in_dollar">Gold Implied Dollar:</string>
+    <string name="language_title">Language</string>
     <string name="live_chart">Live Chart</string>
     <string name="loading">Loading…</string>
     <string name="loading_data">Loading data…</string>
@@ -124,6 +141,18 @@
     <string name="no_internet_message">Please check your connection and try again.</string>
     <string name="no_internet_title">No Internet Connection</string>
     <string name="no_news">No news yet</string>
+    <string name="notif_dollar">Dollar prices</string>
+    <string name="notif_dollar_desc">Alert when the dollar rate changes</string>
+    <string name="notif_general">General notifications</string>
+    <string name="notif_general_desc">Announcements and app updates</string>
+    <string name="notif_gold">Gold alerts</string>
+    <string name="notif_gold_desc">Alert when gold prices change</string>
+    <string name="notif_news">News</string>
+    <string name="notif_news_desc">Market news and MSA news</string>
+    <string name="notif_silver">Silver alerts</string>
+    <string name="notif_silver_desc">Alert when silver prices change</string>
+    <string name="notif_system_hint">If notifications are off in your phone settings, nothing will arrive even when enabled here.</string>
+    <string name="notifications_section">Notifications</string>
     <string name="now">Just now</string>
     <string name="ok">OK</string>
     <string name="ounce_world_price">Ounce World Price</string>
@@ -179,6 +208,7 @@
     <string name="sell">Sell</string>
     <string name="sell_price">Sell</string>
     <string name="send">Send</string>
+    <string name="settings_title">Settings</string>
     <string name="share_app">Share the app</string>
     <string name="silver">Silver</string>
     <string name="silver_kilo">Silver Kilo</string>

@@ -6,26 +6,23 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.msa.android.R
-import com.msa.android.presentation.theme.MSAGradients
 
 /**
- * Background layer for every screen — exact port of iOS BGSwiftUIView:
+ * خلفية كل شاشات التطبيق — نفس `BGSwiftUIView` في iOS بالظبط.
  *
- *   ZStack {
- *       // Base 3-stop dark gradient (topLeading → bottomTrailing)
- *       LinearGradient(...)
- *       // Gold light effect (topLeading)
- *       LinearGradient(gold .opacity(0.4) → clear)
- *       // Subtle texture image
- *       Image("BGImage").opacity(0.15)
- *   }.ignoresSafeArea()
+ * الخلفية بقت صورة واحدة جاهزة بأشكال الهوية بدل ثلاث طبقات:
+ *   • قبل: تدرّج + لمعة ذهب + نقشة بشفافية 15%
+ *   • دلوقتي: لون أساس + الصورة كاملة الوضوح
  *
- * The `showBars` flag is kept for backwards compatibility but is now a no-op
- * (iOS doesn't draw gold/silver bars on the background — they belong to
- * specific screens like the splash, not the global background).
+ * الصورة نفسها فيها التدرّج والأشكال، فاللمعة الذهبية اتشالت — كانت
+ * هتغيّر ألوان التصميم لو فضلت فوقه. اللون الأساس تحتها بلون الصورة
+ * الغالب عشان لو الشاشة أطول من نسبة الصورة، الفراغ يبقى بنفس اللون.
+ *
+ * `showBars` سايبها زي ما هي عشان الكود القديم اللي بيبعتها ما يقعش.
  */
 @Composable
 fun MSABackground(
@@ -36,23 +33,15 @@ fun MSABackground(
     Box(
         modifier = modifier
             .fillMaxSize()
-            // Layer 1: base dark gradient
-            .background(MSAGradients.appBackground())
+            // الطبقة 1: لون الأساس — نفس اللون الغالب في الصورة
+            .background(Color(0xFF2E2020))
     ) {
-        // Layer 2: gold light effect (top-leading glow)
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(MSAGradients.goldLightOverlay())
-        )
-
-        // Layer 3: subtle texture at 15% opacity (matches iOS Image("BGImage").opacity(0.15))
+        // الطبقة 2: خلفية الهوية، كاملة الوضوح وبتملا الشاشة
         Image(
             painter = painterResource(R.drawable.bg_texture),
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop,
-            alpha = 0.15f
+            contentScale = ContentScale.Crop
         )
 
         // Foreground content

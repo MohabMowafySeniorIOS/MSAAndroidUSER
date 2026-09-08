@@ -205,4 +205,31 @@
     <string name="loading">جاري التحميل</string>
     <string name="maintenance_screen_title">في شغل صيانة دلوقتي</string>
     <string name="maintenance_screen_message">الشاشة دي بنشتغل عليها دلوقتي وهترجع تاني قريب.\nمعلش على الإزعاج 🙏</string>
+    <!-- الإعدادات وتحكّم الإشعارات -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="notifications_section">الإشعارات</string>
+    <string name="notif_gold">إشعارات الذهب</string>
+    <string name="notif_gold_desc">تنبيه عند تغيّر أسعار الذهب</string>
+    <string name="notif_silver">إشعارات الفضة</string>
+    <string name="notif_silver_desc">تنبيه عند تغيّر أسعار الفضة</string>
+    <string name="notif_dollar">أسعار الدولار</string>
+    <string name="notif_dollar_desc">تنبيه عند تغيّر سعر الدولار</string>
+    <string name="notif_news">الأخبار</string>
+    <string name="notif_news_desc">أخبار السوق وأخبار MSA</string>
+    <string name="notif_general">الإشعارات العامة</string>
+    <string name="notif_general_desc">إعلانات وتحديثات التطبيق</string>
+    <string name="notif_system_hint">لو قافل الإشعارات من إعدادات الموبايل، مش هيوصلك حاجة حتى لو مفعّلة هنا.</string>
+    <string name="language_title">اللغة</string>
+    <!-- شاشة السبائك -->
+    <string name="bullion_karat">عيار</string>
+    <string name="bullion_manufacturer">الشركة المصنعة</string>
+    <string name="bullion_product">المنتج</string>
+    <string name="bullion_price_per_gram">سعر الجرام</string>
+    <string name="bullion_manufacturing">المصنعية</string>
+    <string name="bullion_total">الإجمالي</string>
+    <string name="bullion_cash_back">استرداد نقدي</string>
+    <string name="bullion_resale">إعادة البيع</string>
+    <string name="bullion_pound">جنيه</string>
+    <string name="bullion_amount">%1$s جنيه</string>
+    <string name="bullion_important_note">ملاحظة هامة: تكاليف التصنيع المذكورة هي الأقل وفقًا لآخر تحديث من الشركة المنتجة. يتم تحديث سعر الجرام للذهب وفقًا لآخر سعر في سوق الذهب وليس مأخوذًا من الشركة المنتجة.</string>
 </resources>

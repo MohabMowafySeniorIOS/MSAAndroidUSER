@@ -29,8 +29,10 @@ import com.msa.android.presentation.screens.portfolio.AddPortfolioItemViewModel_
 import com.msa.android.presentation.screens.portfolio.PortfolioViewModel_HiltModules;
 import com.msa.android.presentation.screens.pricegap.PriceGapDetailsViewModel_HiltModules;
 import com.msa.android.presentation.screens.qr.ScanQRViewModel_HiltModules;
+import com.msa.android.presentation.screens.settings.SettingsViewModel_HiltModules;
 import com.msa.android.presentation.screens.splash.SplashViewModel_HiltModules;
 import com.msa.android.presentation.screens.technicalanalysis.TechnicalAnalysisViewModel_HiltModules;
+import com.msa.android.presentation.service.MSAFirebaseMessagingService_GeneratedInjector;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -177,7 +179,8 @@ public final class MSAApplication_HiltComponents {
 
   @Subcomponent
   @ServiceScoped
-  public abstract static class ServiceC implements ServiceComponent,
+  public abstract static class ServiceC implements MSAFirebaseMessagingService_GeneratedInjector,
+      ServiceComponent,
       GeneratedComponent {
     @Subcomponent.Builder
     abstract interface Builder extends ServiceComponentBuilder {
@@ -212,6 +215,7 @@ public final class MSAApplication_HiltComponents {
           PriceGapDetailsViewModel_HiltModules.KeyModule.class,
           ScanQRViewModel_HiltModules.KeyModule.class,
           ScreenMaintenanceViewModel_HiltModules.KeyModule.class,
+          SettingsViewModel_HiltModules.KeyModule.class,
           SilverValueViewModel_HiltModules.KeyModule.class,
           SilverZakatViewModel_HiltModules.KeyModule.class,
           SplashViewModel_HiltModules.KeyModule.class,
@@ -274,6 +278,7 @@ public final class MSAApplication_HiltComponents {
           PriceGapDetailsViewModel_HiltModules.BindsModule.class,
           ScanQRViewModel_HiltModules.BindsModule.class,
           ScreenMaintenanceViewModel_HiltModules.BindsModule.class,
+          SettingsViewModel_HiltModules.BindsModule.class,
           SilverValueViewModel_HiltModules.BindsModule.class,
           SilverZakatViewModel_HiltModules.BindsModule.class,
           SplashViewModel_HiltModules.BindsModule.class,

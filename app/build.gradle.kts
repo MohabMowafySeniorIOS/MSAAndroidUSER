@@ -10,14 +10,16 @@ plugins {
 
 android {
     namespace = "com.msa.android"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.msa.android"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 12
-        versionName = "1.1"
+        // Google Play: من 31 أغسطس 2026 لازم استهداف Android 16 (API 36)
+        // للتحديثات الجديدة — والتمديد بينتهي 1 نوفمبر 2026.
+        targetSdk = 36
+        versionCode = 13
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

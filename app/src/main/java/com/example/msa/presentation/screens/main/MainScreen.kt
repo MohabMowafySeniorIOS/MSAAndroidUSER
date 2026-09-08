@@ -56,6 +56,8 @@ fun MainScreen(
     onOpenUsagePolicy: () -> Unit,
     onOpenRefundPolicy: () -> Unit,
     onOpenPrivacyPolicy: () -> Unit,
+    onOpenSettings: () -> Unit,
+    onOpenLanguage: () -> Unit,
     onOpenPriceGap: () -> Unit,
     onOpenIndicators: () -> Unit,
     onOpenTechnicalAnalysis: () -> Unit,
@@ -99,12 +101,8 @@ fun MainScreen(
                 ) {
                     BanksScreen(onChangeCurrency = onOpenCurrencyPicker)
                 }
-                BottomTab.BULLIONS -> BullionScreen(onBack = {
-                    // Tab content has no real back; tapping the back arrow just
-                    // bounces user to the Home tab (matches iOS where Bullions
-                    // is a tab root and can't be popped).
-                    selected = BottomTab.HOME
-                })
+                // السبائك تبويب أساسي — مفيش زرار رجوع، زي iOS بالظبط
+                BottomTab.BULLIONS -> BullionScreen(onBack = {}, showBack = false)
                 BottomTab.NEWS -> NewsScreen(onOpenImage = onOpenImageViewer)
                 BottomTab.MORE -> MoreScreen(
                     onGoldSilverCalculator = onOpenCalculatorHub,
@@ -116,7 +114,9 @@ fun MainScreen(
                     onPrivacyPolicy = onOpenPrivacyPolicy,
                     onIndicators = onOpenIndicators,
                     onTechnicalAnalysis = onOpenTechnicalAnalysis,
-                    onPortfolio = onOpenPortfolio
+                    onPortfolio = onOpenPortfolio,
+                    onSettings = onOpenSettings,
+                    onLanguage = onOpenLanguage
                 )
             }
         }
