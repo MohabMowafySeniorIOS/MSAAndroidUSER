@@ -1,5 +1,6 @@
 package com.msa.android.data.source.network
 
+import com.msa.android.BuildConfig
 import com.msa.android.data.source.network.dto.ApiError
 import com.msa.android.data.source.network.dto.AuthResponse
 import com.msa.android.data.source.network.dto.ContactDto
@@ -350,6 +351,10 @@ interface MsaApi {
     suspend fun cancelOrder(@Path("id") id: Long): Response<OrderResponse>
 
     companion object {
-        const val BASE_URL = "https://backend.msagold.com/api/v1/"
+        /** مصدر واحد للـ API كله: بدّل API_ENVIRONMENT في build.gradle.kts. */
+        val BASE_URL: String = when (BuildConfig.API_ENVIRONMENT.lowercase()) {
+            "staging" -> BuildConfig.STAGING_API_BASE_URL
+            else -> BuildConfig.PRODUCTION_API_BASE_URL
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.msa.android.presentation.screens.home.banner
 
+import com.msa.android.data.source.network.MsaApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,9 +36,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object BannerModule {
 
-    /** الـ base URL الحقيقي بتاع MSA. لازم ينتهي بـ "/" */
-    private const val BASE_URL = "https://backend.msagold.com/api/v1/"
-
     @Provides
     @Singleton
     @BannerRetrofit
@@ -59,7 +57,7 @@ object BannerModule {
     @BannerRetrofit
     fun provideBannerRetrofit(@BannerRetrofit client: OkHttpClient): Retrofit =
         Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(MsaApi.BASE_URL)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
