@@ -362,7 +362,7 @@ fun HomeScreen(
             // نفس بانر الـ HOME_INLINE القادم من الـ API، لكن مكانه الآن
             // آخر عنصر في الصفحة بعد الأسعار وكارت الفيدرالي.
             HomeInlineBanner(
-                modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 12.dp),
+                modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 16.dp),
                 onOpenLink = { url ->
                     // TODO: افتح الرابط داخل WebView التطبيق.
                 }

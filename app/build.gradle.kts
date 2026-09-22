@@ -24,7 +24,7 @@ android {
         versionName = "1.2"
 
         // بدّل القيمة إلى "staging" لبناء نسخة الاختبار.
-        buildConfigField("String", "API_ENVIRONMENT", "\"production\"")
+        buildConfigField("String", "API_ENVIRONMENT", "\"staging\"")
         buildConfigField("String", "PRODUCTION_API_BASE_URL", "\"https://backend.msagold.com/api/v1/\"")
         buildConfigField("String", "STAGING_API_BASE_URL", "\"https://staging.backend.msagold.com/api/v1/\"")
 
