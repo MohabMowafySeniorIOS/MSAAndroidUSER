@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- علامة msa — جوّه منطقة الأمان (62dp من 108dp) عشان ما تتقصّش تحت أي قناع.
+     اللون #1F190B متسحوب من ملف الأيقونة الجديدة نفسه. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:pathData="M85,53.265 L77.082,63.135 L65.2,63.135 L65.349,62.948 L72.89,53.55 L64.548,44.099 L42.761,44.099 L34.419,53.55 L41.89,62.859 L41.89,62.861 L41.919,62.896 L41.927,62.907 L41.968,62.963 L41.809,62.964 L30.11,63.135 L23,53.091 L39.118,34.829 L68.728,34.829 Z M85,53.265"
+        android:fillColor="#1F190B"
+        android:fillType="nonZero" />
+
+    <path
+        android:pathData="M59.482,55.464 L56.049,60.204 L53.457,63.67 L46.352,73.171 L34.47,73.171 L39.465,66.115 L40.951,64.018 L41.002,63.948 L41.084,63.837 L41.168,63.729 L41.168,63.728 L47.431,55.464 L53.457,47.516 Z M59.482,55.464"
+        android:fillColor="#1F190B"
+        android:fillType="nonZero" />
+
+    <path
+        android:pathData="M72.442,73.171 L60.56,73.171 L53.457,63.67 L50.864,60.204 L47.43,55.464 L53.457,47.516 L59.482,55.464 L65.744,63.728 L65.744,63.73 L65.828,63.837 L65.911,63.948 L65.961,64.016 L67.447,66.115 Z M72.442,73.171"
+        android:fillColor="#1F190B"
+        android:fillType="nonZero" />
+</vector>

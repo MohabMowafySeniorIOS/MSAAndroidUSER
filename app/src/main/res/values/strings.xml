@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MSA</string>
+
+    <!-- Language / OnBoarding -->
+    <string name="welcome_msa_emoji">🥳 Welcome to MSA</string>
+    <string name="choose_language_hint">Please choose the language you would like to use the app with</string>
+    <string name="apply">Apply</string>
+
+    <!-- Home / Global Screen -->
+    <string name="global_screen">Global Screen</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="karat">Karat</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="gold_pound">Gold Pound</string>
+    <string name="gold_kilo">Gold Kilo</string>
+    <string name="silver_kilo">Silver Kilo</string>
+    <string name="dollar_bank">Bank Dollar</string>
+    <string name="dollar_sagha">Goldsmith Dollar</string>
+    <string name="average_market_price">Average Egyptian gold market reference prices</string>
+    <string name="commission_hint">+ goldsmith\'s commission</string>
+    <string name="now">Just now</string>
+
+    <!-- Banks (Currency Prices) -->
+    <string name="currency_prices">Currency Prices</string>
+    <string name="buy_price">Buy</string>
+    <string name="sell_price">Sell</string>
+    <string name="bank">Bank</string>
+    <string name="bank_price_notifications">Price change notifications</string>
+
+    <!-- Calculator -->
+    <string name="calculator_title">Calculator</string>
+    <string name="bullions">Bullions</string>
+    <string name="calc_gold_value">Gold Value</string>
+    <string name="calc_gold_zakat">Gold Zakat</string>
+    <string name="calc_silver_value">Silver Value</string>
+    <string name="calc_silver_zakat">Silver Zakat</string>
+    <string name="calc_zakat">Calculate Zakat</string>
+
+    <!-- Karat labels -->
+    <string name="karat_24">Karat 24</string>
+    <string name="karat_22">Karat 22</string>
+    <string name="karat_21">Karat 21</string>
+    <string name="karat_18">Karat 18</string>
+    <string name="karat_999">Silver 999</string>
+    <string name="karat_925">Silver 925</string>
+    <string name="karat_900">Silver 900</string>
+    <string name="karat_800">Silver 800</string>
+    <string name="karat_600">Silver 600</string>
+
+    <string name="karat_24_label">24K</string>
+    <string name="karat_22_label">22K</string>
+    <string name="karat_21_label">21K</string>
+    <string name="karat_18_label">18K</string>
+    <string name="karat_999_label">999</string>
+    <string name="karat_925_label">925</string>
+    <string name="karat_900_label">900</string>
+    <string name="karat_800_label">800</string>
+    <string name="karat_600_label">600</string>
+
+    <!-- Notes -->
+    <string name="gold_value_note">Gold value is calculated based on 21K price: %1$s EGP</string>
+    <string name="silver_value_note">Silver value is calculated based on 999 price: %1$s EGP</string>
+    <string name="gold_zakat_note">Gold zakat is due if you own more than 85 grams of 24K gold (or its equivalent in other karats) for one full lunar year. The zakat rate is 2.5%%.</string>
+    <string name="silver_zakat_note">Silver zakat is due if you own more than 595 grams of 999 silver (or its equivalent in other karats) for one full lunar year. The zakat rate is 2.5%%.</string>
+    <string name="pure_gold">Pure gold</string>
+    <string name="pure_silver">Pure silver</string>
+    <string name="zakat_in_gold">Zakat in gold</string>
+    <string name="zakat_in_silver">Zakat in silver</string>
+    <string name="zakat_in_money">Zakat in money</string>
+    <string name="zakat_not_obligatory">Zakat is not obligatory (amount below nisab)</string>
+    <string name="total">Total</string>
+    <string name="egp">EGP</string>
+    <string name="gap_currency_egp">Egyptian Pound</string>
+    <string name="gram">g</string>
+    <string name="pure_silver_total">Pure silver total: %1$s g</string>
+
+    <!-- Bullion picker -->
+    <string name="manufacturer_company">Manufacturer</string>
+    <string name="product">Product</string>
+
+    <!-- More -->
+    <string name="more_title">More</string>
+    <string name="help">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="about_us">About Us</string>
+    <string name="usage_policy">Terms of Use</string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share_app">Share the app</string>
+    <string name="rate_app">Rate the app</string>
+    <string name="version_label">Version: %1$s</string>
+    <string name="developed_by">Developed by Mohab Mowafy</string>
+
+    <!-- Help / contact -->
+    <string name="contact_intro">If you have any inquiry, suggestion, or issue while using the app, you can contact us through the following channels and we will be happy to respond as soon as possible.</string>
+    <string name="contact_website_title">Website</string>
+    <string name="contact_email_title">Email</string>
+    <string name="contact_phone_title">Phone Number</string>
+    <string name="contact_about_title">About the app</string>
+    <string name="contact_about_body">MSA Gold provides gold and silver prices, currency exchange rates, economic news, and financial market information.\n\nData is updated periodically to show users the latest prices and information.</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="thanks">Thank you</string>
+    <string name="message_sent">Your message has been sent successfully</string>
+
+    <!-- WebView -->
+    <string name="live_chart">Live Chart</string>
+
+    <!-- News -->
+    <string name="news">News</string>
+    <string name="no_news">No news yet</string>
+    <string name="error_loading">Error loading data</string>
+
+    <!-- Bottom tab titles -->
+    <string name="tab_home">Global Screen</string>
+    <string name="tab_dollar">Currency Rates</string>
+    <string name="tab_bullions">Bullions</string>
+    <string name="tab_news">News</string>
+    <string name="tab_more">More</string>
+    <string name="more_gold_silver_calculator">Gold &amp; Silver Calculator</string>
+
+    <string name="price_gap">Price Gap</string>
+    <string name="price_details_title">Price Details</string>
+    <string name="gap_details_title">Price Gap Details</string>
+    <string name="label_gold24_global">Gold 24K Global (per gram):</string>
+    <string name="label_gold24_local">Gold 24K Local (per gram):</string>
+    <string name="label_gold_in_dollar">Gold Implied Dollar:</string>
+    <string name="label_dollar_official">Official Dollar:</string>
+    <string name="gap_in_24">Gap in 24K</string>
+    <string name="gap_in_21">Gap in 21K</string>
+    <string name="gap_explanation_title">Gold Price Gap in Egypt</string>
+    <string name="gap_explanation_body">The difference between the local price (as quoted by gold shops) and the world price converted to EGP using the official bank dollar rate. A negative gap means the local price is higher; a positive gap means it is lower.</string>
+    <string name="indicators">Indicators</string>
+    <string name="technical_analysis">Technical Analysis</string>
+    <string name="chart_hint">Long-press the chart for 2 seconds to see the value.</string>
+    <string name="loading_data">Loading data…</string>
+    <string name="period_label">Period</string>
+    <string name="gold_21_price">Gold 21K Price</string>
+    <string name="gold_24_price">Gold 24K Price</string>
+    <string name="ounce_world_price">Ounce World Price</string>
+    <string name="silver_price">Silver Price</string>
+    <string name="bank_dollar">Bank Dollar</string>
+    <string name="usd">USD</string>
+    <string name="change_value">Change Value</string>
+    <string name="change_percent">Change Percent</string>
+    <string name="highest_price">Highest Price</string>
+    <string name="lowest_price">Lowest Price</string>
+    <string name="gold_market_status">Gold Market Status</string>
+    <string name="dollar_market_status">Dollar Market Status</string>
+    <string name="news_tab_normal">News</string>
+    <string name="news_tab_msa">MSA News</string>
+    <string name="currency_label">Currency</string>
+    <string name="change_currency">Change Currency</string>
+    <string name="choose_currency">Choose Currency</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_message">Please check your connection and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="qr_scan_title">Scan QR Code</string>
+    <string name="qr_verifying">Verifying…</string>
+    <string name="qr_valid_title">Valid QR</string>
+    <string name="qr_invalid_title">Invalid QR</string>
+    <string name="qr_invalid_message">This code is not in the system.</string>
+    <string name="qr_error_title">Error</string>
+    <string name="camera_permission_required">Camera permission is needed to scan QR codes</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="ok">OK</string>
+    <string name="qr_manual_entry_button">Enter ID manually for testing</string>
+    <string name="qr_manual_title">Manual QR Test</string>
+    <string name="qr_manual_verify">Verify</string>
+    <string name="cancel">Cancel</string>
+    <string name="qr_scanner_title">Scan QR</string>
+    <string name="qr_scan_again">Scan another QR</string>
+    <string name="qr_permission_needed">Camera required</string>
+    <string name="qr_permission_explanation">The app needs camera access to scan QR codes.</string>
+    <string name="more_portfolio">My Portfolio</string>
+    <string name="portfolio_title">My Portfolio</string>
+    <string name="portfolio_add">Add new asset</string>
+    <string name="portfolio_asset_type">Asset type</string>
+    <string name="portfolio_quantity">Quantity</string>
+    <string name="portfolio_quantity_grams">Quantity (grams)</string>
+    <string name="portfolio_quantity_count">Units count</string>
+    <string name="portfolio_total_price_egp">Total purchase price (EGP)</string>
+    <string name="portfolio_purchase_date">Purchase date</string>
+    <string name="portfolio_notes_optional">Notes (optional)</string>
+    <string name="portfolio_notes_placeholder">e.g. Bought from XYZ shop</string>
+    <string name="portfolio_save">Save</string>
+    <string name="portfolio_current_value">Current value</string>
+    <string name="portfolio_invested">Invested</string>
+    <string name="portfolio_items">Items</string>
+    <string name="portfolio_empty_title">Your portfolio is empty</string>
+    <string name="portfolio_empty_message">Add your first gold or silver purchase and the app will compute profit/loss in real time using current market prices.</string>
+    <string name="portfolio_delete_title">Delete item</string>
+    <string name="portfolio_delete_message">Are you sure you want to remove this from your portfolio?</string>
+    <string name="portfolio_delete_confirm">Delete</string>
+    <string name="portfolio_cancel">Cancel</string>
+    <string name="loading">Loading…</string>
+    <string name="maintenance_screen_title">We’re doing some maintenance</string>
+    <string name="maintenance_screen_message">We’re working on this screen right now and it will be back shortly.\nSorry for the inconvenience 🙏</string>
+    <!-- Settings & notification controls -->
+    <string name="settings_title">Settings</string>
+    <string name="notifications_section">Notifications</string>
+    <string name="notif_gold">Gold alerts</string>
+    <string name="notif_gold_desc">Alert when gold prices change</string>
+    <string name="notif_silver">Silver alerts</string>
+    <string name="notif_silver_desc">Alert when silver prices change</string>
+    <string name="notif_dollar">Dollar prices</string>
+    <string name="notif_dollar_desc">Alert when the dollar rate changes</string>
+    <string name="notif_news">News</string>
+    <string name="notif_news_desc">Market news and MSA news</string>
+    <string name="notif_general">General notifications</string>
+    <string name="notif_general_desc">Announcements and app updates</string>
+    <string name="notif_system_hint">If notifications are off in your phone settings, nothing will arrive even when enabled here.</string>
+    <string name="language_title">Language</string>
+    <!-- Bullions screen -->
+    <string name="bullion_karat">Karat</string>
+    <string name="bullion_manufacturer">Manufacturer</string>
+    <string name="bullion_product">Product</string>
+    <string name="bullion_price_per_gram">Price per gram</string>
+    <string name="bullion_manufacturing">Manufacturing</string>
+    <string name="bullion_total">Total</string>
+    <string name="bullion_cash_back">Cash Back</string>
+    <string name="bullion_resale">Resale</string>
+    <string name="bullion_pound">Pound</string>
+    <string name="bullion_amount">%1$s Pound</string>
+    <string name="bullion_important_note">Important note: The manufacturing costs listed are the lowest according to the latest update from the producing company. The price per gram of gold is updated according to the latest price in the gold market and is not derived from the producing company.</string>
+    <!-- Account -->
+    <string name="auth_login_title">Sign in</string>
+    <string name="auth_login_hint">Sign in with your mobile number and password</string>
+    <string name="auth_login_action">Sign in</string>
+    <string name="auth_register_title">New account</string>
+    <string name="auth_register_hint">Register with your mobile number and we\'ll send a code</string>
+    <string name="auth_register_action">Create account</string>
+    <string name="auth_go_register">No account? Create one</string>
+    <string name="auth_go_login">I already have an account</string>
+    <string name="auth_name">Full name</string>
+    <string name="auth_phone">Mobile number</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_confirm_password">Confirm password</string>
+    <string name="auth_verify_title">Verify number</string>
+    <string name="auth_verify_hint">We sent a code to %1$s</string>
+    <string name="auth_verify_action">Verify</string>
+    <string name="auth_resend">Resend code</string>
+    <string name="auth_resend_in">Resend in %1$d seconds</string>
+    <string name="auth_err_name">Enter your full name</string>
+    <string name="auth_err_phone">Invalid mobile number (e.g. 01012345678)</string>
+    <string name="auth_err_password">Password must be at least 6 characters</string>
+    <string name="auth_err_confirm">Passwords do not match</string>
+    <string name="auth_account">My account</string>
+    <string name="auth_logout">Sign out</string>
+    <string name="auth_login_prompt">Sign in</string>
+    <string name="auth_logged_in_as">Signed in as %1$s</string>
+    <!-- Wallet -->
+    <string name="wallet_title">My Portfolio</string>
+    <string name="wallet_current_value">Current value</string>
+    <string name="wallet_total_paid">Total paid</string>
+    <string name="wallet_total_weight">Total weight</string>
+    <string name="wallet_shop_price">Shop sell price</string>
+    <string name="wallet_cashback">Cash back collected</string>
+    <string name="wallet_items">Items (%1$d)</string>
+    <string name="wallet_pieces">%1$d pieces</string>
+    <string name="wallet_no_items">No items</string>
+    <string name="wallet_avg_buy">Avg. buy %1$s /gram</string>
+    <string name="wallet_empty_title">Your portfolio is empty</string>
+    <string name="wallet_empty_hint">Add your first bullion or gold pound and we\'ll value it at today\'s price</string>
+    <string name="wallet_add">Add item</string>
+    <string name="wallet_edit">Edit item</string>
+    <string name="wallet_save">Save item</string>
+    <string name="wallet_metal">Metal</string>
+    <string name="wallet_karat">Karat</string>
+    <string name="wallet_karat_chip">Karat %1$s</string>
+    <string name="wallet_type">Type</string>
+    <string name="wallet_type_bullion">Bullion</string>
+    <string name="wallet_type_coin">Coins</string>
+    <string name="wallet_type_jewellery">Jewellery</string>
+    <string name="wallet_type_scrap">Scrap</string>
+    <string name="wallet_weight">Weight (grams)</string>
+    <string name="wallet_gram_price">Price per gram</string>
+    <string name="wallet_manufacturing">Manufacturing per gram</string>
+    <string name="wallet_cashback_per_gram">Cash back per gram</string>
+    <string name="wallet_total_hint">Calculated from weight × gram price + manufacturing — you can edit it</string>
+    <string name="wallet_note">Note</string>
+    <string name="wallet_bought_at">bought at %1$s</string>
+    <string name="wallet_zakat_title">Calculate gold zakat</string>
+    <string name="wallet_zakat_hint">On the items in your portfolio</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My account</string>
+    <string name="profile_save">Save changes</string>
+    <string name="profile_saved">Changes saved</string>
+    <string name="profile_phone_locked">Your mobile number is tied to account verification, so changing it needs a code</string>
+    <string name="profile_change_password">Change password</string>
+    <string name="profile_current_password">Current password</string>
+    <string name="profile_new_password">New password</string>
+    <string name="profile_logout_confirm">Are you sure you want to sign out?</string>
+    <string name="profile_delete_account">Delete account</string>
+    <string name="profile_delete_hint">Deleting removes your account and every item in your portfolio. This cannot be undone.</string>
+    <string name="profile_delete_confirm">This is permanent — your account and all portfolio items will be deleted and cannot be restored. Continue?</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_err_email">Invalid email address</string>
+    <string name="wallet_login_title">Sign in first</string>
+    <string name="wallet_login_hint">Your portfolio is saved to your account, so you can reach it from any device</string>
+    <string name="wallet_zakat_of">%1$s zakat</string>
+    <string name="wallet_zakat_pure">Pure in your portfolio</string>
+    <string name="wallet_zakat_nisab">Nisab</string>
+    <string name="wallet_zakat_grams">Zakat amount</string>
+    <string name="wallet_zakat_due">Zakat is due</string>
+    <string name="wallet_zakat_not_due">Below the nisab, so zakat is not due</string>
+    <string name="wallet_zakat_remaining">%1$s grams left to reach the nisab</string>
+    <string name="close">Close</string>
+    <string name="market_global_note">The chart shows the global ounce in USD (XAU/USD) — the market reference local prices track.</string>
+    <string name="ta_disclaimer">This is an automated technical reading of the global market, not investment advice.</string>
+
+    <!-- ── اجتماعات الفيدرالي (FOMC) ─────────────────────────────── -->
+    <string name="fomc_title">Fed meetings</string>
+    <string name="fomc_details_title">Meeting details</string>
+    <string name="fomc_next_meeting">Next FOMC meeting</string>
+    <string name="fomc_time_remaining">Time remaining</string>
+    <string name="fomc_tab_upcoming">Upcoming</string>
+    <string name="fomc_tab_past">Past</string>
+    <string name="fomc_empty">No meetings to show</string>
+    <string name="fomc_load_failed">Could not load the meetings</string>
+    <string name="fomc_status_upcoming">Upcoming</string>
+    <string name="fomc_status_in_progress">In progress</string>
+    <string name="fomc_status_completed">Completed</string>
+    <string name="fomc_section_schedule">Schedule</string>
+    <string name="fomc_section_rate">Rate decision</string>
+    <string name="fomc_section_links">Official sources</string>
+    <string name="fomc_meeting_start">Starts</string>
+    <string name="fomc_meeting_end">Ends</string>
+    <string name="fomc_decision_at">Rate decision</string>
+    <string name="fomc_decision_at_value">Rate decision: %1$s</string>
+    <string name="fomc_press_conference">Press conference</string>
+    <string name="fomc_minutes_at">Minutes released</string>
+    <string name="fomc_target_range">Target range</string>
+    <string name="fomc_previous_rate">Previous rate</string>
+    <string name="fomc_rate_change">Change</string>
+    <string name="fomc_rate_percent">%1$s%%</string>
+    <string name="fomc_has_projections">Includes economic projections</string>
+    <string name="fomc_projections_note">This meeting includes the Summary of Economic Projections (the dot plot).</string>
+    <string name="fomc_open_statement">Official statement</string>
+    <string name="fomc_open_minutes">Meeting minutes</string>
+    <string name="fomc_open_source">Fed calendar</string>
+    <string name="fomc_official_timezone">Official time: %1$s</string>
+    <string name="fomc_local_time_note">Times are shown in your device timezone. Official time: %1$s</string>
+    <string name="fomc_source_note">Source: Federal Reserve / FRED — official data</string>
+    <string name="fomc_countdown_dhm">%1$sd %2$sh %3$sm</string>
+    <string name="fomc_countdown_hms">%1$sh %2$sm %3$ss</string>
+    <string name="fomc_countdown_ms">%1$sm %2$ss</string>
+    <string name="notif_fomc">Fed meetings</string>
+    <string name="notif_fomc_desc">Alert before the meeting and when the rate decision is out</string>
+
+    <!-- ── الفروع ────────────────────────────────────────────────── -->
+    <string name="branches_title">Our branches</string>
+    <string name="branch_details_title">Branch details</string>
+    <string name="branches_empty">No branches to show yet</string>
+    <string name="branches_load_failed">Could not load the branches</string>
+    <string name="branches_sorted_by_distance">Sorted by distance from you</string>
+    <string name="branches_location_hint">Turn on location to sort branches by the closest to you.</string>
+    <string name="branches_location_off">Location is turned off on your device, so branches are not sorted by distance.</string>
+    <string name="branches_enable_location">Enable location</string>
+    <string name="branch_directions">Directions</string>
+    <string name="branch_call">Call</string>
+    <string name="branch_whatsapp">WhatsApp</string>
+    <string name="branch_contact">Contact</string>
+    <string name="branch_distance_km">%1$s km</string>
+    <string name="branch_distance_m">%1$s m</string>
+    <string name="branch_distance_from_you">%1$s away from you</string>
+    <string name="branch_no_maps_app">No maps app found on this device</string>
+    <string name="branch_no_dialer">No phone app found on this device</string>
+    <string name="branch_no_whatsapp">Could not open WhatsApp</string>
+
+    <!-- ── Shop: bullion and jewellery ─────────────────────────────
+         These strings carry one thing the buyer must not miss: who
+         computed the price and when. "Estimated" vs "locked" is a
+         substantive difference in the order. -->
+    <string name="shop_title">Bullion &amp; jewellery</string>
+    <string name="shop_product_details">Product details</string>
+    <string name="shop_kind_all">All</string>
+    <string name="shop_kind_bullion">Bullion</string>
+    <string name="shop_kind_jewellery">Jewellery</string>
+    <string name="shop_empty">No products available right now.</string>
+    <string name="shop_load_failed">Couldn\'t load the products right now.</string>
+    <string name="shop_disabled">Ordering is paused — you can still browse.</string>
+    <string name="shop_price_loading">Loading price…</string>
+    <string name="shop_price_stale">Showing the last saved price. We may not be able to lock a price right now.</string>
+    <string name="shop_gram_price">%1$s per gram</string>
+    <string name="shop_gram_price_label">Gram price</string>
+    <string name="shop_spec_line">%1$s g · %2$s karat · %3$s</string>
+    <string name="shop_manufacturing_per_gram">Making %1$s per gram</string>
+    <string name="shop_metal_value">Metal value</string>
+    <string name="shop_manufacturing">Making charge</string>
+    <string name="shop_tax">Tax</string>
+    <string name="shop_total">Total</string>
+    <string name="shop_quantity">Quantity</string>
+    <string name="shop_add_to_cart">Add to cart</string>
+    <string name="shop_out_of_stock">Out of stock</string>
+    <string name="shop_stock_left">Only %1$s left</string>
+    <string name="shop_view_cart">Cart (%1$s)</string>
+    <string name="shop_order_methods">Available order methods</string>
+    <string name="shop_mode_deposit">With deposit — price locked</string>
+    <string name="shop_mode_deposit_hint">Pay part of the total and the price is locked; the rest on pickup at the same price.</string>
+    <string name="shop_mode_on_arrival">No deposit — priced on pickup</string>
+    <string name="shop_mode_on_arrival_hint">Reserve the item; the price is computed from the gram price when you reach the branch.</string>
+    <string name="metal_gold">Gold</string>
+    <string name="metal_silver">Silver</string>
+    <string name="currency_egp">EGP</string>
+
+    <!-- ── Cart and checkout ───────────────────────────────────── -->
+    <string name="cart_title">Cart</string>
+    <string name="cart_empty">Your cart is empty.</string>
+    <string name="cart_browse_products">Browse products</string>
+    <string name="cart_remove">Remove</string>
+    <string name="cart_how_to_order">Order method</string>
+    <string name="cart_deposit_detail">Deposit %1$s (%2$s%%) — the price stays locked for %3$s hours.</string>
+    <string name="cart_estimate_note">This is an estimate — the final price is computed when you collect from the branch.</string>
+    <string name="cart_pickup_branch">Pickup branch</string>
+    <string name="cart_pick_branch_first">Pick a pickup branch first.</string>
+    <string name="cart_note">Note (optional)</string>
+    <string name="cart_note_hint">Anything the branch should know</string>
+    <string name="cart_place_with_deposit">Place order and pay deposit</string>
+    <string name="cart_place_on_arrival">Place order — priced on pickup</string>
+
+    <!-- ── Orders ──────────────────────────────────────────────── -->
+    <string name="orders_title">My orders</string>
+    <string name="orders_empty">No orders yet.</string>
+    <string name="orders_estimate_label">Estimated — priced on pickup</string>
+    <string name="orders_locked_label">Price locked</string>
+    <string name="orders_deposit">Deposit</string>
+    <string name="orders_lock_expired">The price lock has expired — the price will be recomputed on pickup.</string>
+    <string name="orders_cancel">Cancel order</string>
+    <string name="orders_cancel_confirm">Confirm cancel</string>
+    <string name="orders_cancel_keep">Keep it</string>
+
+
+    <!-- ── Price gap: silver ────────────────────────────────────────
+         The same screen shows gold or silver depending on the mode
+         selected on Home, so karats and labels change with the metal. -->
+    <string name="price_gap_gold">Gold Price Gap</string>
+    <string name="price_gap_silver">Silver Price Gap</string>
+    <string name="label_silver999_global">Silver 999 Global (per gram):</string>
+    <string name="label_silver999_local">Silver 999 Local (per gram):</string>
+    <string name="label_silver_in_dollar">Silver Implied Dollar:</string>
+    <string name="gap_in_999">Gap in 999</string>
+    <string name="gap_in_925">Gap in 925</string>
+    <string name="gap_explanation_title_silver">Silver Price Gap in Egypt</string>
+    <string name="gap_explanation_body_silver">The difference between the local silver price (as quoted by jewellers) and the world price converted to EGP using the official bank dollar rate. A negative gap means the local price is higher; a positive gap means it is lower. Silver figures are far smaller than gold because the gram price itself is lower.</string>
+
+
+    <!-- ── التقويم الاقتصادي / Economic calendar ────────────────── -->
+    <string name="calendar_tab">Calendar</string>
+    <string name="calendar_title">Economic calendar</string>
+
+    <!-- تبويبات المدى الزمني -->
+    <string name="calendar_yesterday">Yesterday</string>
+    <string name="calendar_today">Today</string>
+    <string name="calendar_tomorrow">Tomorrow</string>
+    <string name="calendar_this_week">This week</string>
+
+    <!-- أعمدة الصف — مختصرة عشان تلات أعمدة تترص على عرض الموبايل -->
+    <string name="calendar_actual">Act.</string>
+    <string name="calendar_consensus">Cons.</string>
+    <string name="calendar_previous">Prev.</string>
+
+    <string name="calendar_impact_high">High</string>
+    <string name="calendar_impact_medium">Med</string>
+    <string name="calendar_impact_low">Low</string>
+    <string name="calendar_impact_holiday">Holiday</string>
+
+    <string name="calendar_all_day">All day</string>
+    <string name="calendar_empty">No events in this period</string>
+    <string name="calendar_empty_filtered">No events match your filter</string>
+    <string name="calendar_failed">Couldn\'t load the calendar</string>
+
+    <!-- شاشة التفاصيل -->
+    <string name="calendar_country">Country</string>
+    <string name="calendar_impact">Impact</string>
+    <string name="calendar_symbol">Symbol</string>
+    <string name="calendar_latest_release">Latest release</string>
+    <string name="calendar_next_release">Next release</string>
+    <string name="calendar_date">Date</string>
+    <string name="calendar_time_left">Time left</string>
+    <string name="calendar_no_next_release">Not announced yet</string>
+    <string name="calendar_category">Category</string>
+    <string name="calendar_unit">Unit</string>
+    <string name="calendar_show_more">Show more</string>
+    <string name="calendar_show_less">Show less</string>
+    <string name="calendar_chart">Chart</string>
+    <string name="calendar_history">History</string>
+    <string name="calendar_no_history">No historical data yet</string>
+    <!-- بنقول ليه مفيش تاريخ بدل ما نسيب الشاشة فاضية -->
+    <string name="calendar_history_building">History is built from each release as it comes in, so this chart fills up over time.</string>
+    <string name="calendar_not_released">Not released yet</string>
+
+    <!-- العدّاد التنازلي -->
+    <string name="calendar_left_days">%1$dd %2$dh</string>
+    <string name="calendar_left_hours">%1$dh %2$dm</string>
+    <string name="calendar_left_minutes">%1$dm</string>
+
+    <!-- الفلتر -->
+    <string name="calendar_filter">Filter</string>
+    <string name="calendar_filter_impact">Impact</string>
+    <string name="calendar_filter_currency">Currency</string>
+    <string name="calendar_filter_reset">Reset</string>
+    <string name="calendar_filter_apply">Apply</string>
+    <string name="calendar_filter_active">Filter on</string>
+    <string name="calendar_source_note">Calendar data is collected automatically and may be revised. Always confirm before trading.</string>
+    <string name="qr_checking">Checking…</string>
+    <string name="qr_hint">Point the camera at the QR code on the bullion. We will tell you straight away whether it is registered with us.</string>
+    <string name="qr_network_error_title">Could not check right now</string>
+    <string name="qr_network_error_message">We could not reach our servers. This says nothing about the bullion — check your connection and scan again.</string>
+    <string name="qr_detail_code">Code</string>
+    <string name="qr_detail_karat">Karat</string>
+    <string name="qr_detail_weight">Weight</string>
+    <string name="qr_detail_grams">g</string>
+    <string name="qr_detail_serial">Serial</string>
+</resources>

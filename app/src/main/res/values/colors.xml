@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_gold">#E8B138</color>
+    <color name="splash_bg">#181111</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <!-- ألوان الهوية من Brand Assets/Colors/Colors.ai -->
+    <color name="brand_gold">#E8B138</color>
+    <color name="brand_brown">#3F2D2C</color>
+    <color name="brand_charcoal">#333333</color>
+    <color name="brand_grey">#C6C6C6</color>
+    <color name="brand_accent">#D4B6FF</color>
+</resources>

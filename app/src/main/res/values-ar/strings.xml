@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MSA</string>
+
+    <!-- Language / OnBoarding -->
+    <string name="welcome_msa_emoji">🥳 نورتنا في MSA</string>
+    <string name="choose_language_hint">من فضلك اختر اللغة التي ترغب باستخدام التطبيق بها</string>
+    <string name="apply">تطبيق</string>
+
+    <!-- Home / Global Screen -->
+    <string name="global_screen">الشاشة العالمية</string>
+    <string name="gold">الذهب</string>
+    <string name="silver">الفضة</string>
+    <string name="karat">عيار</string>
+    <string name="buy">شراء</string>
+    <string name="sell">بيع</string>
+    <string name="gold_pound">جنيه دهب</string>
+    <string name="gold_kilo">كيلو دهب</string>
+    <string name="silver_kilo">كيلو فضة</string>
+    <string name="dollar_bank">دولار البنك</string>
+    <string name="dollar_sagha">دولار الصاغة</string>
+    <string name="average_market_price">متوسط أسعار سوق الذهب الاسترشادي المصري</string>
+    <string name="commission_hint">+ مصنعية الصاغة</string>
+    <string name="now">الآن</string>
+
+    <!-- Banks (Currency Prices) -->
+    <string name="currency_prices">أسعار العملات</string>
+    <string name="buy_price">شراء</string>
+    <string name="sell_price">بيع</string>
+    <string name="bank">البنك</string>
+    <string name="bank_price_notifications">إشعار تغيّر السعر</string>
+
+    <!-- Calculator -->
+    <string name="calculator_title">الحاسبة</string>
+    <string name="bullions">السبائك</string>
+    <string name="calc_gold_value">حساب قيمة الذهب</string>
+    <string name="calc_gold_zakat">حساب زكاة الذهب</string>
+    <string name="calc_silver_value">حساب قيمة الفضة</string>
+    <string name="calc_silver_zakat">حساب زكاة الفضة</string>
+    <string name="calc_zakat">احسب الزكاة</string>
+
+    <!-- Karat labels -->
+    <string name="karat_24">عيار 24</string>
+    <string name="karat_22">عيار 22</string>
+    <string name="karat_21">عيار 21</string>
+    <string name="karat_18">عيار 18</string>
+    <string name="karat_999">فضة 999</string>
+    <string name="karat_925">فضة 925</string>
+    <string name="karat_900">فضة 900</string>
+    <string name="karat_800">فضة 800</string>
+    <string name="karat_600">فضة 600</string>
+
+    <string name="karat_24_label">عيار 24</string>
+    <string name="karat_22_label">عيار 22</string>
+    <string name="karat_21_label">عيار 21</string>
+    <string name="karat_18_label">عيار 18</string>
+    <string name="karat_999_label">عيار 999</string>
+    <string name="karat_925_label">عيار 925</string>
+    <string name="karat_900_label">عيار 900</string>
+    <string name="karat_800_label">عيار 800</string>
+    <string name="karat_600_label">عيار 600</string>
+
+    <!-- Notes -->
+    <string name="gold_value_note">قيمة الذهب يتم حسابها على اساس سعر عيار 21: %1$s جنية</string>
+    <string name="silver_value_note">قيمة الفضة يتم حسابها على اساس سعر عيار 999: %1$s جنية</string>
+    <string name="gold_zakat_note">زكاة الذهب تجب إذا كان عندك أكثر من 85 جرام من عيار 24 (أو ما يعادلها بالعيارات الأخرى) ومضى عليها سنة هجرية كاملة، ومقدارها 2.5%%.</string>
+    <string name="silver_zakat_note">زكاة الفضة تجب إذا كان عندك أكثر من 595 جرام من عيار 999 (أو ما يعادلها بالعيارات الأخرى) ومضى عليها سنة هجرية كاملة، ومقدارها 2.5%%.</string>
+    <string name="pure_gold">الذهب الخالص</string>
+    <string name="pure_silver">الفضة الخالصة</string>
+    <string name="zakat_in_gold">الزكاة ذهبًا</string>
+    <string name="zakat_in_silver">الزكاة فضةً</string>
+    <string name="zakat_in_money">الزكاة مالًا</string>
+    <string name="zakat_not_obligatory">الزكاة غير واجبة (أقل من النصاب)</string>
+    <string name="total">الإجمالي</string>
+    <string name="egp">جنيه</string>
+    <string name="gap_currency_egp">جنيه مصري</string>
+    <string name="gram">جرام</string>
+    <string name="pure_silver_total">إجمالي الفضة الخالصة: %1$s جرام</string>
+
+    <!-- Bullion picker -->
+    <string name="manufacturer_company">الشركة المُصنعة</string>
+    <string name="product">المنتج</string>
+
+    <!-- More -->
+    <string name="more_title">المزيد</string>
+    <string name="help">تواصل معنا</string>
+    <string name="faq">الأسئلة الشائعة</string>
+    <string name="about_us">من نحن</string>
+    <string name="usage_policy">سياسة الاستخدام</string>
+    <string name="refund_policy">سياسة الاسترجاع</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="rate_app">تقييم التطبيق</string>
+    <string name="version_label">اصدار: %1$s</string>
+    <string name="developed_by">تم التطوير بواسطة مهاب موافي</string>
+
+    <!-- Help / contact -->
+    <string name="contact_intro">إذا كان لديك أي استفسار أو اقتراح أو واجهت أي مشكلة أثناء استخدام التطبيق، يمكنك التواصل معنا من خلال وسائل الاتصال التالية، وسنكون سعداء بالرد عليك في أقرب وقت ممكن.</string>
+    <string name="contact_website_title">الموقع الإلكتروني</string>
+    <string name="contact_email_title">البريد الإلكتروني</string>
+    <string name="contact_phone_title">رقم الهاتف</string>
+    <string name="contact_about_title">عن التطبيق</string>
+    <string name="contact_about_body">يوفر تطبيق MSA Gold أسعار الذهب والفضة وأسعار صرف العملات، بالإضافة إلى الأخبار الاقتصادية ومعلومات الأسواق المالية.\n\nيتم تحديث البيانات بشكل دوري لضمان عرض أحدث الأسعار والمعلومات للمستخدمين.</string>
+    <string name="name">الاسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="message">الرسالة</string>
+    <string name="send">إرسال</string>
+    <string name="thanks">شكرا لك</string>
+    <string name="message_sent">تم إرسال رسالتك بنجاح</string>
+
+    <!-- WebView -->
+    <string name="live_chart">الشاشة</string>
+
+    <!-- News -->
+    <string name="news">الأخبار</string>
+    <string name="no_news">لا توجد أخبار بعد</string>
+    <string name="error_loading">حدث خطأ أثناء تحميل البيانات</string>
+
+    <!-- Bottom tab titles -->
+    <string name="tab_home">الشاشة</string>
+    <string name="tab_dollar">الأسعار</string>
+    <string name="tab_bullions">السبائك</string>
+    <string name="tab_news">الأخبار</string>
+    <string name="tab_more">المزيد</string>
+    <string name="more_gold_silver_calculator">حاسبة الذهب والفضة</string>
+
+    <string name="price_gap">الفجوة السعرية</string>
+    <string name="price_details_title">تفاصيل الأسعار</string>
+    <string name="gap_details_title">تفاصيل الفجوة السعرية</string>
+    <string name="label_gold24_global">سعر الجرام عيار 24 عالميا:</string>
+    <string name="label_gold24_local">سعر الجرام عيار 24 محليا:</string>
+    <string name="label_gold_in_dollar">الذهب محسوب بسعر الدولار:</string>
+    <string name="label_dollar_official">سعر الدولار الرسمي:</string>
+    <string name="gap_in_24">الفجوة في عيار 24</string>
+    <string name="gap_in_21">الفجوة في عيار 21</string>
+    <string name="gap_explanation_title">الفجوة السعرية في سعر الذهب في مصر</string>
+    <string name="gap_explanation_body">تشير إلى الفرق بين السعر المحلي (كما يُعلن في محلات الذهب أو الصاغة) والسعر العالمي المحوَّل للجنيه المصري وفقاً للسعر الرسمي للدولار في البنوك. الفجوة السالبة تعني أن السعر المحلي أعلى من السعر العالمي، والإيجابية تعني أنه أقل.</string>
+    <string name="indicators">المؤشرات</string>
+    <string name="technical_analysis">التحليل الفني</string>
+    <string name="chart_hint">يمكنك الضغط لمدة ثانيتين على الرسم البياني لعرض القيمة.</string>
+    <string name="loading_data">جاري تحميل البيانات…</string>
+    <string name="period_label">الفترة</string>
+    <string name="gold_21_price">سعر الذهب عيار 21</string>
+    <string name="gold_24_price">سعر الذهب عيار 24</string>
+    <string name="ounce_world_price">سعر الأوقية عالميا</string>
+    <string name="silver_price">سعر الفضة</string>
+    <string name="bank_dollar">الدولار البنكي</string>
+    <string name="usd">دولار</string>
+    <string name="change_value">قيمة التغيير</string>
+    <string name="change_percent">نسبة التغيير</string>
+    <string name="highest_price">أعلى سعر</string>
+    <string name="lowest_price">أقل سعر</string>
+    <string name="gold_market_status">حالة سوق الذهب</string>
+    <string name="dollar_market_status">حالة سوق الدولار</string>
+    <string name="news_tab_normal">الأخبار</string>
+    <string name="news_tab_msa">أخبار MSA</string>
+    <string name="currency_label">العملة</string>
+    <string name="change_currency">تغيير العملة</string>
+    <string name="choose_currency">اختر العملة</string>
+    <string name="no_internet_title">لا يوجد اتصال بالإنترنت</string>
+    <string name="no_internet_message">يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="qr_scan_title">مسح QR Code</string>
+    <string name="qr_verifying">جاري التحقق…</string>
+    <string name="qr_valid_title">QR Code صالح</string>
+    <string name="qr_invalid_title">QR Code غير صالح</string>
+    <string name="qr_invalid_message">هذا الرمز غير موجود في النظام.</string>
+    <string name="qr_error_title">حدث خطأ</string>
+    <string name="camera_permission_required">يحتاج التطبيق إلى صلاحية الكاميرا لمسح رمز QR</string>
+    <string name="grant_permission">منح الصلاحية</string>
+    <string name="ok">حسناً</string>
+    <string name="qr_manual_entry_button">إدخال ID يدوياً للاختبار</string>
+    <string name="qr_manual_title">اختبار QR يدوياً</string>
+    <string name="qr_manual_verify">تحقق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="qr_scanner_title">مسح QR</string>
+    <string name="qr_scan_again">امسح QR جديد</string>
+    <string name="qr_permission_needed">الكاميرا مطلوبة</string>
+    <string name="qr_permission_explanation">يحتاج التطبيق إلى صلاحية الكاميرا لقراءة الـ QR codes.</string>
+    <string name="more_portfolio">محفظتي</string>
+    <string name="portfolio_title">محفظتي</string>
+    <string name="portfolio_add">إضافة سبيكة جديدة</string>
+    <string name="portfolio_asset_type">نوع الأصل</string>
+    <string name="portfolio_quantity">الكمية</string>
+    <string name="portfolio_quantity_grams">الكمية بالجرامات</string>
+    <string name="portfolio_quantity_count">عدد الوحدات</string>
+    <string name="portfolio_total_price_egp">إجمالي سعر الشراء (ج.م)</string>
+    <string name="portfolio_purchase_date">تاريخ الشراء</string>
+    <string name="portfolio_notes_optional">ملاحظات (اختيارية)</string>
+    <string name="portfolio_notes_placeholder">مثلاً: من محل الذهب الفلاني</string>
+    <string name="portfolio_save">حفظ</string>
+    <string name="portfolio_current_value">القيمة الحالية</string>
+    <string name="portfolio_invested">مبلغ الاستثمار</string>
+    <string name="portfolio_items">عدد العناصر</string>
+    <string name="portfolio_empty_title">محفظتك فارغة</string>
+    <string name="portfolio_empty_message">سجل أول عملية شراء لذهب أو فضة وسيقوم التطبيق بحساب الربح والخسارة على الفور بناءً على الأسعار الحالية.</string>
+    <string name="portfolio_delete_title">حذف العنصر</string>
+    <string name="portfolio_delete_message">هل تريد بالتأكيد حذف هذا العنصر من محفظتك؟</string>
+    <string name="portfolio_delete_confirm">حذف</string>
+    <string name="portfolio_cancel">إلغاء</string>
+    <string name="loading">جاري التحميل</string>
+    <string name="maintenance_screen_title">في شغل صيانة دلوقتي</string>
+    <string name="maintenance_screen_message">الشاشة دي بنشتغل عليها دلوقتي وهترجع تاني قريب.\nمعلش على الإزعاج 🙏</string>
+    <!-- الإعدادات وتحكّم الإشعارات -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="notifications_section">الإشعارات</string>
+    <string name="notif_gold">إشعارات الذهب</string>
+    <string name="notif_gold_desc">تنبيه عند تغيّر أسعار الذهب</string>
+    <string name="notif_silver">إشعارات الفضة</string>
+    <string name="notif_silver_desc">تنبيه عند تغيّر أسعار الفضة</string>
+    <string name="notif_dollar">أسعار الدولار</string>
+    <string name="notif_dollar_desc">تنبيه عند تغيّر سعر الدولار</string>
+    <string name="notif_news">الأخبار</string>
+    <string name="notif_news_desc">أخبار السوق وأخبار MSA</string>
+    <string name="notif_general">الإشعارات العامة</string>
+    <string name="notif_general_desc">إعلانات وتحديثات التطبيق</string>
+    <string name="notif_system_hint">لو قافل الإشعارات من إعدادات الموبايل، مش هيوصلك حاجة حتى لو مفعّلة هنا.</string>
+    <string name="language_title">اللغة</string>
+    <!-- شاشة السبائك -->
+    <string name="bullion_karat">عيار</string>
+    <string name="bullion_manufacturer">الشركة المصنعة</string>
+    <string name="bullion_product">المنتج</string>
+    <string name="bullion_price_per_gram">سعر الجرام</string>
+    <string name="bullion_manufacturing">المصنعية</string>
+    <string name="bullion_total">الإجمالي</string>
+    <string name="bullion_cash_back">استرداد نقدي</string>
+    <string name="bullion_resale">إعادة البيع</string>
+    <string name="bullion_pound">جنيه</string>
+    <string name="bullion_amount">%1$s جنيه</string>
+    <string name="bullion_important_note">ملاحظة هامة: تكاليف التصنيع المذكورة هي الأقل وفقًا لآخر تحديث من الشركة المنتجة. يتم تحديث سعر الجرام للذهب وفقًا لآخر سعر في سوق الذهب وليس مأخوذًا من الشركة المنتجة.</string>
+    <!-- الحساب -->
+    <string name="auth_login_title">تسجيل الدخول</string>
+    <string name="auth_login_hint">ادخل برقم موبايلك وكلمة السر</string>
+    <string name="auth_login_action">دخول</string>
+    <string name="auth_register_title">حساب جديد</string>
+    <string name="auth_register_hint">سجّل برقم موبايلك، وهنبعتلك كود تفعيل</string>
+    <string name="auth_register_action">إنشاء الحساب</string>
+    <string name="auth_go_register">مامعاكش حساب؟ اعمل واحد</string>
+    <string name="auth_go_login">عندي حساب بالفعل</string>
+    <string name="auth_name">الاسم بالكامل</string>
+    <string name="auth_phone">رقم الموبايل</string>
+    <string name="auth_password">كلمة السر</string>
+    <string name="auth_confirm_password">تأكيد كلمة السر</string>
+    <string name="auth_verify_title">تأكيد الرقم</string>
+    <string name="auth_verify_hint">بعتنا كود على %1$s</string>
+    <string name="auth_verify_action">تأكيد</string>
+    <string name="auth_resend">إعادة إرسال الكود</string>
+    <string name="auth_resend_in">إعادة الإرسال بعد %1$d ثانية</string>
+    <string name="auth_err_name">اكتب الاسم بالكامل</string>
+    <string name="auth_err_phone">رقم الموبايل غير صحيح (مثال: 01012345678)</string>
+    <string name="auth_err_password">كلمة السر لازم تبقى 6 حروف أو أرقام على الأقل</string>
+    <string name="auth_err_confirm">تأكيد كلمة السر غير مطابق</string>
+    <string name="auth_account">حسابي</string>
+    <string name="auth_logout">تسجيل الخروج</string>
+    <string name="auth_login_prompt">سجّل دخولك</string>
+    <string name="auth_logged_in_as">مسجّل باسم %1$s</string>
+    <!-- المحفظة (المخزون) -->
+    <string name="wallet_title">محفظتي</string>
+    <string name="wallet_current_value">القيمة الحالية</string>
+    <string name="wallet_total_paid">إجمالي المدفوع</string>
+    <string name="wallet_total_weight">إجمالي الوزن</string>
+    <string name="wallet_shop_price">سعر البيع في المحل</string>
+    <string name="wallet_cashback">كاش باك محصّل</string>
+    <string name="wallet_items">القطع (%1$d)</string>
+    <string name="wallet_pieces">%1$d قطعة</string>
+    <string name="wallet_no_items">مفيش قطع</string>
+    <string name="wallet_avg_buy">متوسط سعر الشرا %1$s /جرام</string>
+    <string name="wallet_empty_title">لسه مفيش قطع في محفظتك</string>
+    <string name="wallet_empty_hint">ضيف أول سبيكة أو جنيه ذهب، وهنحسبلك قيمته بسعر النهاردة</string>
+    <string name="wallet_add">إضافة قطعة</string>
+    <string name="wallet_edit">تعديل القطعة</string>
+    <string name="wallet_save">حفظ القطعة</string>
+    <string name="wallet_metal">المعدن</string>
+    <string name="wallet_karat">العيار</string>
+    <string name="wallet_karat_chip">عيار %1$s</string>
+    <string name="wallet_type">النوع</string>
+    <string name="wallet_type_bullion">سبائك</string>
+    <string name="wallet_type_coin">عملات</string>
+    <string name="wallet_type_jewellery">مشغولات</string>
+    <string name="wallet_type_scrap">كسر</string>
+    <string name="wallet_weight">الوزن (جرام)</string>
+    <string name="wallet_gram_price">سعر الجرام</string>
+    <string name="wallet_manufacturing">المصنعية للجرام</string>
+    <string name="wallet_cashback_per_gram">كاش باك للجرام</string>
+    <string name="wallet_total_hint">محسوب من الوزن × سعر الجرام + المصنعية — تقدر تعدّله</string>
+    <string name="wallet_note">ملاحظة</string>
+    <string name="wallet_bought_at">اشتريت بـ %1$s</string>
+    <string name="wallet_zakat_title">احسب زكاة الذهب</string>
+    <string name="wallet_zakat_hint">على القطع اللي في محفظتك</string>
+
+    <!-- البروفايل -->
+    <string name="profile_title">حسابي</string>
+    <string name="profile_save">حفظ التعديلات</string>
+    <string name="profile_saved">تم حفظ البيانات</string>
+    <string name="profile_phone_locked">رقم الموبايل مربوط بتفعيل الحساب، فتغييره بيحتاج كود تأكيد</string>
+    <string name="profile_change_password">تغيير كلمة السر</string>
+    <string name="profile_current_password">كلمة السر الحالية</string>
+    <string name="profile_new_password">كلمة السر الجديدة</string>
+    <string name="profile_logout_confirm">متأكد إنك عايز تسجّل خروج؟</string>
+    <string name="profile_delete_account">حذف الحساب</string>
+    <string name="profile_delete_hint">الحذف بيشيل حسابك وكل القطع اللي في محفظتك، ومش هينفع ترجعهم.</string>
+    <string name="profile_delete_confirm">الحذف نهائي — حسابك وكل قطع محفظتك هيتمسحوا ومش هينفع ترجعهم. متأكد؟</string>
+    <string name="auth_email">البريد الإلكتروني</string>
+    <string name="auth_err_email">البريد الإلكتروني غير صحيح</string>
+    <string name="wallet_login_title">سجّل دخولك الأول</string>
+    <string name="wallet_login_hint">محفظتك محفوظة على حسابك، فتقدر توصلها من أي جهاز</string>
+    <string name="wallet_zakat_of">زكاة %1$s</string>
+    <string name="wallet_zakat_pure">الخالص في محفظتك</string>
+    <string name="wallet_zakat_nisab">النصاب</string>
+    <string name="wallet_zakat_grams">مقدار الزكاة</string>
+    <string name="wallet_zakat_due">الزكاة واجبة</string>
+    <string name="wallet_zakat_not_due">لسه مبلغتش النصاب، فالزكاة مش واجبة</string>
+    <string name="wallet_zakat_remaining">فاضل %1$s جرام توصل للنصاب</string>
+    <string name="close">إغلاق</string>
+    <string name="market_global_note">الرسم للأونصة العالمية بالدولار (XAU/USD) — مرجع السوق اللي بتتحرك عليه الأسعار المحلية.</string>
+    <string name="ta_disclaimer">التحليل ده قراءة فنية آلية للسوق العالمي، مش نصيحة استثمارية. القرار قرارك.</string>
+
+    <!-- ── اجتماعات الفيدرالي (FOMC) ─────────────────────────────── -->
+    <string name="fomc_title">اجتماعات الفيدرالي</string>
+    <string name="fomc_details_title">تفاصيل الاجتماع</string>
+    <string name="fomc_next_meeting">الاجتماع القادم للفيدرالي</string>
+    <string name="fomc_time_remaining">باقي على القرار</string>
+    <string name="fomc_tab_upcoming">القادمة</string>
+    <string name="fomc_tab_past">السابقة</string>
+    <string name="fomc_empty">مفيش اجتماعات تتعرض</string>
+    <string name="fomc_load_failed">مقدرناش نحمّل الاجتماعات</string>
+    <string name="fomc_status_upcoming">قادم</string>
+    <string name="fomc_status_in_progress">جارٍ الآن</string>
+    <string name="fomc_status_completed">منتهي</string>
+    <string name="fomc_section_schedule">المواعيد</string>
+    <string name="fomc_section_rate">قرار الفائدة</string>
+    <string name="fomc_section_links">المصادر الرسمية</string>
+    <string name="fomc_meeting_start">يبدأ</string>
+    <string name="fomc_meeting_end">ينتهي</string>
+    <string name="fomc_decision_at">قرار الفائدة</string>
+    <string name="fomc_decision_at_value">قرار الفائدة: %1$s</string>
+    <string name="fomc_press_conference">المؤتمر الصحفي</string>
+    <string name="fomc_minutes_at">صدور المحضر</string>
+    <string name="fomc_target_range">النطاق المستهدف</string>
+    <string name="fomc_previous_rate">الفائدة السابقة</string>
+    <string name="fomc_rate_change">التغيير</string>
+    <string name="fomc_rate_percent">%1$s%%</string>
+    <string name="fomc_has_projections">فيه توقعات اقتصادية</string>
+    <string name="fomc_projections_note">الاجتماع ده بيصدر معاه ملخّص التوقعات الاقتصادية (مخطط النقاط).</string>
+    <string name="fomc_open_statement">البيان الرسمي</string>
+    <string name="fomc_open_minutes">محضر الاجتماع</string>
+    <string name="fomc_open_source">تقويم الفيدرالي</string>
+    <string name="fomc_official_timezone">التوقيت الرسمي: %1$s</string>
+    <string name="fomc_local_time_note">الأوقات معروضة بتوقيت جهازك. التوقيت الرسمي للحدث: %1$s</string>
+    <string name="fomc_source_note">المصدر: الاحتياطي الفيدرالي / FRED — بيانات رسمية</string>
+    <string name="fomc_countdown_dhm">%1$s ي %2$s س %3$s د</string>
+    <string name="fomc_countdown_hms">%1$s س %2$s د %3$s ث</string>
+    <string name="fomc_countdown_ms">%1$s د %2$s ث</string>
+    <string name="notif_fomc">اجتماعات الفيدرالي</string>
+    <string name="notif_fomc_desc">تنبيه قبل الاجتماع وعند صدور قرار الفائدة</string>
+
+    <!-- ── الفروع ────────────────────────────────────────────────── -->
+    <string name="branches_title">فروعنا</string>
+    <string name="branch_details_title">تفاصيل الفرع</string>
+    <string name="branches_empty">مفيش فروع مضافة لسه</string>
+    <string name="branches_load_failed">مقدرناش نحمّل الفروع</string>
+    <string name="branches_sorted_by_distance">مرتّبة بالأقرب ليك</string>
+    <string name="branches_location_hint">فعّل الموقع عشان نرتّب الفروع بالأقرب ليك.</string>
+    <string name="branches_location_off">خدمة الموقع مقفولة في جهازك، فالفروع مش مرتّبة بالمسافة.</string>
+    <string name="branches_enable_location">فعّل الموقع</string>
+    <string name="branch_directions">الاتجاهات</string>
+    <string name="branch_call">اتصال</string>
+    <string name="branch_whatsapp">واتساب</string>
+    <string name="branch_contact">التواصل</string>
+    <string name="branch_distance_km">%1$s كم</string>
+    <string name="branch_distance_m">%1$s م</string>
+    <string name="branch_distance_from_you">يبعد عنك %1$s</string>
+    <string name="branch_no_maps_app">مفيش تطبيق خرايط على الجهاز</string>
+    <string name="branch_no_dialer">مفيش تطبيق اتصال على الجهاز</string>
+    <string name="branch_no_whatsapp">مقدرناش نفتح واتساب</string>
+
+    <!-- ── المتجر: سبائك ومشغولات ──────────────────────────────────
+         النصوص دي بتوصف حاجة واحدة مهمة للعميل: السعر مين حسبه
+         وإمتى. «تقديري» مقابل «متثبّت» فرق جوهري في الطلب. -->
+    <string name="shop_title">سبائك ومشغولات</string>
+    <string name="shop_product_details">تفاصيل المنتج</string>
+    <string name="shop_kind_all">الكل</string>
+    <string name="shop_kind_bullion">سبائك</string>
+    <string name="shop_kind_jewellery">مشغولات</string>
+    <string name="shop_empty">مفيش منتجات متاحة دلوقتي.</string>
+    <string name="shop_load_failed">مش قادرين نحمّل المنتجات دلوقتي.</string>
+    <string name="shop_disabled">الطلبات متوقفة مؤقتاً — تقدر تتصفّح المنتجات.</string>
+    <string name="shop_price_loading">جاري تحميل السعر…</string>
+    <string name="shop_price_stale">السعر المعروض من آخر تحديث محفوظ. ممكن ما نقدرش نثبّتله سعر دلوقتي.</string>
+    <string name="shop_gram_price">%1$s للجرام</string>
+    <string name="shop_gram_price_label">سعر الجرام</string>
+    <string name="shop_spec_line">%1$s جرام · عيار %2$s · %3$s</string>
+    <string name="shop_manufacturing_per_gram">مصنعية %1$s للجرام</string>
+    <string name="shop_metal_value">قيمة المعدن</string>
+    <string name="shop_manufacturing">المصنعية</string>
+    <string name="shop_tax">الضريبة</string>
+    <string name="shop_total">الإجمالي</string>
+    <string name="shop_quantity">الكمية</string>
+    <string name="shop_add_to_cart">أضف للسلة</string>
+    <string name="shop_out_of_stock">خلص من المخزون</string>
+    <string name="shop_stock_left">متاح %1$s بس</string>
+    <string name="shop_view_cart">السلة (%1$s)</string>
+    <string name="shop_order_methods">طرق الطلب المتاحة</string>
+    <string name="shop_mode_deposit">بعربون — السعر بيتثبّت</string>
+    <string name="shop_mode_deposit_hint">بتدفع جزء من الإجمالي والسعر بيتثبّت، والباقي عند الاستلام بنفس السعر.</string>
+    <string name="shop_mode_on_arrival">من غير عربون — التسعير عند الاستلام</string>
+    <string name="shop_mode_on_arrival_hint">بتحجز المنتج والسعر بيتحسب بسعر الجرام وقت ما توصل الفرع.</string>
+    <string name="metal_gold">ذهب</string>
+    <string name="metal_silver">فضة</string>
+    <string name="currency_egp">ج.م</string>
+
+    <!-- ── السلة وإتمام الطلب ──────────────────────────────────── -->
+    <string name="cart_title">السلة</string>
+    <string name="cart_empty">السلة فاضية.</string>
+    <string name="cart_browse_products">تصفّح المنتجات</string>
+    <string name="cart_remove">حذف</string>
+    <string name="cart_how_to_order">طريقة الطلب</string>
+    <string name="cart_deposit_detail">عربون %1$s (%2$s%%) — السعر بيفضل متثبّت %3$s ساعة.</string>
+    <string name="cart_estimate_note">الرقم ده تقديري — السعر النهائي بيتحسب وقت استلامك من الفرع.</string>
+    <string name="cart_pickup_branch">فرع الاستلام</string>
+    <string name="cart_pick_branch_first">اختار فرع الاستلام الأول.</string>
+    <string name="cart_note">ملاحظة (اختياري)</string>
+    <string name="cart_note_hint">أي حاجة عايز الفرع يعرفها</string>
+    <string name="cart_place_with_deposit">اطلب وادفع العربون</string>
+    <string name="cart_place_on_arrival">اطلب — التسعير عند الاستلام</string>
+
+    <!-- ── الطلبات ────────────────────────────────────────────── -->
+    <string name="orders_title">طلباتي</string>
+    <string name="orders_empty">مفيش طلبات لسه.</string>
+    <string name="orders_estimate_label">سعر تقديري — بيتحسب عند الاستلام</string>
+    <string name="orders_locked_label">سعر متثبّت</string>
+    <string name="orders_deposit">العربون</string>
+    <string name="orders_lock_expired">مدة تثبيت السعر خلصت — السعر هيتحسب من جديد وقت الاستلام.</string>
+    <string name="orders_cancel">إلغاء الطلب</string>
+    <string name="orders_cancel_confirm">تأكيد الإلغاء</string>
+    <string name="orders_cancel_keep">تراجع</string>
+
+
+    <!-- ── الفجوة السعرية: الفضة ────────────────────────────────────
+         نفس الشاشة بتعرض الدهب أو الفضة حسب الوضع المختار في
+         الرئيسية، فالعيارات واللافتات بتتغيّر مع المعدن. -->
+    <string name="price_gap_gold">الفجوة السعرية للذهب</string>
+    <string name="price_gap_silver">الفجوة السعرية للفضة</string>
+    <string name="label_silver999_global">سعر الجرام عيار 999 عالميا:</string>
+    <string name="label_silver999_local">سعر الجرام عيار 999 محليا:</string>
+    <string name="label_silver_in_dollar">الفضة محسوبة بسعر الدولار:</string>
+    <string name="gap_in_999">الفجوة في عيار 999</string>
+    <string name="gap_in_925">الفجوة في عيار 925</string>
+    <string name="gap_explanation_title_silver">الفجوة السعرية في سعر الفضة في مصر</string>
+    <string name="gap_explanation_body_silver">تشير إلى الفرق بين سعر الفضة المحلي (كما يُعلن في محلات الصاغة) والسعر العالمي المحوَّل للجنيه المصري وفقاً للسعر الرسمي للدولار في البنوك. الفجوة السالبة تعني أن السعر المحلي أعلى من السعر العالمي، والإيجابية تعني أنه أقل. أرقام الفضة أصغر بكثير من الذهب لأن سعر الجرام نفسه أقل.</string>
+
+
+    <!-- ── التقويم الاقتصادي ─────────────────────────────────────── -->
+    <string name="calendar_tab">التقويم</string>
+    <string name="calendar_title">التقويم الاقتصادي</string>
+
+    <!-- تبويبات المدى الزمني -->
+    <string name="calendar_yesterday">امبارح</string>
+    <string name="calendar_today">النهاردة</string>
+    <string name="calendar_tomorrow">بكرة</string>
+    <string name="calendar_this_week">الأسبوع ده</string>
+
+    <!-- أعمدة الصف — مختصرة عشان تلات أعمدة تترص على عرض الموبايل -->
+    <string name="calendar_actual">فعلي</string>
+    <string name="calendar_consensus">متوقّع</string>
+    <string name="calendar_previous">سابق</string>
+
+    <string name="calendar_impact_high">عالي</string>
+    <string name="calendar_impact_medium">متوسط</string>
+    <string name="calendar_impact_low">منخفض</string>
+    <string name="calendar_impact_holiday">عطلة</string>
+
+    <string name="calendar_all_day">طول اليوم</string>
+    <string name="calendar_empty">مفيش أحداث في الفترة دي</string>
+    <string name="calendar_empty_filtered">مفيش أحداث مطابقة للفلتر</string>
+    <string name="calendar_failed">مش قادرين نحمّل التقويم</string>
+
+    <!-- شاشة التفاصيل -->
+    <string name="calendar_country">الدولة</string>
+    <string name="calendar_impact">الأهمية</string>
+    <string name="calendar_symbol">العملة</string>
+    <string name="calendar_latest_release">آخر إصدار</string>
+    <string name="calendar_next_release">الإصدار القادم</string>
+    <string name="calendar_date">التاريخ</string>
+    <string name="calendar_time_left">الوقت المتبقي</string>
+    <string name="calendar_no_next_release">لسه ما اتحددش</string>
+    <string name="calendar_category">التصنيف</string>
+    <string name="calendar_unit">الوحدة</string>
+    <string name="calendar_show_more">اعرض المزيد</string>
+    <string name="calendar_show_less">اعرض أقل</string>
+    <string name="calendar_chart">الرسم البياني</string>
+    <string name="calendar_history">التاريخ</string>
+    <string name="calendar_no_history">مفيش تاريخ لسه</string>
+    <!-- بنقول ليه مفيش تاريخ بدل ما نسيب الشاشة فاضية -->
+    <string name="calendar_history_building">التاريخ بيتكوّن من كل إصدار أول ما ينزل، فالرسم بيمتلي مع الوقت.</string>
+    <string name="calendar_not_released">لسه ما صدرش</string>
+
+    <!-- العدّاد التنازلي -->
+    <string name="calendar_left_days">%1$d ي %2$d س</string>
+    <string name="calendar_left_hours">%1$d س %2$d د</string>
+    <string name="calendar_left_minutes">%1$d د</string>
+
+    <!-- الفلتر -->
+    <string name="calendar_filter">فلتر</string>
+    <string name="calendar_filter_impact">الأهمية</string>
+    <string name="calendar_filter_currency">العملة</string>
+    <string name="calendar_filter_reset">إعادة ضبط</string>
+    <string name="calendar_filter_apply">تطبيق</string>
+    <string name="calendar_filter_active">الفلتر شغّال</string>
+    <string name="calendar_source_note">بيانات التقويم بتتجمع تلقائياً وممكن تتعدّل. اتأكد منها قبل أي قرار بيع أو شرا.</string>
+    <string name="qr_checking">بنتأكد…</string>
+    <string name="qr_hint">صوّب الكاميرا على كود الـQR اللي على السبيكة. هنقولك على طول هي مسجّلة عندنا ولا لأ.</string>
+    <string name="qr_network_error_title">ما قدرناش نتأكد دلوقتي</string>
+    <string name="qr_network_error_message">ما وصلناش لسيرفراتنا. ده مالوش علاقة بالسبيكة — اتأكد من النت وجرّب تاني.</string>
+    <string name="qr_detail_code">الكود</string>
+    <string name="qr_detail_karat">العيار</string>
+    <string name="qr_detail_weight">الوزن</string>
+    <string name="qr_detail_grams">جرام</string>
+    <string name="qr_detail_serial">الرقم التسلسلي</string>
+</resources>

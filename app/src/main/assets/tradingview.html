@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+  حاضنة widgets تريدنج فيو الرسمية.
+
+  الـ widgets دي مجانية ومصرّح بتضمينها في المواقع والتطبيقات، والبيانات
+  جاية من مصادر السوق بتاعتهم مباشرة — مش أرقام محلية.
+
+  مهم: النسخة المجانية بتشترط إبقاء إسناد TradingView الظاهر تحت الأداة.
+  متشيلهوش.
+
+  الصفحة بتستقبل إعداداتها من الكود الأصلي عن طريق `window.MSA_CONFIG`
+  اللي بيتحقن قبل التحميل، فنفس الملف بيخدم الشاشتين والمعدنين.
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    :root {
+      --bg: #2E2020;          /* نفس لون خلفية التطبيق */
+      --gold: #E8B138;
+      --muted: #9E9898;
+    }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: var(--bg);
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior: none;
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    #host { height: 100%; display: flex; flex-direction: column; }
+    .tradingview-widget-container { flex: 1; min-height: 0; }
+    .tradingview-widget-container__widget { height: 100%; }
+
+    /* شاشة الخطأ لما الشبكة تفصل */
+    #offline {
+      display: none;
+      position: absolute; inset: 0;
+      align-items: center; justify-content: center;
+      flex-direction: column; gap: 10px;
+      background: var(--bg); color: var(--muted);
+      text-align: center; padding: 30px;
+    }
+    #offline.show { display: flex; }
+    #offline b { color: #fff; font-size: 17px; }
+    #retry {
+      margin-top: 8px; padding: 10px 26px; border: 0; border-radius: 22px;
+      background: var(--gold); color: #3F2D2C; font-weight: 700; font-size: 15px;
+    }
+    /* إسناد TradingView — مطلوب في النسخة المجانية */
+    .tradingview-widget-copyright {
+      font-size: 12px; text-align: center; padding: 6px 0; color: var(--muted);
+    }
+    .tradingview-widget-copyright a { color: var(--gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div id="host"></div>
+
+<div id="offline">
+  <b id="offlineTitle">مفيش اتصال بالإنترنت</b>
+  <span id="offlineHint">المؤشرات محتاجة اتصال بالشبكة</span>
+  <button id="retry">إعادة المحاولة</button>
+</div>
+
+<script>
+  // الإعدادات بتتحقن من التطبيق قبل التحميل
+  var cfg = window.MSA_CONFIG || {
+    widget: 'chart', symbol: 'OANDA:XAUUSD', locale: 'ar_AE'
+  };
+
+  var SCRIPTS = {
+    chart:    'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js',
+    analysis: 'https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js'
+  };
+
+  function settingsFor(kind) {
+    if (kind === 'analysis') {
+      return {
+        interval: '1D',
+        width: '100%',
+        height: '100%',
+        symbol: cfg.symbol,
+        showIntervalTabs: true,
+        displayMode: 'single',
+        locale: cfg.locale,
+        colorTheme: 'dark',
+        isTransparent: true
+      };
+    }
+    return {
+      autosize: true,
+      symbol: cfg.symbol,
+      interval: 'D',
+      timezone: 'Africa/Cairo',
+      theme: 'dark',
+      style: '1',
+      locale: cfg.locale,
+      backgroundColor: 'rgba(46, 32, 32, 1)',
+      gridColor: 'rgba(232, 177, 56, 0.10)',
+      hide_side_toolbar: true,
+      hide_top_toolbar: false,
+      allow_symbol_change: false,
+      save_image: false,
+      support_host: 'https://www.tradingview.com'
+    };
+  }
+
+  var loadTimer = null;
+
+  function render() {
+    document.getElementById('offline').classList.remove('show');
+
+    var host = document.getElementById('host');
+    host.innerHTML =
+      '<div class="tradingview-widget-container">' +
+      '  <div class="tradingview-widget-container__widget"></div>' +
+      '  <div class="tradingview-widget-copyright">' +
+      '    <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">' +
+      '      TradingView' +
+      '    </a>' +
+      '  </div>' +
+      '</div>';
+
+    var script = document.createElement('script');
+    script.src = SCRIPTS[cfg.widget] || SCRIPTS.chart;
+    script.async = true;
+    script.innerHTML = JSON.stringify(settingsFor(cfg.widget));
+
+    // لو السكربت مجاش خلال 12 ثانية نعتبرها مشكلة شبكة
+    loadTimer = setTimeout(showOffline, 12000);
+    script.onload = function () { clearTimeout(loadTimer); };
+    script.onerror = showOffline;
+
+    host.querySelector('.tradingview-widget-container').appendChild(script);
+  }
+
+  function showOffline() {
+    clearTimeout(loadTimer);
+    document.getElementById('offline').classList.add('show');
+  }
+
+  document.getElementById('retry').addEventListener('click', render);
+
+  // نصوص شاشة الخطأ بتتغيّر مع لغة التطبيق
+  if (cfg.locale && cfg.locale.indexOf('ar') !== 0) {
+    document.documentElement.lang = 'en';
+    document.documentElement.dir = 'ltr';
+    document.getElementById('offlineTitle').textContent = 'No internet connection';
+    document.getElementById('offlineHint').textContent = 'Indicators need a network connection';
+    document.getElementById('retry').textContent = 'Retry';
+  }
+
+  render();
+</script>
+</body>
+</html>

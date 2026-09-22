@@ -1,0 +1,15 @@
+.gradle/
+build/
+*/build/
+local.properties
+key.properties
+*.jks
+*.keystore
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+app/google-services.json
+app/adi-registration.properties
