@@ -20,8 +20,8 @@ android {
         // Google Play: من 31 أغسطس 2026 لازم استهداف Android 16 (API 36)
         // للتحديثات الجديدة — والتمديد بينتهي 1 نوفمبر 2026.
         targetSdk = 36
-        versionCode = 13
-        versionName = "1.2"
+        versionCode = 14
+        versionName = "1.4"
 
         // بدّل القيمة إلى "staging" لبناء نسخة الاختبار.
     buildConfigField("String", "API_ENVIRONMENT", "\"production\"")
