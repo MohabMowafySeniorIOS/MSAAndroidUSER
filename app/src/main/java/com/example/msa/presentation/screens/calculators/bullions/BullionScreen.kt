@@ -13,7 +13,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -35,6 +38,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.msa.android.R
 import com.msa.android.presentation.common.components.MSABackground
 import com.msa.android.presentation.common.components.MSATopBar
+import com.msa.android.presentation.common.components.PullToRefreshContainer
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import kotlin.collections.get
 import kotlin.math.round
 import kotlin.times
@@ -59,6 +65,8 @@ fun BullionScreen(
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
     val context = LocalContext.current
+    val refreshScope = rememberCoroutineScope()
+    var refreshing by remember { mutableStateOf(false) }
 
     // iOS: imageName يبدأ "MSA" وبيتغيّر لاسم الشركة عند الاختيار.
     // الربط بالاسم صريح في CompanyImages — البحث بـ getIdentifier كان بيفشل
@@ -68,6 +76,17 @@ fun BullionScreen(
     }
 
     MSABackground {
+        PullToRefreshContainer(
+            refreshing = refreshing,
+            onRefresh = {
+                refreshScope.launch {
+                    refreshing = true
+                    delay(700)
+                    refreshing = false
+                }
+            },
+            modifier = Modifier.fillMaxSize()
+        ) {
         Column(Modifier.fillMaxSize()) {
             MSATopBar(
                 title = stringResource(R.string.bullions),
@@ -97,6 +116,7 @@ fun BullionScreen(
                     PriceGrid(state, vm.handleGramPrice())
                 }
             }
+        }
         }
     }
 
@@ -370,4 +390,3 @@ private fun DividerLine() {
             .background(Color(0x33000000))
     )
 }
-

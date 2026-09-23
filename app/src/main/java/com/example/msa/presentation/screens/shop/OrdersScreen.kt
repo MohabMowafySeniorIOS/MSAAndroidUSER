@@ -45,6 +45,7 @@ import com.msa.android.domain.model.PricingMode
 import com.msa.android.presentation.common.NumberFormatter
 import com.msa.android.presentation.common.components.GoldButton
 import com.msa.android.presentation.common.components.MSABackground
+import com.msa.android.presentation.common.components.PullToRefreshContainer
 import com.msa.android.presentation.common.components.MSATopBar
 import com.msa.android.presentation.theme.GoldenBorder
 
@@ -72,6 +73,11 @@ fun OrdersScreen(
     }
 
     MSABackground {
+        PullToRefreshContainer(
+            refreshing = state.loading,
+            onRefresh = vm::load,
+            modifier = Modifier.fillMaxSize()
+        ) {
         Box(Modifier.fillMaxSize()) {
             Column(Modifier.fillMaxSize()) {
 
@@ -151,6 +157,7 @@ fun OrdersScreen(
                 hostState = snackbar,
                 modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 30.dp)
             )
+        }
         }
     }
 }

@@ -53,6 +53,11 @@ class BanksViewModel @Inject constructor(
         subscribe(currency)
     }
 
+    fun refresh() {
+        _state.update { it.copy(loading = true) }
+        subscribe(_state.value.selectedCurrency)
+    }
+
     /** بينادى لما المستخدم يغيّر سويتش الإشعار بتاع بنك معيّن يدويًا. */
     fun setBankNotificationEnabled(bankName: String, enabled: Boolean) {
         viewModelScope.launch {

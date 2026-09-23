@@ -24,7 +24,7 @@ android {
         versionName = "1.2"
 
         // بدّل القيمة إلى "staging" لبناء نسخة الاختبار.
-        buildConfigField("String", "API_ENVIRONMENT", "\"staging\"")
+    buildConfigField("String", "API_ENVIRONMENT", "\"production\"")
         buildConfigField("String", "PRODUCTION_API_BASE_URL", "\"https://backend.msagold.com/api/v1/\"")
         buildConfigField("String", "STAGING_API_BASE_URL", "\"https://staging.backend.msagold.com/api/v1/\"")
 
@@ -125,6 +125,8 @@ implementation("androidx.compose.ui:ui-graphics")
 implementation("androidx.compose.ui:ui-tooling-preview")
 
 implementation("androidx.compose.material3:material3")
+
+implementation("androidx.compose.material:material")
 
 implementation("androidx.compose.material:material-icons-extended")
 

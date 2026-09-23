@@ -48,6 +48,7 @@ import com.msa.android.R
 import com.msa.android.domain.model.Product
 import com.msa.android.presentation.common.components.GoldButton
 import com.msa.android.presentation.common.components.MSABackground
+import com.msa.android.presentation.common.components.PullToRefreshContainer
 import com.msa.android.presentation.common.components.MSATopBar
 import com.msa.android.presentation.theme.GoldenBorder
 
@@ -81,6 +82,11 @@ fun ProductsScreen(
     }
 
     MSABackground {
+        PullToRefreshContainer(
+            refreshing = state.loading,
+            onRefresh = vm::load,
+            modifier = Modifier.fillMaxSize()
+        ) {
         Box(Modifier.fillMaxSize()) {
             Column(Modifier.fillMaxSize()) {
 
@@ -179,6 +185,7 @@ fun ProductsScreen(
                 hostState = snackbar,
                 modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 90.dp)
             )
+        }
         }
     }
 }

@@ -31,6 +31,7 @@ import coil.request.ImageRequest
 import com.msa.android.R
 import com.msa.android.domain.model.NewsItem
 import com.msa.android.presentation.common.components.MSABackground
+import com.msa.android.presentation.common.components.PullToRefreshContainer
 import com.msa.android.presentation.common.components.SegmentedToggle
 import com.msa.android.presentation.theme.GoldenBorder
 import java.text.SimpleDateFormat
@@ -53,6 +54,11 @@ fun NewsScreen(
     val context = LocalContext.current
 
     MSABackground {
+        PullToRefreshContainer(
+            refreshing = state.isLoading,
+            onRefresh = vm::refresh,
+            modifier = Modifier.fillMaxSize()
+        ) {
         Column(modifier = Modifier.fillMaxSize()) {
             com.msa.android.presentation.common.components.MSATopBar(
                 title = stringResource(R.string.news),
@@ -116,6 +122,7 @@ fun NewsScreen(
                     }
                 }
             }
+        }
         }
     }
 }

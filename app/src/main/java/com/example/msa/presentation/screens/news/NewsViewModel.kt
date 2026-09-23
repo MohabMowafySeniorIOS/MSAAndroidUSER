@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -35,16 +36,19 @@ class NewsViewModel @Inject constructor(
     private val _state = MutableStateFlow(NewsState())
     val state: StateFlow<NewsState> = _state.asStateFlow()
 
+    private var normalJob: Job? = null
+    private var msaJob: Job? = null
+
     init {
         // Subscribe to both feeds in parallel — tab switches feel instant.
-        viewModelScope.launch {
+        normalJob = viewModelScope.launch {
             repo.observeNews()
                 .catch { e -> _state.update { it.copy(loadingNormal = false, error = e.message) } }
                 .collect { list ->
                     _state.update { it.copy(normalArticles = list, loadingNormal = false, error = null) }
                 }
         }
-        viewModelScope.launch {
+        msaJob = viewModelScope.launch {
             repo.observeMsaNews()
                 .catch { e -> _state.update { it.copy(loadingMsa = false, error = e.message) } }
                 .collect { list ->
@@ -56,5 +60,22 @@ class NewsViewModel @Inject constructor(
     fun setTab(tab: NewsTab) {
         if (_state.value.tab == tab) return
         _state.update { it.copy(tab = tab) }
+    }
+
+    fun refresh() {
+        normalJob?.cancel()
+        msaJob?.cancel()
+        _state.update { it.copy(loadingNormal = true, loadingMsa = true, error = null) }
+
+        normalJob = viewModelScope.launch {
+            repo.observeNews()
+                .catch { e -> _state.update { it.copy(loadingNormal = false, error = e.message) } }
+                .collect { list -> _state.update { it.copy(normalArticles = list, loadingNormal = false, error = null) } }
+        }
+        msaJob = viewModelScope.launch {
+            repo.observeMsaNews()
+                .catch { e -> _state.update { it.copy(loadingMsa = false, error = e.message) } }
+                .collect { list -> _state.update { it.copy(msaArticles = list, loadingMsa = false, error = null) } }
+        }
     }
 }

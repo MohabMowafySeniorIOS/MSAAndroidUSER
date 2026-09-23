@@ -16,6 +16,10 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -35,11 +39,14 @@ import com.msa.android.presentation.common.NumberFormatter
 import com.msa.android.presentation.common.RelativeTimeFormatter
 import com.msa.android.presentation.common.components.MSABackground
 import com.msa.android.presentation.common.components.MSATopBar
+import com.msa.android.presentation.common.components.PullToRefreshContainer
 import com.msa.android.presentation.common.components.FitToHeight
 import com.msa.android.presentation.screens.home.banner.HomeBannerPopupHost
 import com.msa.android.presentation.screens.home.banner.HomeInlineBanner
 import com.msa.android.presentation.theme.GoldenBorder
 import kotlin.math.abs
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Mirrors iOS GoldenScreen.swift "الشاشة العالمية":
@@ -67,6 +74,8 @@ fun HomeScreen(
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
     val ctx = LocalContext.current
+    val refreshScope = rememberCoroutineScope()
+    var refreshing by remember { mutableStateOf(false) }
 
     // خلفية الرئيسية بتتبدّل مع اختيار المعدن: خلفية الفضة لما المستخدم
     // يختار «فضة»، وخلفية الدهب الأصلية لما يرجع لـ«دهب». باقي شاشات
@@ -80,6 +89,17 @@ fun HomeScreen(
         textureRes = if (silver) R.drawable.bg_texture_silver else R.drawable.bg_texture,
         baseColor = if (silver) Color(0xFF070707) else Color(0xFF2E2020)
     ) {
+        PullToRefreshContainer(
+            refreshing = refreshing,
+            onRefresh = {
+                refreshScope.launch {
+                    refreshing = true
+                    delay(700)
+                    refreshing = false
+                }
+            },
+            modifier = Modifier.fillMaxSize()
+        ) {
         Box(modifier = Modifier.fillMaxSize()) {
 
             // ── popup البانر ────────────────────────────────────────────
@@ -402,6 +422,7 @@ fun HomeScreen(
 //                    modifier = Modifier.size(28.dp)
 //                )
 //            }
+        }
         }
     }
 }

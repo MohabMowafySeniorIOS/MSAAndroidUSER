@@ -30,6 +30,7 @@ import com.msa.android.domain.model.BankRate
 import com.msa.android.domain.model.Trend
 import com.msa.android.presentation.common.components.MSABackground
 import com.msa.android.presentation.common.components.MSATopBar
+import com.msa.android.presentation.common.components.PullToRefreshContainer
 import com.msa.android.presentation.theme.GoldenBorder
 import com.msa.android.presentation.theme.GreenTrend
 import com.msa.android.presentation.theme.RedTrend
@@ -51,6 +52,11 @@ fun BanksScreen(
     val uriHandler = androidx.compose.ui.platform.LocalUriHandler.current
 
     MSABackground {
+        PullToRefreshContainer(
+            refreshing = state.loading,
+            onRefresh = { vm.refresh() },
+            modifier = Modifier.fillMaxSize()
+        ) {
         Column(Modifier.fillMaxSize()) {
             MSATopBar(
                 title = stringResource(R.string.currency_prices),
@@ -159,6 +165,7 @@ fun BanksScreen(
                     )
                 }
             }
+        }
         }
     }
 }
