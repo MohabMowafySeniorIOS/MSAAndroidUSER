@@ -2,6 +2,7 @@ package com.msa.android.di
 
 import com.msa.android.BuildConfig
 import com.msa.android.data.source.network.AuthInterceptor
+import com.msa.android.data.source.network.ApiLoadingInterceptor
 import com.msa.android.data.source.network.MsaApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -47,6 +48,7 @@ object NetworkModule {
             .writeTimeout(15, TimeUnit.SECONDS)
             // التوكن قبل اللوج عشان الهيدر يبان في اللوج وقت التشخيص
             .addInterceptor(auth)
+            .addInterceptor(ApiLoadingInterceptor())
             .addInterceptor(logging)
             .build()
 

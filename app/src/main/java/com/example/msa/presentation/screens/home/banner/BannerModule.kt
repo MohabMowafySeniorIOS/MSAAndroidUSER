@@ -1,6 +1,7 @@
 package com.msa.android.presentation.screens.home.banner
 
 import com.msa.android.data.source.network.MsaApi
+import com.msa.android.data.source.network.ApiLoadingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -48,6 +49,7 @@ object BannerModule {
         return OkHttpClient.Builder()
             .connectTimeout(20, TimeUnit.SECONDS)
             .readTimeout(20, TimeUnit.SECONDS)
+            .addInterceptor(ApiLoadingInterceptor())
             .addInterceptor(logging)
             .build()
     }

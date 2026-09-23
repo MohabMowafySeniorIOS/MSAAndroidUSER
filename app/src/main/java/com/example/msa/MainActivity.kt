@@ -24,6 +24,8 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import com.msa.android.data.source.local.LanguagePreferences
 import com.msa.android.data.source.network.ConnectivityObserver
+import com.msa.android.data.source.network.ApiLoadingState
+import com.msa.android.presentation.common.components.ApiLoadingOverlay
 import com.msa.android.presentation.common.components.NoInternetOverlay
 import com.msa.android.presentation.navigation.MSANavGraph
 import com.msa.android.presentation.theme.MSATheme
@@ -107,6 +109,7 @@ class MainActivity : ComponentActivity() {
             // initial = true so the first frame is NEVER the offline overlay.
             // The debounced flow will correct this within ~2.5 s if needed.
             val isConnected by debouncedConnectivity.collectAsState(initial = true)
+            val apiLoading by ApiLoadingState.isLoading.collectAsState()
 
             MSATheme {
                 CompositionLocalProvider(LocalLayoutDirection provides direction) {
@@ -130,6 +133,17 @@ class MainActivity : ComponentActivity() {
                                     .zIndex(100f)
                             ) {
                                 NoInternetOverlay()
+                            }
+
+                            androidx.compose.animation.AnimatedVisibility(
+                                visible = apiLoading,
+                                enter = androidx.compose.animation.fadeIn(),
+                                exit = androidx.compose.animation.fadeOut(),
+                                modifier = Modifier
+                                    .fillMaxSize()
+                                    .zIndex(110f)
+                            ) {
+                                ApiLoadingOverlay()
                             }
                         }
                     }
